@@ -67,7 +67,7 @@ bool Player::Update(float dt)
 	// If the player is jumpling, we don't want to apply gravity, we use the current velocity prduced by the jump
 	if(isJumping == true)
 	{
-		velocity = pbody->body->GetLinearVelocity();
+		velocity.y = pbody->body->GetLinearVelocity().y;
 	}
 
 	// Apply the velocity to the player
