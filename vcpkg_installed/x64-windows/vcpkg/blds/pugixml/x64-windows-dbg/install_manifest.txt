@@ -1,0 +1,9 @@
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/lib/pugixml.lib
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/bin/pugixml.dll
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/lib/cmake/pugixml/pugixml-targets.cmake
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/lib/cmake/pugixml/pugixml-targets-debug.cmake
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/lib/cmake/pugixml/pugixml-config-version.cmake
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/lib/cmake/pugixml/pugixml-config.cmake
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/lib/pkgconfig/pugixml.pc
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/include/pugiconfig.hpp
+C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/debug/include/pugixml.hpp

@@ -30,7 +30,8 @@ bool Scene::Awake()
 
 	//L04: TODO 3b: Instantiate the player using the entity manager
 	player = (Player*)Engine::GetInstance().entityManager->CreateEntity(EntityType::PLAYER);
-	
+	player->SetParameters(configParameters.child("entities").child("player"));
+
 	//L08 Create a new item using the entity manager and set the position to (200, 672) to test
 	Item* item = (Item*) Engine::GetInstance().entityManager->CreateEntity(EntityType::ITEM);
 	item->position = Vector2D(200, 672);
@@ -41,9 +42,9 @@ bool Scene::Awake()
 bool Scene::Start()
 {
 	//L06 TODO 3: Call the function to load the map. 
-	Engine::GetInstance().map->Load("Assets/Maps/", "Prova.tmx");
+	//Engine::GetInstance().map->Load("Assets/Maps/", "Prova.tmx");
+	Engine::GetInstance().map->Load(configParameters.child("map").attribute("path").as_string(), configParameters.child("map").attribute("name").as_string());
 
-	LOG("Hola");
 	return true;
 }
 
@@ -58,18 +59,6 @@ bool Scene::Update(float dt)
 {
 	//L03 TODO 3: Make the camera movement independent of framerate
 	float camSpeed = 0;
-
-	//if(Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_UP) == KEY_REPEAT)
-	//	Engine::GetInstance().render.get()->camera.y -= ceil(camSpeed * dt);
-
-	//if(Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
-	//	Engine::GetInstance().render.get()->camera.y += ceil(camSpeed * dt);
-
-	//if(Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_LEFT) == KEY_REPEAT)
-	//	Engine::GetInstance().render.get()->camera.x -= ceil(camSpeed * dt);
-
-	//if(Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_RIGHT) == KEY_REPEAT)
-	//	Engine::GetInstance().render.get()->camera.x += ceil(camSpeed * dt);
 
 	Engine::GetInstance().render.get()->camera.x =- player->position.getX()*2+150;
 	Engine::GetInstance().render.get()->camera.y =- player->position.getY()*2+150;
