@@ -34,6 +34,8 @@ bool Player::Start() {
 
 	//Load animations
 	idle.LoadAnimations(parameters.child("animations").child("idle"));
+	run.LoadAnimations(parameters.child("animations").child("run"));
+	jump.LoadAnimations(parameters.child("animations").child("jump"));
 	currentAnimation = &idle;
 
 	// L08 TODO 5: Add physics to the player - initialize physics body
@@ -56,11 +58,13 @@ bool Player::Update(float dt)
 	// Move left
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_A) == KEY_REPEAT) {
 		velocity.x = -0.2 * dt;
+		currentAnimation = &run;
 	}
 
 	// Move right
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_D) == KEY_REPEAT) {
 		velocity.x = 0.2 * dt;
+		currentAnimation = &run;
 	}
 	
 	//Jump
@@ -74,6 +78,7 @@ bool Player::Update(float dt)
 	if(isJumping == true)
 	{
 		velocity.y = pbody->body->GetLinearVelocity().y;
+		currentAnimation = &jump;
 	}
 
 	// Apply the velocity to the player
@@ -84,7 +89,8 @@ bool Player::Update(float dt)
 	position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
 
 	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
-	currentAnimation->Update();	
+	currentAnimation->Update();
+	currentAnimation = &idle;
 return true;
 }
 

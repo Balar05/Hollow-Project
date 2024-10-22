@@ -20,7 +20,7 @@
 	<scene>
 		<map path="Assets/Maps/" name="Prova.tmx"/>
 		<entities>
-			<player x="100" y="0" w="32" h ="32" texture="Assets/Textures/Knight/Idle.png">
+			<player x="100" y="0" w="32" h ="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>
 					<idle loop="true" speed ="0.1">
 						<frame x="0" y="0" w="32" h="32"/>
@@ -28,6 +28,21 @@
 						<frame x="64" y="0" w="32" h="32"/>
 						<frame x="96" y="0" w="32" h="32"/>
 					</idle>
+					<run loop="true" speed ="0.1">
+						<frame x="0" y="32" w="32" h="32"/>
+						<frame x="32" y="32" w="32" h="32"/>
+						<frame x="64" y="32" w="32" h="32"/>
+						<frame x="96" y="32" w="32" h="32"/>
+						<frame x="128" y="32" w="32" h="32"/>
+						<frame x="160" y="32" w="32" h="32"/>
+					</run>
+					<jump loop="true" speed ="0.1">
+						<frame x="0" y="64" w="32" h="32"/>
+						<frame x="32" y="64" w="32" h="32"/>
+						<frame x="64" y="64" w="32" h="32"/>
+						<frame x="96" y="64" w="32" h="32"/>
+						<frame x="128" y="64" w="32" h="32"/>
+					</jump>
 				</animations>
 			</player>
 		</entities>
