@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/libogg-x64-windows-1.3.5#1-9497baed-f9a1-478e-aae2-013f1c3443b5",
-  "name": "libogg:x64-windows@1.3.5#1 ed62f15ec4f8f02750fa6a91594a9305b76d8bf0be4aa56f0a8dc4fbce4cb0d7",
+  "documentNamespace": "https://spdx.org/spdxdocs/libogg-x64-windows-1.3.5#1-8af7d0a8-297e-46c7-9d87-b536d21ee7dc",
+  "name": "libogg:x64-windows@1.3.5#1 8b362029d994c8523b0c29a6061bf29716edbc89ba514050544a640850391c6f",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
+      "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
     ],
-    "created": "2024-10-23T09:40:46Z"
+    "created": "2024-10-22T21:26:28Z"
   },
   "relationships": [
     {
@@ -59,7 +59,7 @@
     {
       "name": "libogg:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "ed62f15ec4f8f02750fa6a91594a9305b76d8bf0be4aa56f0a8dc4fbce4cb0d7",
+      "versionInfo": "8b362029d994c8523b0c29a6061bf29716edbc89ba514050544a640850391c6f",
       "downloadLocation": "NONE",
       "licenseConcluded": "BSD-3-Clause",
       "licenseDeclared": "NOASSERTION",
@@ -69,7 +69,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/arnaubl1/AppData/Local/vcpkg/registries/git-trees/98e27727c32704393494d32615c25b7b16eb3067/portfile.cmake",
+      "fileName": "./C:/Users/arnau/AppData/Local/vcpkg/registries/git-trees/98e27727c32704393494d32615c25b7b16eb3067/portfile.cmake",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -81,7 +81,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/arnaubl1/AppData/Local/vcpkg/registries/git-trees/98e27727c32704393494d32615c25b7b16eb3067/vcpkg.json",
+      "fileName": "./C:/Users/arnau/AppData/Local/vcpkg/registries/git-trees/98e27727c32704393494d32615c25b7b16eb3067/vcpkg.json",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
