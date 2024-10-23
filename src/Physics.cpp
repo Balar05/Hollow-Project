@@ -219,7 +219,7 @@ bool Physics::PostUpdate()
 	bool ret = true;
 	
 	// Activate or deactivate debug mode
-	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F1) == KEY_DOWN) {
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F9) == KEY_DOWN) {
 		if (debug) {
 			debug = false;
 		}
