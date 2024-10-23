@@ -64,6 +64,10 @@ bool Player::Update(float dt)
 		velocity.x = -0.2 * dt;
 		currentAnimation = &runLeft;
 		isLookingRight = false;
+		
+		/*if (position.getX() > 32) {
+			position.setX(64);
+		}*/
 	}
 
 	// Move right
