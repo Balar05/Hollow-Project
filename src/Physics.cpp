@@ -61,6 +61,7 @@ bool Physics::PreUpdate()
 		}
 	}
 
+
 	return ret;
 }
 
@@ -214,10 +215,16 @@ PhysBody* Physics::CreateChain(int x, int y, int* points, int size, bodyType typ
 bool Physics::PostUpdate()
 {
 	bool ret = true;
-
+	
 	// Activate or deactivate debug mode
-	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F1) == KEY_DOWN)
-		debug = !debug;
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F1) == KEY_DOWN) {
+		if (debug) {
+			debug = false;
+		}
+		else {
+			debug = true;
+		}
+	}
 	
 	//  Iterate all objects in the world and draw the bodies
 	if (debug)
