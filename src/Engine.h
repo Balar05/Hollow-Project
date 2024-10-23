@@ -114,6 +114,7 @@ private:
 	int frameCount = 0;
 	int framesPerSecond = 0;
 	int lastSecFrameCount = 0;
+	bool cap30;
 
 	float averageFps = 0.0f;
 	int secondsSinceStartup = 0;

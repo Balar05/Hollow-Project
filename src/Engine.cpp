@@ -117,6 +117,8 @@ bool Engine::Start() {
         }
     }
 
+    cap30 = false;
+
     LOG("Timer App Start(): %f", timer.ReadMSec());
 
     return result;
@@ -169,7 +171,19 @@ bool Engine::CleanUp() {
 // ---------------------------------------------
 void Engine::PrepareUpdate()
 {
+
+    if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F11) == KEY_DOWN) {
+        if (cap30) {
+            cap30 = false;
+        }
+        else {
+            cap30 = true;
+        }
+    }
+
     frameTime.Start();
+
+
 }
 
 // ---------------------------------------------
@@ -200,12 +214,23 @@ void Engine::FinishUpdate()
     lastSecFrameCount++;
 
     // Average FPS for the whole game life
-    if (lastSecFrameTime.ReadMs() > 1000) {
-        lastSecFrameTime.Start();
-        averageFps = (averageFps + lastSecFrameCount) / 2;
-        framesPerSecond = lastSecFrameCount;
-        lastSecFrameCount = 0;
+    if (cap30) {
+        if (lastSecFrameTime.ReadMs() > 1000/2) {
+            lastSecFrameTime.Start();
+            averageFps = (averageFps + lastSecFrameCount) / 2;
+            framesPerSecond = lastSecFrameCount;
+            lastSecFrameCount = 0;
+        }
     }
+    else {
+        if (lastSecFrameTime.ReadMs() > 1000) {
+            lastSecFrameTime.Start();
+            averageFps = (averageFps + lastSecFrameCount) / 2;
+            framesPerSecond = lastSecFrameCount;
+            lastSecFrameCount = 0;
+        }
+    }
+    
 
     // Shows the time measurements in the window title
     // check sprintf formats here https://cplusplus.com/reference/cstdio/printf/
