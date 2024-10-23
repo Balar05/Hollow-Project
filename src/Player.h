@@ -39,6 +39,9 @@ public:
 	SDL_Texture* texture = NULL;
 	int texW, texH;
 
+	int lives;
+	bool dead;
+
 	//Audio fx
 	int pickCoinFxId;
 
@@ -55,6 +58,8 @@ public:
 	Animation runLeft;
 	Animation jumpRight;
 	Animation jumpLeft;
+	Animation dieRight;
+	Animation dieLeft;
 
 	bool isLookingRight;
 };

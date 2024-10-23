@@ -31,6 +31,8 @@ bool Player::Start() {
 	position.setY(parameters.attribute("y").as_int());
 	texW = parameters.attribute("w").as_int();
 	texH = parameters.attribute("h").as_int();
+	lives = 5;
+	dead = false;
 
 	//Load animations
 	idleRight.LoadAnimations(parameters.child("animations").child("idleRight"));
@@ -39,6 +41,8 @@ bool Player::Start() {
 	runLeft.LoadAnimations(parameters.child("animations").child("runLeft"));
 	jumpRight.LoadAnimations(parameters.child("animations").child("jumpRight"));
 	jumpLeft.LoadAnimations(parameters.child("animations").child("jumpLeft"));
+	dieRight.LoadAnimations(parameters.child("animations").child("dieRight"));
+	dieLeft.LoadAnimations(parameters.child("animations").child("dieLeft"));
 	currentAnimation = &idleRight;
 	isLookingRight = true;
 
@@ -61,9 +65,16 @@ bool Player::Update(float dt)
 
 	// Move left
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_A) == KEY_REPEAT) {
-		velocity.x = -0.2 * dt;
-		currentAnimation = &runLeft;
-		isLookingRight = false;
+		if (dead) {
+			velocity.x = 0;
+
+		}
+		else {
+			velocity.x = -0.2 * dt;
+			currentAnimation = &runLeft;
+			isLookingRight = false;
+		}
+
 		
 		/*if (position.getX() > 32) {
 			position.setX(64);
@@ -72,9 +83,16 @@ bool Player::Update(float dt)
 
 	// Move right
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_D) == KEY_REPEAT) {
-		velocity.x = 0.2 * dt;
-		currentAnimation = &runRight;
-		isLookingRight = true;
+		if (dead) {
+			velocity.x = 0;
+
+		}
+		else {
+			velocity.x = 0.2 * dt;
+			currentAnimation = &runRight;
+			isLookingRight = true;
+		}
+
 	}
 	
 	//Jump
@@ -97,6 +115,34 @@ bool Player::Update(float dt)
 		
 	}
 
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F1) == KEY_DOWN) {
+		lives = lives - 1;
+		if (lives <= 0)
+		{
+			dead = true;
+		}
+		if (lives > 0) {
+			dead = false;
+		}
+		if (lives >= 5) {
+			lives = 5;
+		}
+	}
+
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F2) == KEY_DOWN) {
+		lives = lives + 1;
+		if (lives <= 0)
+		{
+			dead = true;
+		}
+		if (lives > 0) {
+			dead = false;
+		}
+		if (lives >= 5) {
+			lives = 5;
+		}
+	}
+
 	// Apply the velocity to the player
 	pbody->body->SetLinearVelocity(velocity);
 
@@ -107,11 +153,22 @@ bool Player::Update(float dt)
 	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
 	currentAnimation->Update();
 	if (isLookingRight) {
-		currentAnimation = &idleRight;
+		if (dead == true) {
+			currentAnimation = &dieRight;
+		}
+		else {
+			currentAnimation = &idleRight;
+		}
 	}
 	else {
-		currentAnimation = &idleLeft;
+		if (dead == true) {
+			currentAnimation = &dieLeft;
+		}
+		else {
+			currentAnimation = &idleLeft;
+		}
 	}
+
 
 return true;
 }

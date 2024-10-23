@@ -44,8 +44,9 @@ bool Scene::Start()
 	//L06 TODO 3: Call the function to load the map. 
 	//Engine::GetInstance().map->Load("Assets/Maps/", "Prova.tmx");
 	Engine::GetInstance().map->Load(configParameters.child("map").attribute("path").as_string(), configParameters.child("map").attribute("name").as_string());
-	EnterHallownest = Engine::GetInstance().audio->LoadFx("Assets/Audio/Music/EnterHallownest.ogg");
-	Engine::GetInstance().audio.get()->PlayFx(EnterHallownest);
+
+	Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/EnterHallownest.ogg", 0);
+	//Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/Dirtmouth.ogg", 2.0f);
 
 
 	return true;
