@@ -4,20 +4,21 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:206 (message)"
       - "CMakeLists.txt:29 (project)"
     message: |
-      The system is: Windows - 10.0.22631 - AMD64
+      The target system is: Windows - 10.0.22631 - AMD64
+      The host system is: Windows - 10.0.22631 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe 
       Build flags: /nologo;/DWIN32;/D_WINDOWS;/W3;/utf-8;/MP
       Id flags:  
       
@@ -31,30 +32,30 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/3.29.2/CompilerIdC/CMakeCCompilerId.exe
+        C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
-        Nota: inclusión del archivo: C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\ShowIncludes\\foo.h
+        Nota: inclusión del archivo: C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Nota: inclusión del archivo: "
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos warning D9002 : se omite la opción desconocida '--version'
@@ -62,12 +63,12 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos warning D9002 : se omite la opción desconocida '--version'
@@ -75,12 +76,12 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos warning D9002 : se omite la opción desconocida '--version'
@@ -88,12 +89,12 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos warning D9002 : se omite la opción desconocida '--version'
@@ -101,37 +102,24 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:29 (project)"
-    message: |
-      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
-      (C) Microsoft Corporation. Todos los derechos reservados.
-      
-      cl : Línea de comandos warning D9002 : se omite la opción desconocida '--version'
-      cl : Línea de comandos error D8003 : falta el nombre del archivo de código fuente
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is HP using "-V" did not match "HP C":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos error D8004 : '/V' requiere un argumento
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos warning D9002 : se omite la opción desconocida '--version'
@@ -139,13 +127,13 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
       ]+oneAPI)":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos warning D9002 : se omite la opción desconocida '--version'
@@ -153,24 +141,24 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos error D8004 : '/V' requiere un argumento
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1178 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1120 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
       cl : Línea de comandos warning D9002 : se omite la opción desconocida '-qversion'
@@ -178,12 +166,12 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1165 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1107 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:29 (project)"
     message: |
       Checking whether the ASM compiler is MSVC using "-?" matched "Microsoft":
-      Compilador de optimización de C/C++ de Microsoft (R) versión 19.41.34123 para x64
+      Compilador de optimización de C/C++ de Microsoft (R) versión 19.40.33811 para x64
       (C) Microsoft Corporation. Todos los derechos reservados.
       
                                OPCIONES DEL COMPILADOR DE C/C++
@@ -469,14 +457,14 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:29 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-y30ntg"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-y30ntg"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-0xh0sl"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-0xh0sl"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -491,52 +479,24 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-y30ntg'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-0xh0sl'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ca09d
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_ca09d.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_ca09d.dir\\ /FS -c C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ca09d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ca09d.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_ca09d.exe /implib:cmTC_ca09d.lib /pdb:cmTC_ca09d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_3922f
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_3922f.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_3922f.dir\\ /FS -c C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_3922f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_3922f.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_3922f.exe /implib:cmTC_3922f.lib /pdb:cmTC_3922f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:29 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'C': C:/PROGRA~1/MICROS~3/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:29 (project)"
-    message: |
-      Running the C compiler's linker: "C:/PROGRA~1/MICROS~3/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.41.34123.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-  -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "CMakeLists.txt:344 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_LD_VERSION_SCRIPT"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ho326e"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ho326e"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-b7do20"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-b7do20"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -551,27 +511,27 @@ events:
       variable: "HAVE_LD_VERSION_SCRIPT"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ho326e'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-b7do20'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_69877
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_LD_VERSION_SCRIPT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -Wl,--version-script='C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map' /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_69877.dir\\src.c.obj /FdCMakeFiles\\cmTC_69877.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-ho326e\\src.c
-        FAILED: CMakeFiles/cmTC_69877.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_LD_VERSION_SCRIPT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -Wl,--version-script='C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map' /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_69877.dir\\src.c.obj /FdCMakeFiles\\cmTC_69877.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-ho326e\\src.c
-        cl : Línea de comandos error D8021 : argumento numérico no válido '/Wl,--version-script='C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map''
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8be02
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_LD_VERSION_SCRIPT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -Wl,--version-script='C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map' /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8be02.dir\\src.c.obj /FdCMakeFiles\\cmTC_8be02.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-b7do20\\src.c
+        FAILED: CMakeFiles/cmTC_8be02.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_LD_VERSION_SCRIPT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -Wl,--version-script='C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map' /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8be02.dir\\src.c.obj /FdCMakeFiles\\cmTC_8be02.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-b7do20\\src.c
+        cl : Línea de comandos error D8021 : argumento numérico no válido '/Wl,--version-script='C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map''
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "CMakeLists.txt:357 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_SOLARIS_LD_VERSION_SCRIPT"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-muvuwx"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-muvuwx"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-kzdjju"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-kzdjju"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -586,12 +546,12 @@ events:
       variable: "HAVE_SOLARIS_LD_VERSION_SCRIPT"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-muvuwx'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-kzdjju'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_aa545
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_SOLARIS_LD_VERSION_SCRIPT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -Wl,-M -Wl,C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_aa545.dir\\src.c.obj /FdCMakeFiles\\cmTC_aa545.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-muvuwx\\src.c
-        FAILED: CMakeFiles/cmTC_aa545.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_SOLARIS_LD_VERSION_SCRIPT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -Wl,-M -Wl,C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_aa545.dir\\src.c.obj /FdCMakeFiles\\cmTC_aa545.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-muvuwx\\src.c
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f1162
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_SOLARIS_LD_VERSION_SCRIPT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -Wl,-M -Wl,C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f1162.dir\\src.c.obj /FdCMakeFiles\\cmTC_f1162.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-kzdjju\\src.c
+        FAILED: CMakeFiles/cmTC_f1162.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_SOLARIS_LD_VERSION_SCRIPT  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  -Wl,-M -Wl,C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-rel/conftest.map /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f1162.dir\\src.c.obj /FdCMakeFiles\\cmTC_f1162.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\libpng\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-kzdjju\\src.c
         cl : Línea de comandos error D8021 : argumento numérico no válido '/Wl,-M'
         ninja: build stopped: subcommand failed.
         

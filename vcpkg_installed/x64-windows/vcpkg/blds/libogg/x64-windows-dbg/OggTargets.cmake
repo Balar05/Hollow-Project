@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.27)
+cmake_policy(VERSION 2.8.3...3.25)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -50,14 +50,14 @@ unset(_cmake_expected_targets)
 add_library(Ogg::ogg SHARED IMPORTED)
 
 set_target_properties(Ogg::ogg PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/src/v1.3.5-1a4243fef9.clean/include;C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-dbg/include"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/src/v1.3.5-1a4243fef9.clean/include;C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-dbg/include"
 )
 
 # Import target "Ogg::ogg" for configuration "Debug"
 set_property(TARGET Ogg::ogg APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(Ogg::ogg PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-dbg/ogg.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-dbg/ogg.dll"
+  IMPORTED_IMPLIB_DEBUG "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-dbg/ogg.lib"
+  IMPORTED_LOCATION_DEBUG "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-dbg/ogg.dll"
   )
 
 # This file does not depend on other imported targets which have

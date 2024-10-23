@@ -1,9 +1,9 @@
 # ogg pkg-config file
 
-prefix=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libogg_x64-windows/debug
-exec_prefix=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libogg_x64-windows/debug/bin
-libdir=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libogg_x64-windows/debug/lib
-includedir=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libogg_x64-windows/debug/include
+prefix=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libogg_x64-windows/debug
+exec_prefix=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libogg_x64-windows/debug/bin
+libdir=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libogg_x64-windows/debug/lib
+includedir=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libogg_x64-windows/debug/include
 
 Name: ogg
 Description: ogg is a library for manipulating ogg bitstreams

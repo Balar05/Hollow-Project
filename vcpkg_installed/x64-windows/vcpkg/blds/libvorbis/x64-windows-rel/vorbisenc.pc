@@ -1,9 +1,9 @@
 # libvorbisenc pkg-config source file
 
-prefix=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows
-exec_prefix=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/bin
-libdir=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/lib
-includedir=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/include
+prefix=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows
+exec_prefix=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/bin
+libdir=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/lib
+includedir=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/include
 
 Name: vorbisenc
 Description: vorbisenc is a library that provides a convenient API for setting up an encoding environment using libvorbis

@@ -49,7 +49,12 @@ public:
 
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
-	Animation idle;
-	Animation run;
-	Animation jump;
+	Animation idleRight;
+	Animation idleLeft;
+	Animation runRight;
+	Animation runLeft;
+	Animation jumpRight;
+	Animation jumpLeft;
+
+	bool isLookingRight;
 };

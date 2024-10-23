@@ -22,27 +22,48 @@
 		<entities>
 			<player x="100" y="0" w="32" h ="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>
-					<idle loop="true" speed ="0.1">
+					<idleRight loop="true" speed ="0.1">
 						<frame x="0" y="0" w="32" h="32"/>
 						<frame x="32" y="0" w="32" h="32"/>
 						<frame x="64" y="0" w="32" h="32"/>
 						<frame x="96" y="0" w="32" h="32"/>
-					</idle>
-					<run loop="true" speed ="0.1">
+					</idleRight>
+					<idleLeft loop="true" speed ="0.1">
+						<frame x="128" y="0" w="32" h="32"/>
+						<frame x="160" y="0" w="32" h="32"/>
+						<frame x="192" y="0" w="32" h="32"/>
+						<frame x="224" y="0" w="32" h="32"/>
+					</idleLeft>
+					<runRight loop="true" speed ="0.1">
 						<frame x="0" y="32" w="32" h="32"/>
 						<frame x="32" y="32" w="32" h="32"/>
 						<frame x="64" y="32" w="32" h="32"/>
 						<frame x="96" y="32" w="32" h="32"/>
 						<frame x="128" y="32" w="32" h="32"/>
 						<frame x="160" y="32" w="32" h="32"/>
-					</run>
-					<jump loop="true" speed ="0.1">
+					</runRight>
+					<runLeft loop="true" speed ="0.1">
+						<frame x="192" y="32" w="32" h="32"/>
+						<frame x="224" y="32" w="32" h="32"/>
+						<frame x="256" y="32" w="32" h="32"/>
+						<frame x="288" y="32" w="32" h="32"/>
+						<frame x="320" y="32" w="32" h="32"/>
+						<frame x="352" y="32" w="32" h="32"/>
+					</runLeft>
+					<jumpRight loop="true" speed ="0.1">
 						<frame x="0" y="64" w="32" h="32"/>
 						<frame x="32" y="64" w="32" h="32"/>
 						<frame x="64" y="64" w="32" h="32"/>
 						<frame x="96" y="64" w="32" h="32"/>
 						<frame x="128" y="64" w="32" h="32"/>
-					</jump>
+					</jumpRight>
+					<jumpLeft loop="true" speed ="0.1">
+						<frame x="160" y="64" w="32" h="32"/>
+						<frame x="192" y="64" w="32" h="32"/>
+						<frame x="224" y="64" w="32" h="32"/>
+						<frame x="256" y="64" w="32" h="32"/>
+						<frame x="288" y="64" w="32" h="32"/>
+					</jumpLeft>
 				</animations>
 			</player>
 		</entities>

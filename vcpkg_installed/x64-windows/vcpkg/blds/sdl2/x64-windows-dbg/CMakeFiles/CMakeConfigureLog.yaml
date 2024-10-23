@@ -4,20 +4,21 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:206 (message)"
       - "CMakeLists.txt:9 (project)"
     message: |
-      The system is: Windows - 10.0.22631 - AMD64
+      The target system is: Windows - 10.0.22631 - AMD64
+      The host system is: Windows - 10.0.22631 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:9 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe 
       Build flags: /nologo;/DWIN32;/D_WINDOWS;/W3;/utf-8;/MP
       Id flags:  
       
@@ -31,31 +32,31 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/3.29.2/CompilerIdC/CMakeCCompilerId.exe
+        C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:9 (project)"
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
-        Nota: inclusión del archivo: C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\ShowIncludes\\foo.h
+        Nota: inclusión del archivo: C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Nota: inclusión del archivo: "
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:9 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe 
       Build flags: /nologo;/DWIN32;/D_WINDOWS;/W3;/utf-8;/GR;/EHsc;/MP
       Id flags:  
       
@@ -69,32 +70,32 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/3.29.2/CompilerIdCXX/CMakeCXXCompilerId.exe
+        C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:9 (project)"
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
-        Nota: inclusión del archivo: C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\ShowIncludes\\foo.h
+        Nota: inclusión del archivo: C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Nota: inclusión del archivo: "
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:9 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-o7hwl9"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-o7hwl9"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-9a9nsw"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-9a9nsw"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -109,52 +110,24 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-o7hwl9'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-9a9nsw'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f5823
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_f5823.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_f5823.dir\\ /FS -c C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_f5823.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f5823.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_f5823.exe /implib:cmTC_f5823.lib /pdb:cmTC_f5823.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_9b63c
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_9b63c.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_9b63c.dir\\ /FS -c C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_9b63c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9b63c.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_9b63c.exe /implib:cmTC_9b63c.lib /pdb:cmTC_9b63c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:9 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'C': C:/PROGRA~1/MICROS~3/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:9 (project)"
-    message: |
-      Running the C compiler's linker: "C:/PROGRA~1/MICROS~3/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.41.34123.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-  -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:9 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-66iyp7"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-66iyp7"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-wjzg9b"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-wjzg9b"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -169,56 +142,28 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-66iyp7'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-wjzg9b'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_eb36f
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_eb36f.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_eb36f.dir\\ /FS -c C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_eb36f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_eb36f.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_eb36f.exe /implib:cmTC_eb36f.lib /pdb:cmTC_eb36f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a7eed
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a7eed.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_a7eed.dir\\ /FS -c C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a7eed.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a7eed.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_a7eed.exe /implib:cmTC_a7eed.lib /pdb:cmTC_a7eed.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:9 (project)"
-    message: |
-      Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'CXX': C:/PROGRA~1/MICROS~3/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:9 (project)"
-    message: |
-      Running the CXX compiler's linker: "C:/PROGRA~1/MICROS~3/2022/COMMUN~1/VC/Tools/MSVC/1441~1.341/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.41.34123.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-  -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
       - "CMakeLists.txt:82 (check_symbol_exists)"
     checks:
       - "Looking for __GLIBC__"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-myol1x"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-myol1x"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-6b6s6f"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-6b6s6f"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -230,33 +175,33 @@ events:
       variable: "LIBC_IS_GLIBC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-myol1x'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-6b6s6f'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5d664
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_5d664.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_5d664.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-myol1x\\CheckSymbolExists.c
-        FAILED: CMakeFiles/cmTC_5d664.dir/CheckSymbolExists.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_5d664.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_5d664.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-myol1x\\CheckSymbolExists.c
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-myol1x\\CheckSymbolExists.c(8): error C2065: '__GLIBC__': identificador no declarado
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6eaee
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6eaee.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_6eaee.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-6b6s6f\\CheckSymbolExists.c
+        FAILED: CMakeFiles/cmTC_6eaee.dir/CheckSymbolExists.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6eaee.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_6eaee.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-6b6s6f\\CheckSymbolExists.c
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-6b6s6f\\CheckSymbolExists.c(8): error C2065: '__GLIBC__': identificador no declarado
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:28 (_internal_check_cpu_architecture)"
       - "CMakeLists.txt:139 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_X86"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-37w8cx"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-37w8cx"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cxatu4"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cxatu4"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -268,34 +213,34 @@ events:
       variable: "CHECK_CPU_ARCHITECTURE_X86"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-37w8cx'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cxatu4'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f36a3
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_f36a3.dir\\src.c.obj /FdCMakeFiles\\cmTC_f36a3.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-37w8cx\\src.c
-        FAILED: CMakeFiles/cmTC_f36a3.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_f36a3.dir\\src.c.obj /FdCMakeFiles\\cmTC_f36a3.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-37w8cx\\src.c
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-37w8cx\\src.c(6): error C2065: 'choke': identificador no declarado
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-37w8cx\\src.c(8): error C2143: error de sintaxis: falta ';' delante de '}'
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f073a
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_f073a.dir\\src.c.obj /FdCMakeFiles\\cmTC_f073a.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-cxatu4\\src.c
+        FAILED: CMakeFiles/cmTC_f073a.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_f073a.dir\\src.c.obj /FdCMakeFiles\\cmTC_f073a.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-cxatu4\\src.c
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-cxatu4\\src.c(6): error C2065: 'choke': identificador no declarado
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-cxatu4\\src.c(8): error C2143: error de sintaxis: falta ';' delante de '}'
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:30 (_internal_check_cpu_architecture)"
       - "CMakeLists.txt:140 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_X64"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-flkgaz"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-flkgaz"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-htel9m"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-htel9m"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -307,30 +252,30 @@ events:
       variable: "CHECK_CPU_ARCHITECTURE_X64"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-flkgaz'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-htel9m'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_70ae1
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_70ae1.dir\\src.c.obj /FdCMakeFiles\\cmTC_70ae1.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-flkgaz\\src.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_70ae1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_70ae1.dir\\src.c.obj  /out:cmTC_70ae1.exe /implib:cmTC_70ae1.lib /pdb:cmTC_70ae1.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_155b6
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_155b6.dir\\src.c.obj /FdCMakeFiles\\cmTC_155b6.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-htel9m\\src.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_155b6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_155b6.dir\\src.c.obj  /out:cmTC_155b6.exe /implib:cmTC_155b6.lib /pdb:cmTC_155b6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:32 (_internal_check_cpu_architecture)"
       - "CMakeLists.txt:141 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_ARM32"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jimmud"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jimmud"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-944mbn"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-944mbn"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -342,34 +287,34 @@ events:
       variable: "CHECK_CPU_ARCHITECTURE_ARM32"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jimmud'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-944mbn'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4b68e
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4b68e.dir\\src.c.obj /FdCMakeFiles\\cmTC_4b68e.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-jimmud\\src.c
-        FAILED: CMakeFiles/cmTC_4b68e.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4b68e.dir\\src.c.obj /FdCMakeFiles\\cmTC_4b68e.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-jimmud\\src.c
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-jimmud\\src.c(6): error C2065: 'choke': identificador no declarado
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-jimmud\\src.c(8): error C2143: error de sintaxis: falta ';' delante de '}'
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_cc51d
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_cc51d.dir\\src.c.obj /FdCMakeFiles\\cmTC_cc51d.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-944mbn\\src.c
+        FAILED: CMakeFiles/cmTC_cc51d.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_cc51d.dir\\src.c.obj /FdCMakeFiles\\cmTC_cc51d.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-944mbn\\src.c
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-944mbn\\src.c(6): error C2065: 'choke': identificador no declarado
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-944mbn\\src.c(8): error C2143: error de sintaxis: falta ';' delante de '}'
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:34 (_internal_check_cpu_architecture)"
       - "CMakeLists.txt:142 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_ARM64"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-825o0j"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-825o0j"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-aoi80q"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-aoi80q"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -381,34 +326,34 @@ events:
       variable: "CHECK_CPU_ARCHITECTURE_ARM64"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-825o0j'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-aoi80q'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7f997
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7f997.dir\\src.c.obj /FdCMakeFiles\\cmTC_7f997.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-825o0j\\src.c
-        FAILED: CMakeFiles/cmTC_7f997.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7f997.dir\\src.c.obj /FdCMakeFiles\\cmTC_7f997.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-825o0j\\src.c
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-825o0j\\src.c(6): error C2065: 'choke': identificador no declarado
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-825o0j\\src.c(8): error C2143: error de sintaxis: falta ';' delante de '}'
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a1d8b
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a1d8b.dir\\src.c.obj /FdCMakeFiles\\cmTC_a1d8b.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-aoi80q\\src.c
+        FAILED: CMakeFiles/cmTC_a1d8b.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a1d8b.dir\\src.c.obj /FdCMakeFiles\\cmTC_a1d8b.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-aoi80q\\src.c
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-aoi80q\\src.c(6): error C2065: 'choke': identificador no declarado
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-aoi80q\\src.c(8): error C2143: error de sintaxis: falta ';' delante de '}'
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "cmake/CheckCPUArchitecture.cmake:36 (_internal_check_cpu_architecture)"
       - "CMakeLists.txt:143 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-bg6qr2"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-bg6qr2"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-46ple1"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-46ple1"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -420,31 +365,31 @@ events:
       variable: "CHECK_CPU_ARCHITECTURE_LOONGARCH64"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-bg6qr2'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-46ple1'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1099c
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_1099c.dir\\src.c.obj /FdCMakeFiles\\cmTC_1099c.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-bg6qr2\\src.c
-        FAILED: CMakeFiles/cmTC_1099c.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_1099c.dir\\src.c.obj /FdCMakeFiles\\cmTC_1099c.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-bg6qr2\\src.c
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-bg6qr2\\src.c(6): error C2065: 'choke': identificador no declarado
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-bg6qr2\\src.c(8): error C2143: error de sintaxis: falta ';' delante de '}'
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_05fbf
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_05fbf.dir\\src.c.obj /FdCMakeFiles\\cmTC_05fbf.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-46ple1\\src.c
+        FAILED: CMakeFiles/cmTC_05fbf.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_05fbf.dir\\src.c.obj /FdCMakeFiles\\cmTC_05fbf.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-46ple1\\src.c
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-46ple1\\src.c(6): error C2065: 'choke': identificador no declarado
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-46ple1\\src.c(8): error C2143: error de sintaxis: falta ';' delante de '}'
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1019 (check_include_file)"
     checks:
       - "Looking for immintrin.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-2wf6xc"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-2wf6xc"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-5xw0sp"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-5xw0sp"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -456,27 +401,27 @@ events:
       variable: "HAVE_IMMINTRIN_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-2wf6xc'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-5xw0sp'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_3f5bc
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_3f5bc.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_3f5bc.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-2wf6xc\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_3f5bc.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_3f5bc.dir\\CheckIncludeFile.c.obj  /out:cmTC_3f5bc.exe /implib:cmTC_3f5bc.lib /pdb:cmTC_3f5bc.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ef922
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ef922.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_ef922.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-5xw0sp\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ef922.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ef922.dir\\CheckIncludeFile.c.obj  /out:cmTC_ef922.exe /implib:cmTC_ef922.lib /pdb:cmTC_ef922.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1028 (check_include_file)"
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-odxq2g"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-odxq2g"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-i9e3wu"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-i9e3wu"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -488,28 +433,28 @@ events:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-odxq2g'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-i9e3wu'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_dcc5d
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_dcc5d.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_dcc5d.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-odxq2g\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_dcc5d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dcc5d.dir\\CheckIncludeFile.c.obj  /out:cmTC_dcc5d.exe /implib:cmTC_dcc5d.lib /pdb:cmTC_dcc5d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b406f
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_b406f.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_b406f.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-i9e3wu\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b406f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b406f.dir\\CheckIncludeFile.c.obj  /out:cmTC_b406f.exe /implib:cmTC_b406f.lib /pdb:cmTC_b406f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
       - "CMakeLists.txt:1049 (check_symbol_exists)"
     checks:
       - "Looking for M_PI"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-fzzwf3"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-fzzwf3"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hckuky"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hckuky"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -521,31 +466,31 @@ events:
       variable: "HAVE_M_PI"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-fzzwf3'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hckuky'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4fca4
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4fca4.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_4fca4.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-fzzwf3\\CheckSymbolExists.c
-        FAILED: CMakeFiles/cmTC_4fca4.dir/CheckSymbolExists.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4fca4.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_4fca4.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-fzzwf3\\CheckSymbolExists.c
-        C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-fzzwf3\\CheckSymbolExists.c(8): error C2065: 'M_PI': identificador no declarado
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7eedc
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7eedc.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_7eedc.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-hckuky\\CheckSymbolExists.c
+        FAILED: CMakeFiles/cmTC_7eedc.dir/CheckSymbolExists.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7eedc.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_7eedc.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-hckuky\\CheckSymbolExists.c
+        C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-hckuky\\CheckSymbolExists.c(8): error C2065: 'M_PI': identificador no declarado
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "CMakeLists.txt:1782 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_WIN32_CC"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-j3lz8q"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-j3lz8q"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-dzrrr8"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-dzrrr8"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -557,27 +502,27 @@ events:
       variable: "HAVE_WIN32_CC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-j3lz8q'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-dzrrr8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7e74f
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WIN32_CC  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7e74f.dir\\src.c.obj /FdCMakeFiles\\cmTC_7e74f.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-j3lz8q\\src.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_7e74f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7e74f.dir\\src.c.obj  /out:cmTC_7e74f.exe /implib:cmTC_7e74f.lib /pdb:cmTC_7e74f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b297e
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WIN32_CC  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_b297e.dir\\src.c.obj /FdCMakeFiles\\cmTC_b297e.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-dzrrr8\\src.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b297e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b297e.dir\\src.c.obj  /out:cmTC_b297e.exe /implib:cmTC_b297e.lib /pdb:cmTC_b297e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1824 (check_include_file)"
     checks:
       - "Looking for d3d9.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-9cwgdd"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-9cwgdd"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-in7k4y"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-in7k4y"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -589,27 +534,27 @@ events:
       variable: "HAVE_D3D_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-9cwgdd'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-in7k4y'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_edb7b
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_edb7b.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_edb7b.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-9cwgdd\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_edb7b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_edb7b.dir\\CheckIncludeFile.c.obj  /out:cmTC_edb7b.exe /implib:cmTC_edb7b.lib /pdb:cmTC_edb7b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_0a198
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_0a198.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_0a198.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-in7k4y\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_0a198.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_0a198.dir\\CheckIncludeFile.c.obj  /out:cmTC_0a198.exe /implib:cmTC_0a198.lib /pdb:cmTC_0a198.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1825 (check_include_file)"
     checks:
       - "Looking for d3d11_1.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-g87fkx"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-g87fkx"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-eu1o7e"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-eu1o7e"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -621,28 +566,28 @@ events:
       variable: "HAVE_D3D11_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-g87fkx'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-eu1o7e'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1b8ef
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_1b8ef.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_1b8ef.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-g87fkx\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_1b8ef.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1b8ef.dir\\CheckIncludeFile.c.obj  /out:cmTC_1b8ef.exe /implib:cmTC_1b8ef.lib /pdb:cmTC_1b8ef.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b51c2
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_b51c2.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_b51c2.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-eu1o7e\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b51c2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b51c2.dir\\CheckIncludeFile.c.obj  /out:cmTC_b51c2.exe /implib:cmTC_b51c2.lib /pdb:cmTC_b51c2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "CMakeLists.txt:1826 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_D3D12_H"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-4a0iy6"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-4a0iy6"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tt4vpu"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tt4vpu"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -654,27 +599,27 @@ events:
       variable: "HAVE_D3D12_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-4a0iy6'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-tt4vpu'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_dec28
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_D3D12_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_dec28.dir\\src.c.obj /FdCMakeFiles\\cmTC_dec28.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-4a0iy6\\src.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_dec28.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dec28.dir\\src.c.obj  /out:cmTC_dec28.exe /implib:cmTC_dec28.lib /pdb:cmTC_dec28.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_cec4c
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_D3D12_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_cec4c.dir\\src.c.obj /FdCMakeFiles\\cmTC_cec4c.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-tt4vpu\\src.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_cec4c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_cec4c.dir\\src.c.obj  /out:cmTC_cec4c.exe /implib:cmTC_cec4c.lib /pdb:cmTC_cec4c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1834 (check_include_file)"
     checks:
       - "Looking for ddraw.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-r1ekbm"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-r1ekbm"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rgf7un"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rgf7un"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -686,27 +631,27 @@ events:
       variable: "HAVE_DDRAW_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-r1ekbm'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rgf7un'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7eb60
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7eb60.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_7eb60.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-r1ekbm\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_7eb60.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7eb60.dir\\CheckIncludeFile.c.obj  /out:cmTC_7eb60.exe /implib:cmTC_7eb60.lib /pdb:cmTC_7eb60.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_610ef
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_610ef.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_610ef.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-rgf7un\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_610ef.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_610ef.dir\\CheckIncludeFile.c.obj  /out:cmTC_610ef.exe /implib:cmTC_610ef.lib /pdb:cmTC_610ef.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1835 (check_include_file)"
     checks:
       - "Looking for dsound.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-n549zu"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-n549zu"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-n4y1f6"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-n4y1f6"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -718,27 +663,27 @@ events:
       variable: "HAVE_DSOUND_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-n549zu'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-n4y1f6'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_20260
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_20260.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_20260.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-n549zu\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_20260.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_20260.dir\\CheckIncludeFile.c.obj  /out:cmTC_20260.exe /implib:cmTC_20260.lib /pdb:cmTC_20260.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_47e35
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_47e35.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_47e35.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-n4y1f6\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_47e35.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_47e35.dir\\CheckIncludeFile.c.obj  /out:cmTC_47e35.exe /implib:cmTC_47e35.lib /pdb:cmTC_47e35.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1836 (check_include_file)"
     checks:
       - "Looking for dinput.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-m88vbh"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-m88vbh"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ksg1ea"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ksg1ea"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -750,28 +695,28 @@ events:
       variable: "HAVE_DINPUT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-m88vbh'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ksg1ea'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_03a67
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_03a67.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_03a67.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-m88vbh\\CheckIncludeFile.c
-        C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\um\\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_03a67.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_03a67.dir\\CheckIncludeFile.c.obj  /out:cmTC_03a67.exe /implib:cmTC_03a67.lib /pdb:cmTC_03a67.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e567b
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e567b.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e567b.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-ksg1ea\\CheckIncludeFile.c
+        C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e567b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e567b.dir\\CheckIncludeFile.c.obj  /out:cmTC_e567b.exe /implib:cmTC_e567b.lib /pdb:cmTC_e567b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1840 (check_include_file)"
     checks:
       - "Looking for dxgi.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-3l4bst"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-3l4bst"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-licjw5"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-licjw5"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -783,28 +728,28 @@ events:
       variable: "HAVE_DXGI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-3l4bst'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-licjw5'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_51dba
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_51dba.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_51dba.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-3l4bst\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_51dba.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_51dba.dir\\CheckIncludeFile.c.obj  /out:cmTC_51dba.exe /implib:cmTC_51dba.lib /pdb:cmTC_51dba.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_07480
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_07480.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_07480.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-licjw5\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_07480.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_07480.dir\\CheckIncludeFile.c.obj  /out:cmTC_07480.exe /implib:cmTC_07480.lib /pdb:cmTC_07480.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "CMakeLists.txt:1854 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_XINPUT_H"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-5qnqc1"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-5qnqc1"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ii1hu2"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ii1hu2"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -816,28 +761,28 @@ events:
       variable: "HAVE_XINPUT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-5qnqc1'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ii1hu2'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7b626
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7b626.dir\\src.c.obj /FdCMakeFiles\\cmTC_7b626.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-5qnqc1\\src.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_7b626.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7b626.dir\\src.c.obj  /out:cmTC_7b626.exe /implib:cmTC_7b626.lib /pdb:cmTC_7b626.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_bb9c5
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_bb9c5.dir\\src.c.obj /FdCMakeFiles\\cmTC_bb9c5.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-ii1hu2\\src.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_bb9c5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bb9c5.dir\\src.c.obj  /out:cmTC_bb9c5.exe /implib:cmTC_bb9c5.lib /pdb:cmTC_bb9c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "CMakeLists.txt:1858 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_WINDOWS_GAMING_INPUT_H"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rfib9g"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rfib9g"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-w9obim"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-w9obim"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -849,27 +794,27 @@ events:
       variable: "HAVE_WINDOWS_GAMING_INPUT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rfib9g'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-w9obim'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e6fb0
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WINDOWS_GAMING_INPUT_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e6fb0.dir\\src.c.obj /FdCMakeFiles\\cmTC_e6fb0.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-rfib9g\\src.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e6fb0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e6fb0.dir\\src.c.obj  /out:cmTC_e6fb0.exe /implib:cmTC_e6fb0.lib /pdb:cmTC_e6fb0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7b23a
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WINDOWS_GAMING_INPUT_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7b23a.dir\\src.c.obj /FdCMakeFiles\\cmTC_7b23a.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-w9obim\\src.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_7b23a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7b23a.dir\\src.c.obj  /out:cmTC_7b23a.exe /implib:cmTC_7b23a.lib /pdb:cmTC_7b23a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1866 (check_include_file)"
     checks:
       - "Looking for tpcshrd.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-8bx6wr"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-8bx6wr"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-2pno8i"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-2pno8i"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -881,27 +826,27 @@ events:
       variable: "HAVE_TPCSHRD_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-8bx6wr'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-2pno8i'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_55935
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_55935.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_55935.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-8bx6wr\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_55935.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_55935.dir\\CheckIncludeFile.c.obj  /out:cmTC_55935.exe /implib:cmTC_55935.lib /pdb:cmTC_55935.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_07068
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_07068.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_07068.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-2pno8i\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_07068.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_07068.dir\\CheckIncludeFile.c.obj  /out:cmTC_07068.exe /implib:cmTC_07068.lib /pdb:cmTC_07068.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1867 (check_include_file)"
     checks:
       - "Looking for roapi.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-prrupp"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-prrupp"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jfafpy"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jfafpy"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -913,27 +858,27 @@ events:
       variable: "HAVE_ROAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-prrupp'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jfafpy'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_824a6
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_824a6.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_824a6.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-prrupp\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_824a6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_824a6.dir\\CheckIncludeFile.c.obj  /out:cmTC_824a6.exe /implib:cmTC_824a6.lib /pdb:cmTC_824a6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_db4aa
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_db4aa.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_db4aa.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-jfafpy\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_db4aa.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_db4aa.dir\\CheckIncludeFile.c.obj  /out:cmTC_db4aa.exe /implib:cmTC_db4aa.lib /pdb:cmTC_db4aa.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1868 (check_include_file)"
     checks:
       - "Looking for mmdeviceapi.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-vv77m6"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-vv77m6"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7zvh6t"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7zvh6t"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -945,27 +890,27 @@ events:
       variable: "HAVE_MMDEVICEAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-vv77m6'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7zvh6t'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_df785
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_df785.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_df785.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-vv77m6\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_df785.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_df785.dir\\CheckIncludeFile.c.obj  /out:cmTC_df785.exe /implib:cmTC_df785.lib /pdb:cmTC_df785.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c0986
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_c0986.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_c0986.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-7zvh6t\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_c0986.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c0986.dir\\CheckIncludeFile.c.obj  /out:cmTC_c0986.exe /implib:cmTC_c0986.lib /pdb:cmTC_c0986.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1869 (check_include_file)"
     checks:
       - "Looking for audioclient.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7j9f9h"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7j9f9h"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-o8uh5b"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-o8uh5b"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -977,27 +922,27 @@ events:
       variable: "HAVE_AUDIOCLIENT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7j9f9h'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-o8uh5b'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_41fc5
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_41fc5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_41fc5.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-7j9f9h\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_41fc5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_41fc5.dir\\CheckIncludeFile.c.obj  /out:cmTC_41fc5.exe /implib:cmTC_41fc5.lib /pdb:cmTC_41fc5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1e349
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_1e349.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_1e349.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-o8uh5b\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_1e349.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1e349.dir\\CheckIncludeFile.c.obj  /out:cmTC_1e349.exe /implib:cmTC_1e349.lib /pdb:cmTC_1e349.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1870 (check_include_file)"
     checks:
       - "Looking for sensorsapi.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-77eg4d"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-77eg4d"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-c2omdu"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-c2omdu"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -1009,27 +954,27 @@ events:
       variable: "HAVE_SENSORSAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-77eg4d'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-c2omdu'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_564f8
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_564f8.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_564f8.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-77eg4d\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_564f8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_564f8.dir\\CheckIncludeFile.c.obj  /out:cmTC_564f8.exe /implib:cmTC_564f8.lib /pdb:cmTC_564f8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_75a30
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_75a30.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_75a30.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-c2omdu\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_75a30.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_75a30.dir\\CheckIncludeFile.c.obj  /out:cmTC_75a30.exe /implib:cmTC_75a30.lib /pdb:cmTC_75a30.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/arnau/AppData/Local/vcpkg/downloads/tools/cmake-3.29.2-windows/cmake-3.29.2-windows-i386/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "CMakeLists.txt:1871 (check_include_file)"
     checks:
       - "Looking for shellscalingapi.h"
     directories:
-      source: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qx62yr"
-      binary: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qx62yr"
+      source: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cq0fnp"
+      binary: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cq0fnp"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/src/ase-2.30.0-3ceee4a14f.clean/cmake"
       CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
       VCPKG_APPLOCAL_DEPS: "OFF"
@@ -1041,11 +986,11 @@ events:
       variable: "HAVE_SHELLSCALINGAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qx62yr'
+        Change Dir: 'C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cq0fnp'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d3c7d
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_d3c7d.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_d3c7d.dir\\ /FS -c C:\\Users\\arnau\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-qx62yr\\CheckIncludeFile.c
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Users\\arnau\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.29.2-windows\\cmake-3.29.2-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_d3c7d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d3c7d.dir\\CheckIncludeFile.c.obj  /out:cmTC_d3c7d.exe /implib:cmTC_d3c7d.lib /pdb:cmTC_d3c7d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_11218
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_11218.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_11218.dir\\ /FS -c C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-cq0fnp\\CheckIncludeFile.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\arnaubl1\\AppData\\Local\\vcpkg\\downloads\\tools\\cmake-3.27.1-windows\\cmake-3.27.1-windows-i386\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_11218.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_11218.dir\\CheckIncludeFile.c.obj  /out:cmTC_11218.exe /implib:cmTC_11218.lib /pdb:cmTC_11218.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...

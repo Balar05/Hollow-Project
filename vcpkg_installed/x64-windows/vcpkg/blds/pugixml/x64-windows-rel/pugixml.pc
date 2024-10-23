@@ -1,7 +1,7 @@
-prefix=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows
+prefix=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows
 exec_prefix=${prefix}
-includedir=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/include
-libdir=C:/Users/arnau/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/lib
+includedir=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/include
+libdir=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/pugixml_x64-windows/lib
 
 Name: pugixml
 Description: Light-weight, simple and fast XML parser for C++ with XPath support.

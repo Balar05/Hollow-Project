@@ -33,10 +33,14 @@ bool Player::Start() {
 	texH = parameters.attribute("h").as_int();
 
 	//Load animations
-	idle.LoadAnimations(parameters.child("animations").child("idle"));
-	run.LoadAnimations(parameters.child("animations").child("run"));
-	jump.LoadAnimations(parameters.child("animations").child("jump"));
-	currentAnimation = &idle;
+	idleRight.LoadAnimations(parameters.child("animations").child("idleRight"));
+	idleLeft.LoadAnimations(parameters.child("animations").child("idleLeft"));
+	runRight.LoadAnimations(parameters.child("animations").child("runRight"));
+	runLeft.LoadAnimations(parameters.child("animations").child("runLeft"));
+	jumpRight.LoadAnimations(parameters.child("animations").child("jumpRight"));
+	jumpLeft.LoadAnimations(parameters.child("animations").child("jumpLeft"));
+	currentAnimation = &idleRight;
+	isLookingRight = true;
 
 	// L08 TODO 5: Add physics to the player - initialize physics body
 	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX(), (int)position.getY(), texW / 2, bodyType::DYNAMIC);
@@ -58,13 +62,15 @@ bool Player::Update(float dt)
 	// Move left
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_A) == KEY_REPEAT) {
 		velocity.x = -0.2 * dt;
-		currentAnimation = &run;
+		currentAnimation = &runLeft;
+		isLookingRight = false;
 	}
 
 	// Move right
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_D) == KEY_REPEAT) {
 		velocity.x = 0.2 * dt;
-		currentAnimation = &run;
+		currentAnimation = &runRight;
+		isLookingRight = true;
 	}
 	
 	//Jump
@@ -78,7 +84,13 @@ bool Player::Update(float dt)
 	if(isJumping == true)
 	{
 		velocity.y = pbody->body->GetLinearVelocity().y;
-		currentAnimation = &jump;
+		if (isLookingRight) {
+			currentAnimation = &jumpRight;
+		}
+		else {
+			currentAnimation = &jumpLeft;
+		}
+		
 	}
 
 	// Apply the velocity to the player
@@ -90,7 +102,13 @@ bool Player::Update(float dt)
 
 	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
 	currentAnimation->Update();
-	currentAnimation = &idle;
+	if (isLookingRight) {
+		currentAnimation = &idleRight;
+	}
+	else {
+		currentAnimation = &idleLeft;
+	}
+
 return true;
 }
 

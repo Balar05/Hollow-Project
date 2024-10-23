@@ -64,10 +64,10 @@ bool Scene::Update(float dt)
 	Engine::GetInstance().render.get()->camera.y =- player->position.getY()*2+150;
 
 
-	//if (Engine::GetInstance().render.get()->camera.y < -740)
-	//{
-	//	Engine::GetInstance().render.get()->camera.y = -740;
-	//}
+	if (Engine::GetInstance().render.get()->camera.y < -740)
+	{
+		Engine::GetInstance().render.get()->camera.y = -740;
+	}
 
 
 	
