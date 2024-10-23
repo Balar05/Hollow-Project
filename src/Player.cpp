@@ -105,20 +105,27 @@ bool Player::Update(float dt)
 	// If the player is jumpling, we don't want to apply gravity, we use the current velocity prduced by the jump
 	if(isJumping == true)
 	{
-		velocity.y = pbody->body->GetLinearVelocity().y;
-		if (isLookingRight) {
-			currentAnimation = &jumpRight;
+		if (dead) {
+			velocity.x = 0;
+			velocity.y = 0;
+
 		}
 		else {
-			currentAnimation = &jumpLeft;
+			velocity.y = pbody->body->GetLinearVelocity().y;
+			if (isLookingRight) {
+				currentAnimation = &jumpRight;
+			}
+			else {
+				currentAnimation = &jumpLeft;
+			}
 		}
-		
 	}
 
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F1) == KEY_DOWN) {
 		lives = lives - 1;
 		if (lives <= 0)
 		{
+			lives = 0;
 			dead = true;
 		}
 		if (lives > 0) {
@@ -133,6 +140,7 @@ bool Player::Update(float dt)
 		lives = lives + 1;
 		if (lives <= 0)
 		{
+			lives = 0;
 			dead = true;
 		}
 		if (lives > 0) {
