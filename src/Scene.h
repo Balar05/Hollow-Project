@@ -32,6 +32,10 @@ public:
 	// Called before quitting
 	bool CleanUp();
 
+	//Music and FX
+
+	int EnterHallownest;
+
 private:
 	SDL_Texture* img;
 
