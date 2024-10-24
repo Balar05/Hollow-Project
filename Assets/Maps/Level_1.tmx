@@ -1696,9 +1696,9 @@
    <tile gid="144"/>
    <tile gid="142"/>
    <tile gid="143"/>
-   <tile gid="144"/>
-   <tile gid="3"/>
-   <tile/>
+   <tile gid="45"/>
+   <tile gid="46"/>
+   <tile gid="121"/>
    <tile/>
    <tile/>
    <tile/>
