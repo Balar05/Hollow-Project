@@ -18,7 +18,7 @@
   </window>
 
 	<scene>
-		<map path="Assets/Maps/" name="Prova.tmx"/>
+		<map path="Assets/Maps/" name="Level_1.tmx"/>
 		<entities>
 			<player x="100" y="0" w="32" h ="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>

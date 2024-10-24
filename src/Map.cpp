@@ -206,10 +206,10 @@ bool Map::Load(std::string path, std::string fileName)
                         //Get the gid from tile  
                         int gid = mapLayer->Get(i, j);
                         //Check if the gid is different from 0 - some tiles are empty
-                        if (gid == 157) {
+                        if (gid == 1) {
                             
                             Vector2D mapCoord = MapToWorld(i, j);
-                            PhysBody* platform = Engine::GetInstance().physics.get()->CreateRectangle(mapCoord.getX() + mapData.tileWidth/2, mapCoord.getY() + mapData.tileHeight/2+16, mapData.tileWidth, mapData.tileHeight, STATIC);
+                            PhysBody* platform = Engine::GetInstance().physics.get()->CreateRectangle(mapCoord.getX() + mapData.tileWidth/2, mapCoord.getY() + mapData.tileHeight/2, mapData.tileWidth, mapData.tileHeight, STATIC);
                             platform->ctype = ColliderType::PLATFORM;
                         }
                     }
