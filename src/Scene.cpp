@@ -64,8 +64,8 @@ bool Scene::Update(float dt)
 	//L03 TODO 3: Make the camera movement independent of framerate
 	float camSpeed = 0;
 
-	Engine::GetInstance().render.get()->camera.x =- player->position.getX()*2+150;
-	Engine::GetInstance().render.get()->camera.y =- player->position.getY()*2+150;
+	Engine::GetInstance().render.get()->camera.x =- player->position.getX()*2+200;
+	Engine::GetInstance().render.get()->camera.y =- player->position.getY()*2+200;
 
 
 	//if (Engine::GetInstance().render.get()->camera.y < -760)
