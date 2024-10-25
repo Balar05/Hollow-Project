@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/libvorbis-x64-windows-1.3.7#2-45bf3711-e60b-4d67-960a-1852bc56559e",
-  "name": "libvorbis:x64-windows@1.3.7#2 21dd8365fdf48f2469a6a8f53e0ce85c8b1b708182dbe2d106bf76f85cdbc9af",
+  "documentNamespace": "https://spdx.org/spdxdocs/libvorbis-x64-windows-1.3.7#2-12bbb953-1fcf-4937-b533-24c67c8d4594",
+  "name": "libvorbis:x64-windows@1.3.7#2 3b6f230461476de7f768f263da80c2e05e4ec2c13d579b8935d288ba4c316543",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-1c9ec1978a6b0c2b39c9e9554a96e3e275f7556e"
+      "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
     ],
-    "created": "2024-10-22T22:36:19Z"
+    "created": "2024-09-23T07:03:27Z"
   },
   "relationships": [
     {
@@ -99,7 +99,7 @@
     {
       "name": "libvorbis:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "21dd8365fdf48f2469a6a8f53e0ce85c8b1b708182dbe2d106bf76f85cdbc9af",
+      "versionInfo": "3b6f230461476de7f768f263da80c2e05e4ec2c13d579b8935d288ba4c316543",
       "downloadLocation": "NONE",
       "licenseConcluded": "BSD-3-Clause",
       "licenseDeclared": "NOASSERTION",
@@ -123,7 +123,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0001-Dont-export-vorbisenc-functions.patch",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0001-Dont-export-vorbisenc-functions.patch",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -135,7 +135,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0002-Fixup-pkgconfig-libs.patch",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0002-Fixup-pkgconfig-libs.patch",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -147,7 +147,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0003-def-mingw-compat.patch",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0003-def-mingw-compat.patch",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -159,7 +159,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/portfile.cmake",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/portfile.cmake",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -171,7 +171,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/usage",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/usage",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
@@ -183,7 +183,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/vcpkg.json",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/vcpkg.json",
       "SPDXID": "SPDXRef-file-5",
       "checksums": [
         {
