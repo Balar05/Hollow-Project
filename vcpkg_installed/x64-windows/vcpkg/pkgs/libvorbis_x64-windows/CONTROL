@@ -4,5 +4,5 @@ Port-Version: 2
 Depends: libogg, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 3b6f230461476de7f768f263da80c2e05e4ec2c13d579b8935d288ba4c316543
+Abi: 21dd8365fdf48f2469a6a8f53e0ce85c8b1b708182dbe2d106bf76f85cdbc9af
 Description: Ogg Vorbis is a fully open, non-proprietary, patent-and-royalty-free, general-purpose compressed audio format
