@@ -67,7 +67,7 @@ bool Player::Update(float dt)
 	if (godMode) {
 		lives = 5;
 		dead = false;
-		isJumping = false;
+		isJumping = false; 
 
 		pbody->body->SetGravityScale(0);
 		velocity = b2Vec2(0, 0);
