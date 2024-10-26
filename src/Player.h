@@ -41,6 +41,7 @@ public:
 
 	int lives;
 	bool dead;
+	bool godMode;
 
 	//Audio fx
 	int pickCoinFxId;

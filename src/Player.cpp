@@ -33,6 +33,7 @@ bool Player::Start() {
 	texH = parameters.attribute("h").as_int();
 	lives = 5;
 	dead = false;
+	godMode = false;
 
 	//Load animations
 	idleRight.LoadAnimations(parameters.child("animations").child("idleRight"));
@@ -61,7 +62,26 @@ bool Player::Start() {
 bool Player::Update(float dt)
 {
 	// L08 TODO 5: Add physics to the player - updated player position using physics
-	b2Vec2 velocity = b2Vec2(0, -GRAVITY_Y);
+	b2Vec2 velocity;
+
+	if (godMode) {
+		lives = 5;
+		dead = false;
+		isJumping = false;
+
+		pbody->body->SetGravityScale(0);
+		velocity = b2Vec2(0, 0);
+
+		if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_W) == KEY_REPEAT) {
+			velocity.y = -0.2 * 16;
+		}
+		if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_S) == KEY_REPEAT) {
+			velocity.y = 0.2 * 16;
+		}
+	}
+	else {
+		velocity = b2Vec2(0, -GRAVITY_Y);
+	}
 
 	// Move left
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_A) == KEY_REPEAT) {
@@ -70,15 +90,10 @@ bool Player::Update(float dt)
 
 		}
 		else {
-			velocity.x = -0.2 * dt;
+			velocity.x = -0.2 * 16;
 			currentAnimation = &runLeft;
 			isLookingRight = false;
 		}
-
-		
-		/*if (position.getX() > 32) {
-			position.setX(64);
-		}*/
 	}
 
 	// Move right
@@ -88,7 +103,7 @@ bool Player::Update(float dt)
 
 		}
 		else {
-			velocity.x = 0.2 * dt;
+			velocity.x = 0.2 * 16;
 			currentAnimation = &runRight;
 			isLookingRight = true;
 		}
@@ -151,6 +166,10 @@ bool Player::Update(float dt)
 		}
 	}
 
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F10) == KEY_DOWN) {
+		godMode = !godMode;
+	}
+
 	// Apply the velocity to the player
 	pbody->body->SetLinearVelocity(velocity);
 
@@ -206,6 +225,7 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 	default:
 		break;
 	}
+	
 }
 
 void Player::OnCollisionEnd(PhysBody* physA, PhysBody* physB)

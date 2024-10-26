@@ -173,11 +173,12 @@ void Engine::PrepareUpdate()
 {
 
     if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F11) == KEY_DOWN) {
+        cap30 = !cap30;
         if (cap30) {
-            cap30 = false;
+            maxFrameDuration = 33;  // 30 FPS
         }
         else {
-            cap30 = true;
+            maxFrameDuration = 16;  // 60 FPS
         }
     }
 
