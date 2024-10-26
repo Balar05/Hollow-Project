@@ -70,7 +70,7 @@ bool Player::Update(float dt)
 
 		}
 		else {
-			velocity.x = -0.2 * dt;
+			velocity.x = -0.2 * 16;
 			currentAnimation = &runLeft;
 			isLookingRight = false;
 		}
@@ -88,7 +88,7 @@ bool Player::Update(float dt)
 
 		}
 		else {
-			velocity.x = 0.2 * dt;
+			velocity.x = 0.2 * 16;
 			currentAnimation = &runRight;
 			isLookingRight = true;
 		}

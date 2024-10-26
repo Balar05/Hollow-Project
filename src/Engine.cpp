@@ -171,19 +171,14 @@ bool Engine::CleanUp() {
 // ---------------------------------------------
 void Engine::PrepareUpdate()
 {
-
+    // Detecta si se presiona la tecla F11
     if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F11) == KEY_DOWN) {
-        if (cap30) {
-            cap30 = false;
-        }
-        else {
-            cap30 = true;
-        }
+        // Alterna entre 30 y 60 FPS
+        cap30 = !cap30;
+        maxFrameDuration = cap30 ? 33 : 16;  // 33 ms para 30 FPS, 16 ms para 60 FPS
     }
 
     frameTime.Start();
-
-
 }
 
 // ---------------------------------------------
