@@ -180,21 +180,6 @@ bool Map::Load(std::string path, std::string fileName)
             mapData.layers.push_back(mapLayer);
         }
 
-        // L08 TODO 3: Create colliders
-       
-        // L08 TODO 7: Assign collider type
-        // Later you can create a function here to load and create the colliders from the map
-       /* PhysBody* c1 = Engine::GetInstance().physics.get()->CreateRectangle(224 + 128, 544 + 32, 256, 64, STATIC);
-        c1->ctype = ColliderType::PLATFORM;
-
-        PhysBody* c2 = Engine::GetInstance().physics.get()->CreateRectangle(352 + 64, 384 + 32, 128, 64, STATIC);
-        c2->ctype = ColliderType::PLATFORM;
-
-        PhysBody* c3 = Engine::GetInstance().physics.get()->CreateRectangle(256, 704 + 32, 576, 64, STATIC);
-        c3->ctype = ColliderType::PLATFORM;*/
-
-        //CREATE COLLIDERS
-
         for (const auto& mapLayer : mapData.layers) {
             //Check if the property Draw exist get the value, if it's true draw the lawyer
             if (mapLayer->properties.GetProperty("Colliders") != NULL && mapLayer->properties.GetProperty("Colliders")->value == true) {
