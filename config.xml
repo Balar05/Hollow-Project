@@ -18,9 +18,9 @@
   </window>
 
 	<scene>
-		<map path="Assets/Maps/" name="Prova.tmx"/>
+		<map path="Assets/Maps/" name="Level_1.tmx"/>
 		<entities>
-			<player x="100" y="720-32" w="32" h ="32" texture="Assets/Textures/HollowSprites.png">
+			<player x="100" y="736" w="32" h ="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>
 					<idleRight loop="true" speed ="0.1">
 						<frame x="0" y="0" w="32" h="32"/>
@@ -76,8 +76,34 @@
 						<frame x="192" y="224" w="32" h="32"/>
 						<frame x="224" y="224" w="32" h="32"/>
 					</dieLeft>
+					<dashRight loop="true" speed ="0.1">
+						<frame x="0" y="192" w="32" h="32"/>
+						<frame x="32" y="192" w="32" h="32"/>
+						<frame x="64" y="192" w="32" h="32"/>
+						<frame x="96" y="192" w="32" h="32"/>
+					</dashRight>
+					<dashLeft loop="true" speed ="0.1">
+						<frame x="128" y="192" w="32" h="32"/>
+						<frame x="160" y="192" w="32" h="32"/>
+						<frame x="192" y="192" w="32" h="32"/>
+						<frame x="224" y="192" w="32" h="32"/>
+					</dashLeft>
 				</animations>
 			</player>
+			<fire w ="32" h="32" texture="Assets/Textures/Fire.png">
+				<animations>
+					<fire loop ="true" speed ="0.1">
+						<frame x="0" y="0" w="32" h="32"/>
+						<frame x="32" y="0" w="32" h="32"/>
+						<frame x="64" y="0" w="32" h="32"/>
+						<frame x="96" y="0" w="32" h="32"/>
+						<frame x="128" y="0" w="32" h="32"/>
+						<frame x="160" y="0" w="32" h="32"/>
+						<frame x="192" y="0" w="32" h="32"/>
+						<frame x="224" y="0" w="32" h="32"/>
+					</fire>
+				</animations>
+			</fire>
 		</entities>
 	</scene>
 

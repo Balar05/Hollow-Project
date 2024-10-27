@@ -4,6 +4,7 @@
 #include "SDL2/SDL.h"
 #include "Box2D/Box2D.h"
 #include "Animation.h"
+#include "Timer.h"
 
 struct SDL_Texture;
 
@@ -35,20 +36,25 @@ public:
 public:
 
 	//Declare player parameters
-	float speed = 5.0f;
+	float speed = 3.0f;
 	SDL_Texture* texture = NULL;
 	int texW, texH;
 
 	int lives;
 	bool dead;
+	bool godMode;
 
 	//Audio fx
 	int pickCoinFxId;
 
 	// L08 TODO 5: Add physics to the player - declare a Physics body
 	PhysBody* pbody;
-	float jumpForce = 3; // The force to apply when jumping
+	float jumpForce = 1.8; // The force to apply when jumping
 	bool isJumping = false; // Flag to check if the player is currently jumping
+	bool isDashing = false;
+	float dashDuration = 4;
+	float dashTimer = 0.0f;
+	Timer dashCooldown;
 
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
@@ -60,6 +66,9 @@ public:
 	Animation jumpLeft;
 	Animation dieRight;
 	Animation dieLeft;
+	Animation dashRight;
+	Animation dashLeft;
+	
 
 	bool isLookingRight;
 };

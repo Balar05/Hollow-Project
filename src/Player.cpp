@@ -8,6 +8,8 @@
 #include "Log.h"
 #include "Physics.h"
 
+//			<Fire x="100" y="736" w="32" h ="32" texture="Assets/Textures/Fire.png">
+
 Player::Player() : Entity(EntityType::PLAYER)
 {
 	name = "Player";
@@ -33,6 +35,7 @@ bool Player::Start() {
 	texH = parameters.attribute("h").as_int();
 	lives = 5;
 	dead = false;
+	godMode = false;
 
 	//Load animations
 	idleRight.LoadAnimations(parameters.child("animations").child("idleRight"));
@@ -43,12 +46,14 @@ bool Player::Start() {
 	jumpLeft.LoadAnimations(parameters.child("animations").child("jumpLeft"));
 	dieRight.LoadAnimations(parameters.child("animations").child("dieRight"));
 	dieLeft.LoadAnimations(parameters.child("animations").child("dieLeft"));
+	dashRight.LoadAnimations(parameters.child("animations").child("dashRight"));
+	dashLeft.LoadAnimations(parameters.child("animations").child("dashLeft"));
 	currentAnimation = &idleRight;
 	isLookingRight = true;
 
 	// L08 TODO 5: Add physics to the player - initialize physics body
 	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX(), (int)position.getY(), texW / 2, bodyType::DYNAMIC);
-
+	
 	// L08 TODO 6: Assign player class (using "this") to the listener of the pbody. This makes the Physics module to call the OnCollision method
 	pbody->listener = this;
 
@@ -61,7 +66,27 @@ bool Player::Start() {
 bool Player::Update(float dt)
 {
 	// L08 TODO 5: Add physics to the player - updated player position using physics
-	b2Vec2 velocity = b2Vec2(0, -GRAVITY_Y);
+	b2Vec2 velocity;
+
+	if (godMode) {
+		lives = 5;
+		dead = false;
+		isJumping = false; 
+
+		pbody->body->SetGravityScale(0);
+		velocity = b2Vec2(0, 0);
+
+		if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_W) == KEY_REPEAT) {
+			velocity.y = -0.2 * 16;
+		}
+		if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_S) == KEY_REPEAT) {
+			velocity.y = 0.2 * 16;
+		}
+	}
+	else {
+		pbody->body->SetGravityScale(1);
+		velocity = b2Vec2(0, -GRAVITY_Y);
+	}
 
 	// Move left
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_A) == KEY_REPEAT) {
@@ -74,11 +99,6 @@ bool Player::Update(float dt)
 			currentAnimation = &runLeft;
 			isLookingRight = false;
 		}
-
-		
-		/*if (position.getX() > 32) {
-			position.setX(64);
-		}*/
 	}
 
 	// Move right
@@ -94,11 +114,34 @@ bool Player::Update(float dt)
 		}
 
 	}
+
+
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F) == KEY_DOWN) {
+		isDashing = true;
+		dashTimer = dashDuration;
+	}
+
+	if (isDashing) {
+		dashTimer -= 0.16;
+		if (dashTimer <= 0) {
+			isDashing = false;
+		}
+		if (isLookingRight && isDashing) {
+			velocity.x = 0.4 * 16;
+			currentAnimation = &dashRight;
+		}
+		else {
+			velocity.x = -0.4 * 16;
+			currentAnimation = &dashLeft;
+		}
+	}
+
 	
 	//Jump
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_SPACE) == KEY_DOWN && isJumping == false) {
 		// Apply an initial upward force
 		pbody->body->ApplyLinearImpulseToCenter(b2Vec2(0, -jumpForce), true);
+
 		isJumping = true;
 	}
 
@@ -108,15 +151,24 @@ bool Player::Update(float dt)
 		if (dead) {
 			velocity.x = 0;
 			velocity.y = 0;
-
 		}
 		else {
 			velocity.y = pbody->body->GetLinearVelocity().y;
 			if (isLookingRight) {
-				currentAnimation = &jumpRight;
+				if (isDashing) {
+					currentAnimation = &dashRight;
+				}
+				else {
+					currentAnimation = &jumpRight;
+				}
 			}
 			else {
-				currentAnimation = &jumpLeft;
+				if (isDashing) {
+					currentAnimation = &dashLeft;
+				}
+				else {
+					currentAnimation = &jumpLeft;
+				}
 			}
 		}
 	}
@@ -151,6 +203,10 @@ bool Player::Update(float dt)
 		}
 	}
 
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F10) == KEY_DOWN) {
+		godMode = !godMode;
+	}
+
 	// Apply the velocity to the player
 	pbody->body->SetLinearVelocity(velocity);
 
@@ -177,7 +233,7 @@ bool Player::Update(float dt)
 		}
 	}
 
-
+	//LOG("X: %f, Y = %f", position.getX(), position.getY());
 return true;
 }
 
@@ -206,6 +262,7 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 	default:
 		break;
 	}
+	
 }
 
 void Player::OnCollisionEnd(PhysBody* physA, PhysBody* physB)

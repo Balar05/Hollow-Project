@@ -19,6 +19,7 @@ struct Properties
     {
         for (const auto& property : propertyList)
         {
+            
             delete property;
         }
 

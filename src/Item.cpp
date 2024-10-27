@@ -31,6 +31,9 @@ bool Item::Start() {
 	// L08 TODO 7: Assign collider type
 	pbody->ctype = ColliderType::ITEM;
 
+
+	
+	
 	return true;
 }
 
