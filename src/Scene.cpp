@@ -78,6 +78,7 @@ bool Scene::Update(float dt)
 	if (Engine::GetInstance().render.get()->camera.x > 0) {
 		Engine::GetInstance().render.get()->camera.x = 0;
 	}
+	
 
 
 	
