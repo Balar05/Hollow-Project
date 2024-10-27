@@ -36,6 +36,7 @@ bool Scene::Awake()
 	Item* item = (Item*) Engine::GetInstance().entityManager->CreateEntity(EntityType::ITEM);
 	item->position = Vector2D(200, 672);
 	return ret;
+
 }
 
 // Called before the first frame
@@ -46,6 +47,7 @@ bool Scene::Start()
 	Engine::GetInstance().map->Load(configParameters.child("map").attribute("path").as_string(), configParameters.child("map").attribute("name").as_string());
 
 	Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/EnterHallownest.ogg", 0);
+
 	//Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/Dirtmouth.ogg", 2.0f);
 
 

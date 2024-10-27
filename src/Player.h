@@ -66,6 +66,7 @@ public:
 	Animation dieLeft;
 	Animation dashRight;
 	Animation dashLeft;
+	
 
 	bool isLookingRight;
 };
