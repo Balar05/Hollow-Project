@@ -80,6 +80,7 @@ bool Player::Update(float dt)
 		}
 	}
 	else {
+		pbody->body->SetGravityScale(1);
 		velocity = b2Vec2(0, -GRAVITY_Y);
 	}
 
