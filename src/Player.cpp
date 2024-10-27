@@ -116,24 +116,24 @@ bool Player::Update(float dt)
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F) == KEY_DOWN && isDashing == false) {
 		pbody->body->ApplyLinearImpulseToCenter(b2Vec2(jumpForce, 0), true);
 		isDashing = true;
+		dashTimer = dashDuration;  // Set timer to start the dash
 	}
 
 	if (isDashing == true) {
-		if (dead) {
-			velocity.x = 0;
-			velocity.y = 0;
-
+		dashTimer -= 0.16;
+		if (dashTimer <= 0.0f) {
+			pbody->body->SetLinearVelocity(b2Vec2(0, pbody->body->GetLinearVelocity().y));			//velocity.x = pbody->body->GetLinearVelocity().x;
+			isDashing = false;
+		}
+			
+		if (isLookingRight) {
+			currentAnimation = &dashRight;
 		}
 		else {
-			velocity.x = pbody->body->GetLinearVelocity().x;
-			if (isLookingRight) {
-				currentAnimation = &dashRight;
-			}
-			else {
-				currentAnimation = &dashLeft;
-			}
+			currentAnimation = &dashLeft;
 		}
 	}
+
 	
 	//Jump
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_SPACE) == KEY_DOWN && isJumping == false) {

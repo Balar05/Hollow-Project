@@ -51,6 +51,8 @@ public:
 	float jumpForce = 1.8; // The force to apply when jumping
 	bool isJumping = false; // Flag to check if the player is currently jumping
 	bool isDashing = false;
+	float dashDuration = 5;
+	float dashTimer = 0.0f;
 
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
