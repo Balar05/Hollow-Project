@@ -8,6 +8,8 @@
 #include "Log.h"
 #include "Physics.h"
 
+//			<Fire x="100" y="736" w="32" h ="32" texture="Assets/Textures/Fire.png">
+
 Player::Player() : Entity(EntityType::PLAYER)
 {
 	name = "Player";
@@ -222,7 +224,7 @@ bool Player::Update(float dt)
 		}
 	}
 
-
+	//LOG("X: %f, Y = %f", position.getX(), position.getY());
 return true;
 }
 

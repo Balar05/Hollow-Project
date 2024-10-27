@@ -11,6 +11,9 @@
 #include "Player.h"
 #include "Map.h"
 #include "Item.h"
+#include "Fire.h"
+
+#define NUM_FIRES 5
 
 Scene::Scene() : Module()
 {
@@ -33,8 +36,29 @@ bool Scene::Awake()
 	player->SetParameters(configParameters.child("entities").child("player"));
 
 	//L08 Create a new item using the entity manager and set the position to (200, 672) to test
-	Item* item = (Item*) Engine::GetInstance().entityManager->CreateEntity(EntityType::ITEM);
-	item->position = Vector2D(200, 672);
+	/*Item* item = (Item*) Engine::GetInstance().entityManager->CreateEntity(EntityType::ITEM);
+	item->position = Vector2D(200, 672);*/
+
+	Fire* fire1 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire1->SetParameters(configParameters.child("entities").child("fire"));
+	fire1->position = Vector2D(192, 640);
+
+	Fire* fire2 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire2->SetParameters(configParameters.child("entities").child("fire"));
+	fire2->position = Vector2D(734, 352);
+
+	Fire* fire3 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire3->SetParameters(configParameters.child("entities").child("fire"));
+	fire3->position = Vector2D(1216, 576);
+	
+	Fire* fire4 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire4->SetParameters(configParameters.child("entities").child("fire"));
+	fire4->position = Vector2D(896, 736);
+
+	Fire* fire5 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire5->SetParameters(configParameters.child("entities").child("fire"));
+	fire5->position = Vector2D(1312, 1216);
+
 	return ret;
 
 }

@@ -90,9 +90,9 @@
 					</dashLeft>
 				</animations>
 			</player>
-			<Fire x="100" y="736" w="32" h ="32" texture="Assets/Textures/Fire.png">
+			<fire w ="32" h="32" texture="Assets/Textures/Fire.png">
 				<animations>
-					<flame loop ="true" speed ="0.1">
+					<fire loop ="true" speed ="0.1">
 						<frame x="0" y="0" w="32" h="32"/>
 						<frame x="32" y="0" w="32" h="32"/>
 						<frame x="64" y="0" w="32" h="32"/>
@@ -101,9 +101,9 @@
 						<frame x="160" y="0" w="32" h="32"/>
 						<frame x="192" y="0" w="32" h="32"/>
 						<frame x="224" y="0" w="32" h="32"/>
-					</flame>
+					</fire>
 				</animations>
-			</Fire>
+			</fire>
 		</entities>
 	</scene>
 
