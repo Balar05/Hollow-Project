@@ -50,6 +50,7 @@ public:
 	PhysBody* pbody;
 	float jumpForce = 1.8; // The force to apply when jumping
 	bool isJumping = false; // Flag to check if the player is currently jumping
+	bool isDashing = false;
 
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
@@ -61,6 +62,8 @@ public:
 	Animation jumpLeft;
 	Animation dieRight;
 	Animation dieLeft;
+	Animation dashRight;
+	Animation dashLeft;
 
 	bool isLookingRight;
 };

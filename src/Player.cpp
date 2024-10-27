@@ -44,6 +44,8 @@ bool Player::Start() {
 	jumpLeft.LoadAnimations(parameters.child("animations").child("jumpLeft"));
 	dieRight.LoadAnimations(parameters.child("animations").child("dieRight"));
 	dieLeft.LoadAnimations(parameters.child("animations").child("dieLeft"));
+	dashRight.LoadAnimations(parameters.child("animations").child("dashRight"));
+	dashLeft.LoadAnimations(parameters.child("animations").child("dashLeft"));
 	currentAnimation = &idleRight;
 	isLookingRight = true;
 
@@ -110,11 +112,34 @@ bool Player::Update(float dt)
 		}
 
 	}
+
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F) == KEY_DOWN && isDashing == false) {
+		pbody->body->ApplyLinearImpulseToCenter(b2Vec2(jumpForce, 0), true);
+		isDashing = true;
+	}
+
+	if (isDashing == true) {
+		if (dead) {
+			velocity.x = 0;
+			velocity.y = 0;
+
+		}
+		else {
+			velocity.x = pbody->body->GetLinearVelocity().x;
+			if (isLookingRight) {
+				currentAnimation = &dashRight;
+			}
+			else {
+				currentAnimation = &dashLeft;
+			}
+		}
+	}
 	
 	//Jump
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_SPACE) == KEY_DOWN && isJumping == false) {
 		// Apply an initial upward force
 		pbody->body->ApplyLinearImpulseToCenter(b2Vec2(0, -jumpForce), true);
+
 		isJumping = true;
 	}
 
