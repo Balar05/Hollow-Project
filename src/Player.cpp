@@ -224,7 +224,7 @@ bool Player::Update(float dt)
 		}
 	}
 
-
+	//LOG("X: %f, Y = %f", position.getX(), position.getY());
 return true;
 }
 
