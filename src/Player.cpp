@@ -115,23 +115,23 @@ bool Player::Update(float dt)
 
 	}
 
-	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F) == KEY_DOWN && isDashing == false) {
-		pbody->body->ApplyLinearImpulseToCenter(b2Vec2(jumpForce, 0), true);
+
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F) == KEY_DOWN) {
 		isDashing = true;
-		dashTimer = dashDuration;  // Set timer to start the dash
+		dashTimer = dashDuration;
 	}
 
-	if (isDashing == true) {
+	if (isDashing) {
 		dashTimer -= 0.16;
-		if (dashTimer <= 0.0f) {
-			pbody->body->SetLinearVelocity(b2Vec2(0, pbody->body->GetLinearVelocity().y));			//velocity.x = pbody->body->GetLinearVelocity().x;
+		if (dashTimer <= 0) {
 			isDashing = false;
 		}
-			
-		if (isLookingRight) {
+		if (isLookingRight && isDashing) {
+			velocity.x = 0.4 * 16;
 			currentAnimation = &dashRight;
 		}
 		else {
+			velocity.x = -0.4 * 16;
 			currentAnimation = &dashLeft;
 		}
 	}
@@ -151,15 +151,24 @@ bool Player::Update(float dt)
 		if (dead) {
 			velocity.x = 0;
 			velocity.y = 0;
-
 		}
 		else {
 			velocity.y = pbody->body->GetLinearVelocity().y;
 			if (isLookingRight) {
-				currentAnimation = &jumpRight;
+				if (isDashing) {
+					currentAnimation = &dashRight;
+				}
+				else {
+					currentAnimation = &jumpRight;
+				}
 			}
 			else {
-				currentAnimation = &jumpLeft;
+				if (isDashing) {
+					currentAnimation = &dashLeft;
+				}
+				else {
+					currentAnimation = &jumpLeft;
+				}
 			}
 		}
 	}

@@ -4,6 +4,7 @@
 #include "SDL2/SDL.h"
 #include "Box2D/Box2D.h"
 #include "Animation.h"
+#include "Timer.h"
 
 struct SDL_Texture;
 
@@ -51,8 +52,9 @@ public:
 	float jumpForce = 1.8; // The force to apply when jumping
 	bool isJumping = false; // Flag to check if the player is currently jumping
 	bool isDashing = false;
-	float dashDuration = 5;
+	float dashDuration = 4;
 	float dashTimer = 0.0f;
+	Timer dashCooldown;
 
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
