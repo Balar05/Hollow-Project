@@ -255,7 +255,7 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 	case ColliderType::PLATFORM:
 		LOG("Collision PLATFORM");
 		//reset the jump flag when touching the ground
-		isJumping = false;
+		//isJumping = false;
 		break;
 	case ColliderType::ITEM:
 		LOG("Collision ITEM");
@@ -263,6 +263,12 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 	case ColliderType::UNKNOWN:
 		LOG("Collision UNKNOWN");
 		break;
+	case ColliderType::GROUND:
+		LOG("Collision GROUND");
+		isJumping = false;
+	case ColliderType::SPIKES:
+		LOG("Collision SPIKES");
+		lives--;
 	default:
 		break;
 	}
@@ -284,5 +290,19 @@ void Player::OnCollisionEnd(PhysBody* physA, PhysBody* physB)
 		break;
 	default:
 		break;
+	}
+}
+
+void Player::takeDamage() {
+	lives--;
+	if (lives <= 0) {
+		dead = true;
+		pbody->body->SetLinearVelocity(b2Vec2(0, 0));
+		if (isLookingRight) {
+			currentAnimation = &dieRight;
+		}
+	}
+	else {
+		currentAnimation = &dieLeft;
 	}
 }

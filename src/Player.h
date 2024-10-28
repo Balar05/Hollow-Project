@@ -33,6 +33,8 @@ public:
 		this->parameters = parameters;
 	}
 
+	void takeDamage();
+
 public:
 
 	//Declare player parameters

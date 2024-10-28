@@ -195,7 +195,19 @@ bool Map::Load(std::string path, std::string fileName)
                             
                             Vector2D mapCoord = MapToWorld(i, j);
                             PhysBody* platform = Engine::GetInstance().physics.get()->CreateRectangle(mapCoord.getX() + mapData.tileWidth/2, mapCoord.getY() + mapData.tileHeight/2, mapData.tileWidth, mapData.tileHeight, STATIC);
+                            platform->ctype = ColliderType::GROUND;
+                        }
+                        if (gid == 3) {
+
+                            Vector2D mapCoord = MapToWorld(i, j);
+                            PhysBody* platform = Engine::GetInstance().physics.get()->CreateRectangle(mapCoord.getX() + mapData.tileWidth / 2, mapCoord.getY() + mapData.tileHeight / 2, mapData.tileWidth, mapData.tileHeight, STATIC);
                             platform->ctype = ColliderType::PLATFORM;
+                        }
+                        if (gid == 4) {
+
+                            Vector2D mapCoord = MapToWorld(i, j);
+                            PhysBody* platform = Engine::GetInstance().physics.get()->CreateRectangle(mapCoord.getX() + mapData.tileWidth / 2, mapCoord.getY() + mapData.tileHeight / 2, mapData.tileWidth, mapData.tileHeight, STATIC);
+                            platform->ctype = ColliderType::SPIKES;
                         }
                     }
                 }

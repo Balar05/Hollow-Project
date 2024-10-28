@@ -13,7 +13,6 @@
 #include "Item.h"
 #include "Fire.h"
 
-#define NUM_FIRES 11
 
 Scene::Scene() : Module()
 {
