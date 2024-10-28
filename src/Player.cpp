@@ -202,10 +202,6 @@ bool Player::Update(float dt)
 			lives = 5;
 		}
 	}
-	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_H) == KEY_DOWN) {
-
-		texture = Engine::GetInstance().textures.get()->Load("Assets/UI/Help_menu.png");
-	}
 
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F10) == KEY_DOWN) {
 		godMode = !godMode;
