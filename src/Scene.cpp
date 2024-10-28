@@ -166,6 +166,7 @@ bool Scene::Update(float dt)
 		Engine::GetInstance().render.get()->camera.x = 0;
 	}
 	
+	
 
 
 	
