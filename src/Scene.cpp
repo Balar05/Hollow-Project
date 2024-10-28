@@ -81,7 +81,19 @@ bool Scene::Awake()
 
 	Fire* fire11 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
 	fire11->SetParameters(configParameters.child("entities").child("fire"));
-	fire11->position = Vector2D(2304, 704);
+	fire11->position = Vector2D(2272, 704);
+
+	Fire* fire12 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire12->SetParameters(configParameters.child("entities").child("fire"));
+	fire12->position = Vector2D(2528, 1088);
+
+	Fire* fire13 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire13->SetParameters(configParameters.child("entities").child("fire"));
+	fire13->position = Vector2D(2656, 1088);
+
+	Fire* fire14 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire14->SetParameters(configParameters.child("entities").child("fire"));
+	fire14->position = Vector2D(3328, 1184);
 
 
 	return ret;
