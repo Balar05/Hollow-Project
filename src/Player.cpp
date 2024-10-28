@@ -66,7 +66,7 @@ bool Player::Start() {
 bool Player::Update(float dt)
 {
 	// L08 TODO 5: Add physics to the player - updated player position using physics
-	b2Vec2 velocity;
+	//b2Vec2 velocity;
 
 	if (godMode) {
 		lives = 5;
@@ -174,18 +174,7 @@ bool Player::Update(float dt)
 	}
 
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F1) == KEY_DOWN) {
-		lives = lives - 1;
-		if (lives <= 0)
-		{
-			lives = 0;
-			dead = true;
-		}
-		if (lives > 0) {
-			dead = false;
-		}
-		if (lives >= 5) {
-			lives = 5;
-		}
+		takeDamage();
 	}
 
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F2) == KEY_DOWN) {
@@ -201,6 +190,7 @@ bool Player::Update(float dt)
 		if (lives >= 5) {
 			lives = 5;
 		}
+		LOG("Curar vides");
 	}
 
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F10) == KEY_DOWN) {
@@ -250,8 +240,6 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 	{
 	case ColliderType::PLATFORM:
 		LOG("Collision PLATFORM");
-		//reset the jump flag when touching the ground
-		//isJumping = false;
 		break;
 	case ColliderType::ITEM:
 		LOG("Collision ITEM");
@@ -262,10 +250,12 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 	case ColliderType::GROUND:
 		LOG("Collision GROUND");
 		isJumping = false;
+		break;
 	case ColliderType::SPIKES:
 		LOG("Collision SPIKES");
 		isJumping = false;
-		lives--;
+		takeDamage();
+		break;
 	default:
 		break;
 	}
@@ -285,21 +275,45 @@ void Player::OnCollisionEnd(PhysBody* physA, PhysBody* physB)
 	case ColliderType::UNKNOWN:
 		LOG("End Collision UNKNOWN");
 		break;
+	case ColliderType::SPIKES:
+		LOG("End Collision SPIKES");
+		break;
 	default:
 		break;
 	}
 }
 
 void Player::takeDamage() {
-	lives--;
+	
 	if (lives <= 0) {
 		dead = true;
 		pbody->body->SetLinearVelocity(b2Vec2(0, 0));
 		if (isLookingRight) {
 			currentAnimation = &dieRight;
 		}
+		else {
+			currentAnimation = &dieLeft;
+		}
 	}
 	else {
-		currentAnimation = &dieLeft;
+		lives = lives-1;
+		//velocity.y = 0.4 * 16;
+		if (isLookingRight) {
+			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(-10, -1.5f), true);
+			currentAnimation = &jumpRight;
+			
+		}
+		else {
+			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(10, -1.5f), true);
+			currentAnimation = &jumpLeft;
+		}
+		velocity.y = pbody->body->GetLinearVelocity().y;
+		velocity.x = pbody->body->GetLinearVelocity().x;
+
+
+
+		
+		
 	}
+	
 }

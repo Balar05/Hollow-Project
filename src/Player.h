@@ -58,6 +58,8 @@ public:
 	float dashTimer = 0.0f;
 	Timer dashCooldown;
 
+	b2Vec2 velocity;
+
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
 	Animation idleRight;
