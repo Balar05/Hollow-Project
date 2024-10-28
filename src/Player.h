@@ -72,6 +72,8 @@ public:
 	Animation dieLeft;
 	Animation dashRight;
 	Animation dashLeft;
+	Animation damageRight;
+	Animation damageLeft;
 	
 
 	bool isLookingRight;

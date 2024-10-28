@@ -48,6 +48,8 @@ bool Player::Start() {
 	dieLeft.LoadAnimations(parameters.child("animations").child("dieLeft"));
 	dashRight.LoadAnimations(parameters.child("animations").child("dashRight"));
 	dashLeft.LoadAnimations(parameters.child("animations").child("dashLeft"));
+	damageRight.LoadAnimations(parameters.child("animations").child("damageRight"));
+	damageLeft.LoadAnimations(parameters.child("animations").child("damageLeft"));
 	currentAnimation = &idleRight;
 	isLookingRight = true;
 
@@ -179,6 +181,7 @@ bool Player::Update(float dt)
 
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F2) == KEY_DOWN) {
 		lives = lives + 1;
+
 		if (lives <= 0)
 		{
 			lives = 0;
@@ -190,6 +193,7 @@ bool Player::Update(float dt)
 		if (lives >= 5) {
 			lives = 5;
 		}
+		
 		LOG("Curar vides");
 	}
 
@@ -284,7 +288,7 @@ void Player::OnCollisionEnd(PhysBody* physA, PhysBody* physB)
 }
 
 void Player::takeDamage() {
-	
+
 	if (lives <= 0) {
 		dead = true;
 		pbody->body->SetLinearVelocity(b2Vec2(0, 0));
@@ -297,23 +301,17 @@ void Player::takeDamage() {
 	}
 	else {
 		lives = lives-1;
+		LOG("Treure vides");
 		//velocity.y = 0.4 * 16;
 		if (isLookingRight) {
 			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(-10, -1.5f), true);
 			currentAnimation = &jumpRight;
-			
 		}
 		else {
 			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(10, -1.5f), true);
-			currentAnimation = &jumpLeft;
+			currentAnimation = &damageLeft;
 		}
 		velocity.y = pbody->body->GetLinearVelocity().y;
 		velocity.x = pbody->body->GetLinearVelocity().x;
-
-
-
-		
-		
 	}
-	
 }
