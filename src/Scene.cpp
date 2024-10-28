@@ -94,6 +94,33 @@ bool Scene::Awake()
 	fire14->SetParameters(configParameters.child("entities").child("fire"));
 	fire14->position = Vector2D(3328, 1184);
 
+	Fire* fire15 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire15->SetParameters(configParameters.child("entities").child("fire"));
+	fire15->position = Vector2D(3040, 928);
+
+	Fire* fire16 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire16->SetParameters(configParameters.child("entities").child("fire"));
+	fire16->position = Vector2D(3616, 928);
+
+	Fire* fire17 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire17->SetParameters(configParameters.child("entities").child("fire"));
+	fire17->position = Vector2D(2752, 928);
+
+	Fire* fire18 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire18->SetParameters(configParameters.child("entities").child("fire"));
+	fire18->position = Vector2D(2592, 864);
+
+	Fire* fire19 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire19->SetParameters(configParameters.child("entities").child("fire"));
+	fire19->position = Vector2D(2592, 1216);
+
+	Fire* fire20 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire20->SetParameters(configParameters.child("entities").child("fire"));
+	fire20->position = Vector2D(3232, 1024);
+
+	Fire* fire21 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
+	fire21->SetParameters(configParameters.child("entities").child("fire"));
+	fire21->position = Vector2D(3360, 1024);
 
 	return ret;
 
