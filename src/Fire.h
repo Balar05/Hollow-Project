@@ -37,6 +37,5 @@ public:
 	SDL_Texture* texture = NULL;
 	int texW, texH;
 
-	//L08 TODO 4: Add a physics to an item
 	PhysBody* pbody;
 };

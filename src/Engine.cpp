@@ -27,7 +27,6 @@ Engine::Engine() {
     lastSecFrameTime = PerfTimer();
     frames = 0;
 
-    // L4: TODO 1: Add the EntityManager Module to the Engine
     
     // Modules
     window = std::make_shared<Window>();
@@ -48,7 +47,6 @@ Engine::Engine() {
     AddModule(std::static_pointer_cast<Module>(input));
     AddModule(std::static_pointer_cast<Module>(textures));
     AddModule(std::static_pointer_cast<Module>(audio));
-    // L08: TODO 2: Add Physics module
     AddModule(std::static_pointer_cast<Module>(physics));
     AddModule(std::static_pointer_cast<Module>(map));
     AddModule(std::static_pointer_cast<Module>(scene));
@@ -80,11 +78,8 @@ bool Engine::Awake() {
 
     LOG("Engine::Awake");
 
-    //L05 TODO 2: Add the LoadConfig() method here
     LoadConfig();
 
-    // L05: TODO 3: Read the title from the config file and set the variable gameTitle, read maxFrameDuration and set the variable
-    // also read maxFrameDuration 
     gameTitle = configFile.child("config").child("engine").child("title").child_value();
     maxFrameDuration = configFile.child("config").child("engine").child("maxFrameDuration").attribute("value").as_int();
 
@@ -192,12 +187,10 @@ void Engine::PrepareUpdate()
 // ---------------------------------------------
 void Engine::FinishUpdate()
 {
-    // L03: TODO 1: Cap the framerate of the gameloop
     double currentDt = frameTime.ReadMs();
     if (maxFrameDuration > 0 && currentDt < maxFrameDuration) {
         int delay = (int)(maxFrameDuration - currentDt);
 
-        // L03: TODO 2: Measure accurately the amount of time SDL_Delay() actually waits compared to what was expected
         PerfTimer delayTimer = PerfTimer();
         SDL_Delay(delay);
         //Measure accurately the amount of time SDL_Delay() actually waits compared to what was expected
@@ -298,11 +291,6 @@ bool Engine::PostUpdate()
 bool Engine::LoadConfig()
 {
     bool ret = true;
-
-    // L05: TODO 2: Load config.xml file using load_file() method from the xml_document class
-    // If the result is ok get the main node of the XML
-    // else, log the error
-    // check https://pugixml.org/docs/quickstart.html#loading
 
     pugi::xml_parse_result result = configFile.load_file("config.xml");
     if (result)

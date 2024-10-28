@@ -29,28 +29,11 @@ bool Fire::Start() {
 	fire.LoadAnimations(parameters.child("animations").child("fire"));
 	currentAnimation = &fire;
 
-	//initilize textures
-	
-
-	// L08 TODO 4: Add a physics to an item - initialize the physics body
-	//pbody = Engine::GetInstance().physics.get()->CreateRectangle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, 32, 32, bodyType::STATIC);
-
-	// L08 TODO 7: Assign collider type
-	//pbody->ctype = ColliderType::FIRE;
-
-	
-
 	return true;
 }
 
 bool Fire::Update(float dt)
 {
-	// L08 TODO 4: Add a physics to an item - update the position of the object from the physics.  
-
-	//b2Transform pbodyPos = pbody->body->GetTransform();
-	//position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
-	//position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
-
 	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
 	currentAnimation->Update();
 

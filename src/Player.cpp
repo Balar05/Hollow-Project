@@ -8,7 +8,6 @@
 #include "Log.h"
 #include "Physics.h"
 
-//			<Fire x="100" y="736" w="32" h ="32" texture="Assets/Textures/Fire.png">
 
 Player::Player() : Entity(EntityType::PLAYER)
 {
@@ -21,7 +20,6 @@ Player::~Player() {
 
 bool Player::Awake() {
 
-	//L03: TODO 2: Initialize Player parameters
 	position = Vector2D(0, 0);
 	return true;
 }
@@ -53,13 +51,10 @@ bool Player::Start() {
 	currentAnimation = &idleRight;
 	isLookingRight = true;
 
-	// L08 TODO 5: Add physics to the player - initialize physics body
 	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX(), (int)position.getY(), texW / 2, bodyType::DYNAMIC);
 	
-	// L08 TODO 6: Assign player class (using "this") to the listener of the pbody. This makes the Physics module to call the OnCollision method
 	pbody->listener = this;
 
-	// L08 TODO 7: Assign collider type
 	pbody->ctype = ColliderType::PLAYER;
 
 	return true;
@@ -67,8 +62,6 @@ bool Player::Start() {
 
 bool Player::Update(float dt)
 {
-	// L08 TODO 5: Add physics to the player - updated player position using physics
-	//b2Vec2 velocity;
 
 	if (godMode) {
 		lives = 5;
@@ -227,8 +220,7 @@ bool Player::Update(float dt)
 		}
 	}
 
-	//LOG("X: %f, Y = %f", position.getX(), position.getY());
-return true;
+	return true;
 }
 
 bool Player::CleanUp()
@@ -238,7 +230,6 @@ bool Player::CleanUp()
 	return true;
 }
 
-// L08 TODO 6: Define OnCollision function for the player. 
 void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 	switch (physB->ctype)
 	{
@@ -302,7 +293,6 @@ void Player::takeDamage() {
 	else {
 		lives = lives-1;
 		LOG("Treure vides");
-		//velocity.y = 0.4 * 16;
 		if (isLookingRight) {
 			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(-10, -1.5f), true);
 			currentAnimation = &jumpRight;

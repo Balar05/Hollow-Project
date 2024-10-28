@@ -4,7 +4,6 @@
 #include <list>
 #include <vector>
 
-// L09: TODO 5: Add attributes to the property structure
 struct Properties
 {
     struct Property
@@ -26,14 +25,12 @@ struct Properties
         propertyList.clear();
     }
 
-    // L09: DONE 7: Method to ask for the value of a custom property
     Property* GetProperty(const char* name);
 
 };
 
 struct MapLayer
 {
-    // L07: TODO 1: Add the info to the MapLayer Struct
     int id;
     std::string name;
     int width;
@@ -41,15 +38,12 @@ struct MapLayer
     std::vector<int> tiles;
     Properties properties;
 
-    // L07: TODO 6: Short function to get the gid value of i,j
     int Get(int i, int j) const
     {
         return tiles[(j * width) + i];
     }
 };
 
-// L06: TODO 2: Create a struct to hold information for a TileSet
-// Ignore Terrain Types and Tile Types for now, but we want the image!
 
 struct TileSet
 {
@@ -63,7 +57,6 @@ struct TileSet
     int columns;
     SDL_Texture* texture;
 
-    // L07: TODO 7: Implement the method that receives the gid and returns a Rect
     SDL_Rect GetRect(unsigned int gid) {
         SDL_Rect rect = { 0 };
 
@@ -78,7 +71,6 @@ struct TileSet
 
 };
 
-// L06: TODO 1: Create a struct needed to hold the information to Map node
 struct MapData
 {
 	int width;
@@ -87,7 +79,6 @@ struct MapData
 	int tileHeight;
     std::list<TileSet*> tilesets;
 
-    // L07: TODO 2: Add the info to the MapLayer Struct
     std::list<MapLayer*> layers;
 };
 
@@ -115,13 +106,10 @@ public:
     // Load new map
     bool Load(std::string path, std::string mapFileName);
 
-    // L07: TODO 8: Create a method that translates x,y coordinates from map positions to world positions
     Vector2D MapToWorld(int x, int y) const;
 
-    // L09: TODO 2: Implement function to the Tileset based on a tile id
     TileSet* GetTilesetFromTileId(int gid) const;
 
-    // L09: TODO 6: Load a group of properties 
     bool LoadProperties(pugi::xml_node& node, Properties& properties);
 
 public: 
@@ -130,6 +118,5 @@ public:
 
 private:
     bool mapLoaded;
-    // L06: DONE 1: Declare a variable data of the struct MapData
     MapData mapData;
 };
