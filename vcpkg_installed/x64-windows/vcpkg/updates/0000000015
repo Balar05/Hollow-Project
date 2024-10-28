@@ -1,8 +1,8 @@
-Package: sdl2
-Version: 2.30.0
-Depends: vcpkg-cmake, vcpkg-cmake-config
+Package: sdl2-image
+Version: 2.8.2
+Depends: libpng, sdl2, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 64e9829225d1f6819ef2ba7b89fba4ce85730e2c6f2af06046edd7bc5af818e1
-Description: Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
-Status: purge ok not-installed
+Abi: fe93a387ef244c1dbc7597bf51915405c66e4a9f200d620749940ae041993b04
+Description: SDL_image is an image file loading library. It loads images as SDL surfaces and textures, and supports the following formats: BMP, GIF, JPEG, LBM, PCX, PNG, PNM, TGA, TIFF, WEBP, XCF, XPM, XV
+Status: install ok installed

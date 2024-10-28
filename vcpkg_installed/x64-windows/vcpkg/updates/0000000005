@@ -1,9 +1,9 @@
-Package: libogg
-Version: 1.3.5
-Port-Version: 1
+Package: box2d
+Version: 2.4.1
+Port-Version: 3
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 9b3ff9c34cb31027ce32ba760aa68149bdd02b3694e412c062ec562b0d8fe9b7
-Description: Ogg is a multimedia container format, and the native file and stream format for the Xiph.org multimedia codecs.
-Status: purge ok not-installed
+Abi: 45e69ef7c294231138532cbb6b438c3bd77443ed3176b9a4ed701b6cc82b648b
+Description: An open source C++ engine for simulating rigid bodies in 2D
+Status: install ok installed
