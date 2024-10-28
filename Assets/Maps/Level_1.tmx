@@ -80176,7 +80176,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="2" name="Collisions" width="127" height="45" visible="0">
+ <layer id="2" name="Collisions" width="127" height="45">
   <properties>
    <property name="Colliders" type="bool" value="true"/>
    <property name="Draw" type="bool" value="false"/>
@@ -81223,7 +81223,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="1"/>
    <tile/>
    <tile/>
    <tile/>
@@ -92669,7 +92669,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile gid="3"/>
+   <tile/>
    <tile/>
    <tile/>
    <tile/>
