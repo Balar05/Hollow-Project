@@ -264,6 +264,7 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 		isJumping = false;
 	case ColliderType::SPIKES:
 		LOG("Collision SPIKES");
+		isJumping = false;
 		lives--;
 	default:
 		break;

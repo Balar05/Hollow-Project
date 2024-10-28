@@ -133,7 +133,7 @@ bool Scene::Start()
 	//Engine::GetInstance().map->Load("Assets/Maps/", "Prova.tmx");
 	Engine::GetInstance().map->Load(configParameters.child("map").attribute("path").as_string(), configParameters.child("map").attribute("name").as_string());
 
-	Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/EnterHallownest.ogg", 0);
+	//Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/EnterHallownest.ogg", 0);
 
 	//Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/Dirtmouth.ogg", 2.0f);
 
@@ -165,10 +165,6 @@ bool Scene::Update(float dt)
 	if (Engine::GetInstance().render.get()->camera.x > 0) {
 		Engine::GetInstance().render.get()->camera.x = 0;
 	}
-	
-	
-
-
 	
 	return true;
 }
