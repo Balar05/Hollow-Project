@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="127" height="45" tilewidth="32" tileheight="32" infinite="0" nextlayerid="19" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="127" height="45" tilewidth="32" tileheight="32" infinite="0" nextlayerid="19" nextobjectid="1">
  <tileset firstgid="1" name="MapMetadata" tilewidth="32" tileheight="32" tilecount="4" columns="2">
   <image source="MapMetadata.png" width="67" height="68"/>
  </tileset>
@@ -73293,7 +73293,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile gid="3858"/>
+   <tile gid="3854"/>
    <tile/>
    <tile/>
    <tile/>
@@ -79375,7 +79375,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile gid="3858"/>
+   <tile gid="3854"/>
    <tile/>
    <tile/>
    <tile/>
@@ -79626,7 +79626,7 @@
    <tile/>
    <tile/>
    <tile gid="3892"/>
-   <tile gid="3858"/>
+   <tile gid="3854"/>
    <tile/>
    <tile/>
    <tile/>
@@ -79883,7 +79883,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile gid="3858"/>
+   <tile gid="3854"/>
    <tile/>
    <tile/>
    <tile/>
@@ -85899,7 +85899,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="18" name="SpikeCollisions" width="127" height="45" visible="0">
+ <layer id="18" name="SpikeCollisions" width="127" height="45">
   <properties>
    <property name="Colliders" type="bool" value="true"/>
    <property name="Draw" type="bool" value="false"/>
@@ -91622,7 +91622,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="17" name="WallColllisions" width="127" height="45" visible="0">
+ <layer id="17" name="WallColllisions" width="127" height="45">
   <properties>
    <property name="Colliders" type="bool" value="true"/>
    <property name="Draw" type="bool" value="false"/>
@@ -92669,7 +92669,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="3"/>
    <tile/>
    <tile/>
    <tile/>
@@ -92772,7 +92772,6 @@
    <tile/>
    <tile/>
    <tile gid="3"/>
-   <tile/>
    <tile/>
    <tile/>
    <tile/>
@@ -92797,6 +92796,7 @@
    <tile/>
    <tile/>
    <tile/>
+   <tile gid="3"/>
    <tile/>
    <tile/>
    <tile/>
@@ -95769,7 +95769,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="3"/>
    <tile/>
    <tile/>
    <tile/>
@@ -95896,7 +95896,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="3"/>
    <tile/>
    <tile/>
    <tile/>
@@ -96016,7 +96016,6 @@
    <tile/>
    <tile/>
    <tile gid="3"/>
-   <tile/>
    <tile/>
    <tile/>
    <tile/>
@@ -96024,6 +96023,7 @@
    <tile/>
    <tile/>
    <tile/>
+   <tile gid="3"/>
    <tile/>
    <tile/>
    <tile/>
@@ -96150,7 +96150,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="3"/>
    <tile/>
    <tile/>
    <tile/>
