@@ -2,8 +2,8 @@
 #include "Module.h"
 #include "Player.h"
 
-#define OFFSET_X 0
-#define OFFSET_Y -40
+#define OFFSET_X -120
+#define OFFSET_Y -60
 
 class UI : public Module
 {
