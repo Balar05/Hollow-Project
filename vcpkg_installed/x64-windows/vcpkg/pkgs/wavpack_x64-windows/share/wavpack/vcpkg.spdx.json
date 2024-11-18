@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/wavpack-x64-windows-5.6.0#1-355a1662-710a-4901-a194-a82596802fb9",
+  "documentNamespace": "https://spdx.org/spdxdocs/wavpack-x64-windows-5.6.0#1-77a29ccb-5c8c-4db0-9c9a-1b34afacdf67",
   "name": "wavpack:x64-windows@5.6.0#1 6110cdd8ddc613cd46ae2ed1c69d7f1dc70d610fb46ae15fe237d85023949491",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
     ],
-    "created": "2024-09-23T07:03:05Z"
+    "created": "2024-11-18T07:12:23Z"
   },
   "relationships": [
     {

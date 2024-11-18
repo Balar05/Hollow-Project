@@ -61,8 +61,8 @@ bool Player::Start() {
 }
 
 bool Player::Update(float dt)
-{
-
+{/*
+	LOG("position: %f", position.getY());*/
 	if (godMode) {
 		lives = 5;
 		dead = false;

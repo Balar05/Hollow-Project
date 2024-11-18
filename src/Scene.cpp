@@ -149,6 +149,14 @@ bool Scene::Update(float dt)
 	if (Engine::GetInstance().render.get()->camera.x > 0) {
 		Engine::GetInstance().render.get()->camera.x = 0;
 	}
+	if (Engine::GetInstance().render.get()->camera.y > 0) {
+		Engine::GetInstance().render.get()->camera.y = 0;
+	}
+	if (Engine::GetInstance().render.get()->camera.y < -2160) {
+		Engine::GetInstance().render.get()->camera.y = -2160;
+		LOG("pedro the goat");
+	}
+	LOG("camera position: %d", Engine::GetInstance().render.get()->camera.y);
 	
 	return true;
 }
