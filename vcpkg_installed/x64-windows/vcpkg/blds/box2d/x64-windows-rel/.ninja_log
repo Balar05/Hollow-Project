@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< Updated upstream
 10	214	7536170632743025	src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.obj	58d222c01cd5254c
 2	255	7536170633155030	src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.obj	13d35eb88c114e0e
 7	261	7536170633165163	src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.obj	8fa2bee289128662
@@ -46,3 +47,52 @@
 661	1119	7536170641896572	src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.obj	ae9d2f93d3a0535e
 1120	1192	7536170642586715	bin/box2d.lib	9179cb22910182da
 1192	1333	0	CMakeFiles/install.util	907b84d8f3dd818
+=======
+56	247	7536181909250354	src/CMakeFiles/box2d.dir/common/b2_math.cpp.obj	178854b921063e11
+48	267	7536181909118775	src/CMakeFiles/box2d.dir/common/b2_block_allocator.cpp.obj	c11dcf771d52ab4
+13	274	7536181909469586	src/CMakeFiles/box2d.dir/collision/b2_collide_circle.cpp.obj	a3dd1dcdb4bac1b6
+21	280	7536181909469586	src/CMakeFiles/box2d.dir/collision/b2_collide_polygon.cpp.obj	8b402f5325632590
+60	285	7536181909469586	src/CMakeFiles/box2d.dir/common/b2_settings.cpp.obj	83f22872ac6bd2f7
+64	291	7536181909625980	src/CMakeFiles/box2d.dir/common/b2_stack_allocator.cpp.obj	1295d73509453ab0
+36	300	7536181909625980	src/CMakeFiles/box2d.dir/collision/b2_edge_shape.cpp.obj	fde5f18a4986ada4
+2	309	7536181909625980	src/CMakeFiles/box2d.dir/collision/b2_broad_phase.cpp.obj	eefd917a18fefba1
+52	316	7536181909625980	src/CMakeFiles/box2d.dir/common/b2_draw.cpp.obj	215ca7246ca09e7e
+44	336	7536181910097444	src/CMakeFiles/box2d.dir/collision/b2_time_of_impact.cpp.obj	d95fc0e7c90a24ec
+6	344	7536181910283167	src/CMakeFiles/box2d.dir/collision/b2_chain_shape.cpp.obj	2cfa0fa91b2484f5
+32	358	7536181910283167	src/CMakeFiles/box2d.dir/collision/b2_dynamic_tree.cpp.obj	6c29f440fb6f47ce
+25	371	7536181910358300	src/CMakeFiles/box2d.dir/collision/b2_collision.cpp.obj	a4168311ba0068d6
+10	377	7536181910569924	src/CMakeFiles/box2d.dir/collision/b2_circle_shape.cpp.obj	6b40e8f2f6fd3f3f
+16	384	7536181910569924	src/CMakeFiles/box2d.dir/collision/b2_collide_edge.cpp.obj	9025ffa9ab1e2259
+29	412	7536181910889208	src/CMakeFiles/box2d.dir/collision/b2_distance.cpp.obj	e3ba77b27bedc985
+40	589	7536181912676177	src/CMakeFiles/box2d.dir/collision/b2_polygon_shape.cpp.obj	749ee5ae05594709
+291	596	7536181912652211	src/CMakeFiles/box2d.dir/dynamics/b2_contact.cpp.obj	7ef3bea2d314d23c
+371	612	7536181912863908	src/CMakeFiles/box2d.dir/dynamics/b2_friction_joint.cpp.obj	6589699dae62b01b
+274	622	7536181912511933	src/CMakeFiles/box2d.dir/dynamics/b2_chain_circle_contact.cpp.obj	ea8ecadeefc78229
+317	629	7536181912863908	src/CMakeFiles/box2d.dir/dynamics/b2_distance_joint.cpp.obj	7d5cf2417cb6dabc
+344	635	7536181912840939	src/CMakeFiles/box2d.dir/dynamics/b2_edge_polygon_contact.cpp.obj	3b62025f9c351115
+301	645	7536181912863908	src/CMakeFiles/box2d.dir/dynamics/b2_contact_manager.cpp.obj	cc3c10274a64fee0
+336	651	7536181913013179	src/CMakeFiles/box2d.dir/dynamics/b2_edge_circle_contact.cpp.obj	79211d6876334d00
+285	657	7536181913055784	src/CMakeFiles/box2d.dir/dynamics/b2_circle_contact.cpp.obj	2a055bdcce088d2c
+280	664	7536181912676177	src/CMakeFiles/box2d.dir/dynamics/b2_chain_polygon_contact.cpp.obj	645e2b39a61682dc
+377	672	7536181913025185	src/CMakeFiles/box2d.dir/dynamics/b2_gear_joint.cpp.obj	ec9150ea6fbb7009
+268	679	7536181913595475	src/CMakeFiles/box2d.dir/dynamics/b2_body.cpp.obj	cf81f1f7802d0a05
+384	735	7536181914216133	src/CMakeFiles/box2d.dir/dynamics/b2_island.cpp.obj	d70502727e2edc9a
+250	853	7536181915161002	src/CMakeFiles/box2d.dir/common/b2_timer.cpp.obj	8c96d4a0ac753697
+596	856	7536181915318594	src/CMakeFiles/box2d.dir/dynamics/b2_mouse_joint.cpp.obj	da99dfe941397b2a
+635	865	7536181915476163	src/CMakeFiles/box2d.dir/dynamics/b2_pulley_joint.cpp.obj	b10ac11698a6de38
+614	865	7536181915476163	src/CMakeFiles/box2d.dir/dynamics/b2_polygon_circle_contact.cpp.obj	bd7f6a5d9ed40d9c
+590	865	7536181915476163	src/CMakeFiles/box2d.dir/dynamics/b2_motor_joint.cpp.obj	de85d7d3e1806c8e
+358	866	7536181915476163	src/CMakeFiles/box2d.dir/dynamics/b2_fixture.cpp.obj	c2e089066c5e33b6
+672	867	7536181915476163	src/CMakeFiles/box2d.dir/dynamics/b2_world_callbacks.cpp.obj	9fba4f21e2edd250
+651	868	7536181915476163	src/CMakeFiles/box2d.dir/dynamics/b2_weld_joint.cpp.obj	16ddbfdabb6d166d
+412	868	7536181915476163	src/CMakeFiles/box2d.dir/dynamics/b2_joint.cpp.obj	6e0e558fa281ad90
+645	873	7536181915652153	src/CMakeFiles/box2d.dir/dynamics/b2_revolute_joint.cpp.obj	f8fb800e11cf3074
+622	899	7536181915900591	src/CMakeFiles/box2d.dir/dynamics/b2_polygon_contact.cpp.obj	619e43c1af9dbac5
+309	917	7536181915976387	src/CMakeFiles/box2d.dir/dynamics/b2_contact_solver.cpp.obj	ef671f3738a29d6c
+629	948	7536181916370751	src/CMakeFiles/box2d.dir/dynamics/b2_prismatic_joint.cpp.obj	474387100a6176df
+657	977	7536181916685887	src/CMakeFiles/box2d.dir/dynamics/b2_wheel_joint.cpp.obj	ac5208fa8f8aa8d9
+679	997	7536181916903453	src/CMakeFiles/box2d.dir/rope/b2_rope.cpp.obj	f60b2e36ae83b952
+665	1057	7536181917433219	src/CMakeFiles/box2d.dir/dynamics/b2_world.cpp.obj	13fd93563e3be35
+1057	1135	7536181918196966	bin/box2d.lib	9179cb22910182da
+1135	1240	0	CMakeFiles/install.util	1199a760ced4c06e
+>>>>>>> Stashed changes

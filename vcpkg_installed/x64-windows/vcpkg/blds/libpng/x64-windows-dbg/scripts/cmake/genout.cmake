@@ -13,18 +13,31 @@
 # SPDX-License-Identifier: libpng-2.0
 
 # Variables substituted from CMakeLists.txt
+<<<<<<< Updated upstream
 set(SRCDIR "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/src/v1.6.43-e957a32120.clean")
 set(BINDIR "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-dbg")
+=======
+set(SRCDIR "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/src/v1.6.43-e957a32120.clean")
+set(BINDIR "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-dbg")
+>>>>>>> Stashed changes
 
 set(AWK "AWK-NOTFOUND")
 set(CMAKE_C_COMPILER "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe")
 set(CMAKE_C_FLAGS  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP )
+<<<<<<< Updated upstream
 set(INCDIR "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-dbg")
+=======
+set(INCDIR "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-dbg")
+>>>>>>> Stashed changes
 set(PNG_PREFIX "")
 set(PNGLIB_MAJOR "1")
 set(PNGLIB_MINOR "6")
 set(PNGLIB_VERSION "1.6.43")
+<<<<<<< Updated upstream
 set(ZLIBINCDIR "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/x64-windows/include")
+=======
+set(ZLIBINCDIR "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/x64-windows/include")
+>>>>>>> Stashed changes
 
 set(PLATFORM_C_FLAGS)
 if(APPLE)

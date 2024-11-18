@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< Updated upstream
 40	237	7536171423934290	CMakeFiles/wavpack.dir/src/pack_floats.c.obj	a9983558bdd68181
 25	247	7536171423965044	CMakeFiles/wavpack.dir/src/open_legacy.c.obj	c3cbac3d5a66544
 3	254	7536171424083914	CMakeFiles/wavpack.dir/src/common_utils.c.obj	bf15d77c0962bdc9
@@ -28,3 +29,34 @@
 807	979	7536171431416751	wavpackdll.dll	4492ef9f7470b935
 807	979	7536171431416751	wavpackdll.lib	4492ef9f7470b935
 979	1067	0	CMakeFiles/install.util	7bce041a0240ef73
+=======
+7	225	7536182724301387	CMakeFiles/wavpack.dir/src/decorr_utils.c.obj	dc37a550a0056f44
+10	236	7536182724364594	CMakeFiles/wavpack.dir/src/entropy_utils.c.obj	dccc888a238d3884
+45	243	7536182724470207	CMakeFiles/wavpack.dir/src/pack_floats.c.obj	d3469ab6097fce8b
+41	384	7536182725903343	CMakeFiles/wavpack.dir/src/pack_dns.c.obj	27cc146e0f7c1b11
+32	390	7536182725780728	CMakeFiles/wavpack.dir/src/open_raw.c.obj	4de525f3ab41637d
+2	397	7536182724915022	CMakeFiles/wavpack.dir/src/common_utils.c.obj	6ed2cf6cfa93a9eb
+60	404	7536182725559668	CMakeFiles/wavpack.dir/src/tag_utils.c.obj	88c1cb641a4a21
+56	411	7536182724915022	CMakeFiles/wavpack.dir/src/tags.c.obj	4cbcb80a06f309b3
+27	420	7536182725397315	CMakeFiles/wavpack.dir/src/open_legacy.c.obj	b52474c72cb140d0
+49	435	7536182726329276	CMakeFiles/wavpack.dir/src/pack_utils.c.obj	4dfc8d51de5145cb
+23	436	7536182726429399	CMakeFiles/wavpack.dir/src/open_filename.c.obj	780a4dfb5255bc12
+12	436	7536182726484550	CMakeFiles/wavpack.dir/src/extra1.c.obj	9d919dfb0ee35f8a
+414	445	7536182726640969	CMakeFiles/wavpack.dir/src/unpack_x64.asm.obj	a36bf61523b481c
+405	447	7536182726640969	CMakeFiles/wavpack.dir/src/pack_x64.asm.obj	aa8f332e386042ea
+19	494	7536182727129327	CMakeFiles/wavpack.dir/src/open_utils.c.obj	8c5b607fe3d9d97e
+236	498	7536182727206349	CMakeFiles/wavpack.dir/src/unpack_seek.c.obj	adde6cfdf2d7240f
+52	508	7536182727321794	CMakeFiles/wavpack.dir/src/read_words.c.obj	5accf228074bc285
+421	591	7536182728062110	CMakeFiles/wavpack.dir/wavpackdll/wavpackdll.rc.res	2665310af1d27f0c
+229	614	7536182728376472	CMakeFiles/wavpack.dir/src/unpack_floats.c.obj	ef4159b947afa3d2
+244	618	7536182728376472	CMakeFiles/wavpack.dir/src/unpack_utils.c.obj	adcefe0105e6af54
+384	635	7536182728532857	CMakeFiles/wavpack.dir/src/write_words.c.obj	12128dbd6e98ccde
+398	662	7536182728850334	CMakeFiles/wavpack.dir/src/unpack_dsd.c.obj	a19f5668fe2e2ee8
+15	679	7536182729065186	CMakeFiles/wavpack.dir/src/extra2.c.obj	6e608d35924c2c9b
+391	684	7536182729104379	CMakeFiles/wavpack.dir/src/pack_dsd.c.obj	1b209d1e4ad73abc
+64	705	7536182729321452	CMakeFiles/wavpack.dir/src/unpack.c.obj	b2c0cf4d7e73d02b
+37	841	7536182730656079	CMakeFiles/wavpack.dir/src/pack.c.obj	347c69becf35d22
+841	1003	7536182732167619	wavpackdll.dll	8ee60970617a6b7c
+841	1003	7536182732167619	wavpackdll.lib	8ee60970617a6b7c
+1004	1096	0	CMakeFiles/install.util	19f306e4a83b77be
+>>>>>>> Stashed changes

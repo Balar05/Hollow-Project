@@ -305,3 +305,9 @@ void Player::takeDamage() {
 		velocity.x = pbody->body->GetLinearVelocity().x;
 	}
 }
+
+Vector2D Player::GetPosition() {
+	b2Vec2 bodyPos = pbody->body->GetTransform().p;
+	Vector2D pos = Vector2D(METERS_TO_PIXELS(bodyPos.x), METERS_TO_PIXELS(bodyPos.y));
+	return pos;
+}

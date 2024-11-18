@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 #line 1 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
 
 
 #line 1 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\resource.h"
+=======
+#line 1 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+
+
+#line 1 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\resource.h"
+>>>>>>> Stashed changes
 
 
 
@@ -16,7 +23,11 @@
 
 
 
+<<<<<<< Updated upstream
 #line 4 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+=======
+#line 4 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+>>>>>>> Stashed changes
 
 
 
@@ -8792,7 +8803,11 @@
 #line 42 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winresrc.h"
 
 #line 44 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winresrc.h"
+<<<<<<< Updated upstream
 #line 11 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+=======
+#line 11 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+>>>>>>> Stashed changes
 
 
 
@@ -8804,7 +8819,11 @@
 
 LANGUAGE 0x09, 0x01
 #pragma code_page(1252)
+<<<<<<< Updated upstream
 #line 23 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+=======
+#line 23 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+>>>>>>> Stashed changes
 
 
 
@@ -8845,7 +8864,11 @@ LANGUAGE 0x09, 0x01
 
 
  FILEFLAGS 0x0L
+<<<<<<< Updated upstream
 #line 64 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+=======
+#line 64 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+>>>>>>> Stashed changes
  FILEOS 0x4L
  FILETYPE 0x2L
  FILESUBTYPE 0x0L
@@ -8870,7 +8893,11 @@ BEGIN
     END
 END
 
+<<<<<<< Updated upstream
 #line 89 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+=======
+#line 89 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+>>>>>>> Stashed changes
 
 
 
@@ -8883,5 +8910,9 @@ END
 
 
 
+<<<<<<< Updated upstream
 #line 102 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+=======
+#line 102 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\wavpack\\src\\5.6.0-d46202430d.clean\\wavpackdll\\wavpackdll.rc"
+>>>>>>> Stashed changes
 

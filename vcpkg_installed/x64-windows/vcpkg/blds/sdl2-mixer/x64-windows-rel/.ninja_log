@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< Updated upstream
 16	104	7536171689189876	CMakeFiles/SDL2_mixer.dir/src/codecs/music_drflac.c.obj	af1b6f1e7c6de4eb
 23	112	7536171689189876	CMakeFiles/SDL2_mixer.dir/src/codecs/music_fluidsynth.c.obj	55b99e10ad630c0c
 36	118	7536171689289978	CMakeFiles/SDL2_mixer.dir/src/codecs/music_modplug.c.obj	e0f906f19b7d7a8c
@@ -28,3 +29,34 @@
 404	543	7536171693486282	SDL2_mixer.dll	c967c72d1cd2d6ef
 404	543	7536171693486282	SDL2_mixer.lib	c967c72d1cd2d6ef
 543	667	0	CMakeFiles/install.util	19d557cd16c29e41
+=======
+23	116	7536182993986614	CMakeFiles/SDL2_mixer.dir/src/codecs/music_flac.c.obj	71736da842b48390
+49	124	7536182994116712	CMakeFiles/SDL2_mixer.dir/src/codecs/music_nativemidi.c.obj	877fe9ce73d4f34d
+33	129	7536182994116712	CMakeFiles/SDL2_mixer.dir/src/codecs/music_gme.c.obj	d90e16dbc02daac8
+41	135	7536182994116712	CMakeFiles/SDL2_mixer.dir/src/codecs/music_modplug.c.obj	b44578fb8fcec3b1
+45	139	7536182994275694	CMakeFiles/SDL2_mixer.dir/src/codecs/music_mpg123.c.obj	cb14f2a15d1c931d
+18	143	7536182994275694	CMakeFiles/SDL2_mixer.dir/src/codecs/music_drflac.c.obj	48ed5eb31846d896
+27	147	7536182994275694	CMakeFiles/SDL2_mixer.dir/src/codecs/music_fluidsynth.c.obj	1f8868de1de26647
+37	152	7536182994287466	CMakeFiles/SDL2_mixer.dir/src/codecs/music_minimp3.c.obj	b5d58f7a7fe1b8a9
+58	158	7536182994287466	CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg_stb.c.obj	2a767ee8fc8ef934
+62	169	7536182994390963	CMakeFiles/SDL2_mixer.dir/src/codecs/music_opus.c.obj	e2103c41bdb85374
+67	170	7536182994414258	CMakeFiles/SDL2_mixer.dir/src/codecs/music_timidity.c.obj	c74136e54961c812
+124	186	7536182994756920	CMakeFiles/SDL2_mixer.dir/src/codecs/music_xmp.c.obj	a3a24b1629092897
+13	187	7536182994852062	CMakeFiles/SDL2_mixer.dir/src/codecs/music_cmd.c.obj	52dc0a516772b1ef
+152	257	7536182995541579	CMakeFiles/SDL2_mixer.dir/src/utils.c.obj	647f52de76ec8ddb
+2	293	7536182995880607	CMakeFiles/SDL2_mixer.dir/src/codecs/load_aiff.c.obj	d54dd60ee915001a
+6	305	7536182995880607	CMakeFiles/SDL2_mixer.dir/src/codecs/load_voc.c.obj	be4358523c5f4e5a
+53	342	7536182996172219	CMakeFiles/SDL2_mixer.dir/src/codecs/music_ogg.c.obj	d9ee83c863fe4ec7
+158	343	7536182996015864	CMakeFiles/SDL2_mixer.dir/version.rc.res	ae4756c5b3de97ad
+135	345	7536182996172219	CMakeFiles/SDL2_mixer.dir/src/effect_stereoreverse.c.obj	68e0fcc7f190893b
+139	345	7536182996172219	CMakeFiles/SDL2_mixer.dir/src/effects_internal.c.obj	101dfccde9001158
+118	346	7536182996172219	CMakeFiles/SDL2_mixer.dir/src/codecs/music_wavpack.c.obj	3021ef2c0f547728
+72	351	7536182996430481	CMakeFiles/SDL2_mixer.dir/src/codecs/music_wav.c.obj	d91fd0115ab49a92
+9	365	7536182996485594	CMakeFiles/SDL2_mixer.dir/src/codecs/mp3utils.c.obj	1bf48defbeabbbf7
+129	373	7536182996709103	CMakeFiles/SDL2_mixer.dir/src/effect_position.c.obj	eb0b6c539acb7775
+147	381	7536182996788186	CMakeFiles/SDL2_mixer.dir/src/music.c.obj	84cda6345f97fd47
+143	411	7536182996958592	CMakeFiles/SDL2_mixer.dir/src/mixer.c.obj	388347df95dfe051
+411	570	7536182998546724	SDL2_mixer.dll	efc42b565ce5c3f5
+411	570	7536182998546724	SDL2_mixer.lib	efc42b565ce5c3f5
+570	680	0	CMakeFiles/install.util	c653445648f3baaf
+>>>>>>> Stashed changes

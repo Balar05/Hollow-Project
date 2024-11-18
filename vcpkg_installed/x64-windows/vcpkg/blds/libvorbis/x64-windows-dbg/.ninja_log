@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< Updated upstream
 22	148	7536171599796146	lib/CMakeFiles/vorbis.dir/lsp.c.obj	13934218abd24959
 34	155	7536171599796146	lib/CMakeFiles/vorbis.dir/synthesis.c.obj	8f89ca49a43dc4ff
 63	162	7536171599856253	lib/CMakeFiles/vorbis.dir/registry.c.obj	84aecbc23042ac9a
@@ -29,3 +30,35 @@
 815	1097	7536171609182620	lib/vorbisenc.dll	8da75112090e2181
 815	1097	7536171609182620	lib/vorbisenc.lib	8da75112090e2181
 1097	1305	0	CMakeFiles/install.util	90cbe8d83d7dfc21
+=======
+65	196	7536182896561651	lib/CMakeFiles/vorbis.dir/registry.c.obj	c3f238e4163e8c63
+54	215	7536182896718985	lib/CMakeFiles/vorbis.dir/res0.c.obj	1fefa305cdc30fc0
+33	221	7536182896718985	lib/CMakeFiles/vorbis.dir/synthesis.c.obj	44fea0d52e2e91cc
+26	225	7536182896718985	lib/CMakeFiles/vorbis.dir/lpc.c.obj	e8fc71bb28c931b
+14	229	7536182896718985	lib/CMakeFiles/vorbis.dir/envelope.c.obj	55bd68059b55c19
+41	236	7536182896797540	lib/CMakeFiles/vorbis.dir/info.c.obj	589b00171846674e
+17	241	7536182896561651	lib/CMakeFiles/vorbis.dir/window.c.obj	a70f1be5f95ec81f
+30	241	7536182896797540	lib/CMakeFiles/vorbis.dir/analysis.c.obj	13e047f486e8842a
+7	242	7536182896718985	lib/CMakeFiles/vorbis.dir/smallft.c.obj	68ba90c2c6c91f36
+21	242	7536182896718985	lib/CMakeFiles/vorbis.dir/lsp.c.obj	c0fe905803bd2097
+2	243	7536182896797540	lib/CMakeFiles/vorbis.dir/mdct.c.obj	abcb194f26588963
+50	243	7536182896941666	lib/CMakeFiles/vorbis.dir/floor0.c.obj	ea5358001ad6d0d4
+46	244	7536182896941666	lib/CMakeFiles/vorbis.dir/floor1.c.obj	48ba6ede4b1a0f65
+11	244	7536182896941666	lib/CMakeFiles/vorbis.dir/block.c.obj	4c9b98ea0fcc9345
+37	244	7536182897038135	lib/CMakeFiles/vorbis.dir/psy.c.obj	a40e5e8ea831df01
+60	288	7536182897664611	lib/CMakeFiles/vorbis.dir/mapping0.c.obj	e1d47d8e987ab5dd
+215	290	7536182897705942	lib/CMakeFiles/vorbis.dir/lookup.c.obj	4e0d85b6b769ec19
+70	292	7536182897725569	lib/CMakeFiles/vorbis.dir/codebook.c.obj	9c600ce6527f6b03
+209	312	7536182897848781	lib/CMakeFiles/vorbis.dir/sharedbook.c.obj	401939832fb7ebe2
+221	312	7536182897911623	lib/CMakeFiles/vorbis.dir/bitrate.c.obj	978a09286eea2b93
+236	346	7536182898193304	lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.obj	1c8b51cc9046abd3
+225	607	7536182900843044	lib/CMakeFiles/vorbis.dir/vorbisenc.c.obj	84d6f681dd3a19db
+229	627	7536182900843044	lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.obj	ca1015901b0dda72
+608	900	7536182903595305	lib/vorbis.dll	1bfb133d652b9e7a
+608	900	7536182903595305	lib/vorbis.lib	1bfb133d652b9e7a
+912	1172	7536182906312578	lib/vorbisfile.dll	f430b725ec282c9f
+912	1172	7536182906312578	lib/vorbisfile.lib	f430b725ec282c9f
+900	1173	7536182906312578	lib/vorbisenc.dll	4cab2b349e8657ce
+900	1173	7536182906312578	lib/vorbisenc.lib	4cab2b349e8657ce
+1173	1380	0	CMakeFiles/install.util	c55ab0d91890e996
+>>>>>>> Stashed changes

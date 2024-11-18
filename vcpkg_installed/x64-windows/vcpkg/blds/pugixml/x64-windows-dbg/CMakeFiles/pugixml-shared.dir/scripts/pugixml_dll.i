@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 #line 1 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+=======
+#line 1 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+>>>>>>> Stashed changes
 #line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winver.h"
 #line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\shared\\winapifamily.h"
 
@@ -5779,7 +5783,11 @@
 
 #line 257 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winver.h"
 
+<<<<<<< Updated upstream
 #line 2 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+=======
+#line 2 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+>>>>>>> Stashed changes
 
 
 
@@ -5788,9 +5796,15 @@
 
 
 
+<<<<<<< Updated upstream
 #line 11 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
 1		VERSIONINFO	MOVEABLE IMPURE LOADONCALL DISCARDABLE
 #line 13 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+=======
+#line 11 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+1		VERSIONINFO	MOVEABLE IMPURE LOADONCALL DISCARDABLE
+#line 13 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+>>>>>>> Stashed changes
   FILEVERSION		1,14,0,0
   PRODUCTVERSION	1,14,0,0
   FILEFLAGSMASK		0x0000003FL
@@ -5798,7 +5812,11 @@
   FILEFLAGS		1
 
 
+<<<<<<< Updated upstream
 #line 21 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+=======
+#line 21 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\pugixml\\src\\v1.14-3215fd4dab.clean\\scripts\\pugixml_dll.rc"
+>>>>>>> Stashed changes
   FILEOS		0x00000004L
   FILETYPE		0x00000002L
   FILESUBTYPE		0	

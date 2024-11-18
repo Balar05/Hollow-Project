@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< Updated upstream
 5	117	7536171271490638	CMakeFiles/SDL2_image.dir/src/IMG_WIC.c.obj	7cf99ac3db50b1f7
 26	249	7536171272744568	CMakeFiles/SDL2_image.dir/src/IMG_lbm.c.obj	dc1c4b3b2780c6b7
 38	255	7536171272603492	CMakeFiles/SDL2_image.dir/src/IMG_pnm.c.obj	b1c134835039e858
@@ -23,3 +24,29 @@
 379	677	7536171276873872	SDL2_imaged.dll	617f8d096052dc5
 379	677	7536171276873872	SDL2_imaged.lib	617f8d096052dc5
 677	823	0	CMakeFiles/install.util	4402e96f5de8c5cd
+=======
+6	111	7536182568188999	CMakeFiles/SDL2_image.dir/src/IMG_WIC.c.obj	650d2299f09f3938
+50	239	7536182569662343	CMakeFiles/SDL2_image.dir/src/IMG_stb.c.obj	921aafbd320d67f3
+25	247	7536182569752476	CMakeFiles/SDL2_image.dir/src/IMG_jxl.c.obj	a8779ddf4a6d3bf7
+3	253	7536182569752476	CMakeFiles/SDL2_image.dir/src/IMG.c.obj	2fe1d46a1281ba60
+20	263	7536182569752476	CMakeFiles/SDL2_image.dir/src/IMG_jpg.c.obj	981fbb6ee07fabdb
+41	264	7536182569784009	CMakeFiles/SDL2_image.dir/src/IMG_pnm.c.obj	e3b60eecc807639e
+46	265	7536182569832794	CMakeFiles/SDL2_image.dir/src/IMG_qoi.c.obj	5e766704951cb303
+13	265	7536182569768948	CMakeFiles/SDL2_image.dir/src/IMG_bmp.c.obj	c4139432d1879973
+17	266	7536182569832794	CMakeFiles/SDL2_image.dir/src/IMG_gif.c.obj	96ef4a6513f819fc
+9	266	7536182569870498	CMakeFiles/SDL2_image.dir/src/IMG_avif.c.obj	c737f137c4664aa6
+33	267	7536182569894206	CMakeFiles/SDL2_image.dir/src/IMG_pcx.c.obj	703fb810df9595f8
+55	274	7536182570027495	CMakeFiles/SDL2_image.dir/src/IMG_svg.c.obj	9a23ee4fad62416c
+37	292	7536182570177211	CMakeFiles/SDL2_image.dir/src/IMG_png.c.obj	2bdb1579dbc44f5b
+29	294	7536182570253424	CMakeFiles/SDL2_image.dir/src/IMG_lbm.c.obj	ba2010949e5ab07b
+62	295	7536182570253424	CMakeFiles/SDL2_image.dir/src/IMG_tif.c.obj	ebcc702212731109
+67	296	7536182570278116	CMakeFiles/SDL2_image.dir/src/IMG_webp.c.obj	d856a0abc1e4eed8
+58	324	7536182570553806	CMakeFiles/SDL2_image.dir/src/IMG_tga.c.obj	cca1c8c9aa19ccf3
+113	327	7536182570586284	CMakeFiles/SDL2_image.dir/src/IMG_xcf.c.obj	4029f2a93916c43e
+253	341	7536182570713899	CMakeFiles/SDL2_image.dir/src/version.rc.res	df9a6e16491fa50e
+240	373	7536182571048114	CMakeFiles/SDL2_image.dir/src/IMG_xpm.c.obj	2f8e1fbcfff710c7
+247	381	7536182571125674	CMakeFiles/SDL2_image.dir/src/IMG_xv.c.obj	23fd2cbe60824e80
+381	670	7536182573847208	SDL2_imaged.dll	4095ffc8badcf0bf
+381	670	7536182573847208	SDL2_imaged.lib	4095ffc8badcf0bf
+670	814	0	CMakeFiles/install.util	abac540673e4e95b
+>>>>>>> Stashed changes

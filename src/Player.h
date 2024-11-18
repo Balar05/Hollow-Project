@@ -34,6 +34,8 @@ public:
 
 	void takeDamage();
 
+	Vector2D GetPosition();
+
 public:
 
 	//Declare player parameters

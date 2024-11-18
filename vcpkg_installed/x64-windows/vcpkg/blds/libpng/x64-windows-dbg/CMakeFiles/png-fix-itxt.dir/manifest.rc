@@ -1,2 +1,6 @@
 #pragma code_page(65001)
+<<<<<<< Updated upstream
 1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-dbg/CMakeFiles/png-fix-itxt.dir/embed.manifest"
+=======
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-dbg/CMakeFiles/png-fix-itxt.dir/embed.manifest"
+>>>>>>> Stashed changes

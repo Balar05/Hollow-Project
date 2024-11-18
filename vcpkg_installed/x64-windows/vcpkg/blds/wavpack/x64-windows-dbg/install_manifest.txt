@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/lib/wavpackdll.lib
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/bin/wavpackdll.dll
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/include/wavpack/wavpack.h
@@ -5,3 +6,12 @@ C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vc
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/cmake/wavpack-config-debug.cmake
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/cmake/wavpack-config-version.cmake
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/lib/pkgconfig/wavpack.pc
+=======
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/lib/wavpackdll.lib
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/bin/wavpackdll.dll
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/include/wavpack/wavpack.h
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/cmake/wavpack-config.cmake
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/cmake/wavpack-config-debug.cmake
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/cmake/wavpack-config-version.cmake
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug/lib/pkgconfig/wavpack.pc
+>>>>>>> Stashed changes

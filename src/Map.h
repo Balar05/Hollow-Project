@@ -4,6 +4,12 @@
 #include <list>
 #include <vector>
 
+enum MapOrientation
+{
+    ORTOGRAPHIC = 0,
+    ISOMETRIC
+};
+
 struct Properties
 {
     struct Property
@@ -80,6 +86,8 @@ struct MapData
     std::list<TileSet*> tilesets;
 
     std::list<MapLayer*> layers;
+
+    MapOrientation orientation;
 };
 
 class Map : public Module
@@ -108,9 +116,29 @@ public:
 
     Vector2D MapToWorld(int x, int y) const;
 
+    Vector2D WorldToMap(int x, int y);
+
     TileSet* GetTilesetFromTileId(int gid) const;
 
     bool LoadProperties(pugi::xml_node& node, Properties& properties);
+
+    int GetWidth() {
+        return mapData.width;
+    }
+
+    int GetHeight() {
+        return mapData.height;
+    }
+
+    int GetTileWidth() {
+        return mapData.tileWidth;
+    }
+
+    int GetTileHeight() {
+        return mapData.tileHeight;
+    }
+
+    MapLayer* GetNavigationLayer();
 
 public: 
     std::string mapFileName;

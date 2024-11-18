@@ -1,6 +1,14 @@
 # ninja log v5
+<<<<<<< Updated upstream
 2	133	7536170681256005	CMakeFiles/pugixml-shared.dir/scripts/pugixml_dll.rc.res	bbcd6a8faf721187
 64	571	7536170685583043	CMakeFiles/pugixml-shared.dir/src/pugixml.cpp.obj	6fa9ba50e46c9196
 571	791	7536170687716108	pugixml.dll	f5dd5d1ac41f3988
 571	791	7536170687716108	pugixml.lib	f5dd5d1ac41f3988
 791	926	0	CMakeFiles/install.util	493ea8a45b1fcd03
+=======
+2	130	7536181959205245	CMakeFiles/pugixml-shared.dir/scripts/pugixml_dll.rc.res	291dc311937e4d18
+69	532	7536181963245536	CMakeFiles/pugixml-shared.dir/src/pugixml.cpp.obj	e776f00231a74088
+532	756	7536181965309609	pugixml.dll	c394661bc13dbec3
+532	756	7536181965309609	pugixml.lib	c394661bc13dbec3
+756	884	0	CMakeFiles/install.util	49fb8bdf297aacc4
+>>>>>>> Stashed changes

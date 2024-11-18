@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 prefix=C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows
+=======
+prefix=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows
+>>>>>>> Stashed changes
 exec_prefix=${prefix}
 libdir=${prefix}/lib
 includedir=${prefix}/include

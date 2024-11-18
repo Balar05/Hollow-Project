@@ -1,9 +1,16 @@
 # libvorbisfile pkg-config source file
 
+<<<<<<< Updated upstream
 prefix=C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows
 exec_prefix=C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/bin
 libdir=C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/lib
 includedir=C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/include
+=======
+prefix=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows
+exec_prefix=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/bin
+libdir=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/lib
+includedir=C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libvorbis_x64-windows/include
+>>>>>>> Stashed changes
 
 Name: vorbisfile
 Description: vorbisfile is a library that provides a convenient high-level API for decoding and basic manipulation of all Vorbis I audio streams

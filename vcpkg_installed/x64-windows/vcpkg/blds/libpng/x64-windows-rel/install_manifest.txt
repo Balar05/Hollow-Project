@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/libpng16.lib
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/bin/libpng16.dll
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/include/png.h
@@ -10,3 +11,17 @@ C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vc
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/libpng/libpng16.cmake
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/libpng/libpng16-release.cmake
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/libpng/libpng-config.cmake
+=======
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/libpng16.lib
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/bin/libpng16.dll
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/include/png.h
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/include/pngconf.h
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/include/pnglibconf.h
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/include/libpng16/png.h
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/include/libpng16/pngconf.h
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/include/libpng16/pnglibconf.h
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/pkgconfig/libpng16.pc
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/libpng/libpng16.cmake
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/libpng/libpng16-release.cmake
+C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/libpng_x64-windows/lib/libpng/libpng-config.cmake
+>>>>>>> Stashed changes

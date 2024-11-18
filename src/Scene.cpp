@@ -154,9 +154,7 @@ bool Scene::Update(float dt)
 	}
 	if (Engine::GetInstance().render.get()->camera.y < -2160) {
 		Engine::GetInstance().render.get()->camera.y = -2160;
-		LOG("pedro the goat");
 	}
-	LOG("camera position: %d", Engine::GetInstance().render.get()->camera.y);
 	
 	return true;
 }
@@ -180,4 +178,9 @@ bool Scene::CleanUp()
 	SDL_DestroyTexture(img);
 
 	return true;
+}
+
+Vector2D Scene::GetPlayerPosition()
+{
+	return player->GetPosition();
 }

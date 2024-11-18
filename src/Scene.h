@@ -36,6 +36,8 @@ public:
 
 	int EnterHallownest;
 
+	Vector2D GetPlayerPosition();
+
 
 private:
 	SDL_Texture* img;

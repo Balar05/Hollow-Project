@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 #line 1 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2-image\\src\\ease-2.8.2-89b2ee6bc2.clean\\src\\version.rc"
+=======
+#line 1 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2-image\\src\\ease-2.8.2-89b2ee6bc2.clean\\src\\version.rc"
+>>>>>>> Stashed changes
 
 #line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winresrc.h"
 
@@ -8769,7 +8773,11 @@
 #line 42 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winresrc.h"
 
 #line 44 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winresrc.h"
+<<<<<<< Updated upstream
 #line 3 "C:\\Users\\martimv2\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2-image\\src\\ease-2.8.2-89b2ee6bc2.clean\\src\\version.rc"
+=======
+#line 3 "C:\\Users\\arnaubl1\\Documents\\GitHub\\Hollow-Project\\vcpkg_installed\\x64-windows\\vcpkg\\blds\\sdl2-image\\src\\ease-2.8.2-89b2ee6bc2.clean\\src\\version.rc"
+>>>>>>> Stashed changes
 
 LANGUAGE 0x09, 0x01
 

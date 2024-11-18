@@ -3,13 +3,21 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
+<<<<<<< Updated upstream
   "documentNamespace": "https://spdx.org/spdxdocs/pugixml-x64-windows-1.14-049967a4-1213-4159-87bf-46d6226f05ed",
+=======
+  "documentNamespace": "https://spdx.org/spdxdocs/pugixml-x64-windows-1.14-e098b30a-2f30-41c9-8a29-b84c593d6e51",
+>>>>>>> Stashed changes
   "name": "pugixml:x64-windows@1.14 8a74584c25c1a689a53c01a2e5376a0c02d609164e32a09bb142990db4f618fa",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
     ],
+<<<<<<< Updated upstream
     "created": "2024-11-18T07:11:13Z"
+=======
+    "created": "2024-11-18T07:30:01Z"
+>>>>>>> Stashed changes
   },
   "relationships": [
     {
@@ -83,7 +91,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/6e38344aea6e7529afde3895e0885ed5cb0c0542/portfile.cmake",
+      "fileName": "./C:/Users/arnaubl1/AppData/Local/vcpkg/registries/git-trees/6e38344aea6e7529afde3895e0885ed5cb0c0542/portfile.cmake",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -95,7 +103,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/6e38344aea6e7529afde3895e0885ed5cb0c0542/vcpkg.json",
+      "fileName": "./C:/Users/arnaubl1/AppData/Local/vcpkg/registries/git-trees/6e38344aea6e7529afde3895e0885ed5cb0c0542/vcpkg.json",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
