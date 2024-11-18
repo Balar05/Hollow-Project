@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 # Install script for directory: C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-rel/CMakeFiles/CheckASM
-=======
-# Install script for directory: C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-rel/CMakeFiles/CheckASM
->>>>>>> Stashed changes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< Updated upstream
 file(WRITE "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-rel/CMakeFiles/CheckASM/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-rel/CMakeFiles/CheckASM/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> Stashed changes
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

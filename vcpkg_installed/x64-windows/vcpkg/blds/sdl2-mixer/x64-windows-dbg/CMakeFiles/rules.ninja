@@ -32,11 +32,7 @@ rule C_COMPILER__SDL2_mixer_unscanned_Debug
 rule RC_COMPILER__SDL2_mixer_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-<<<<<<< Updated upstream
   command = C:/Users/martimv2/AppData/Local/vcpkg/DOWNLO~1/tools/CMAKE-~1.1-W/CMAKE-~1.1-W/bin/cmcldeps.exe RC $in $DEP_FILE $out "Nota: inclusión del archivo: " "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe" ${LAUNCHER}${CODE_CHECK}C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe $DEFINES $INCLUDES $FLAGS /fo $out $in
-=======
-  command = C:/Users/arnaubl1/AppData/Local/vcpkg/DOWNLO~1/tools/CMAKE-~1.1-W/CMAKE-~1.1-W/bin/cmcldeps.exe RC $in $DEP_FILE $out "Nota: inclusión del archivo: " "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe" ${LAUNCHER}${CODE_CHECK}C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe $DEFINES $INCLUDES $FLAGS /fo $out $in
->>>>>>> Stashed changes
   description = Building RC object $out
 
 
@@ -44,11 +40,7 @@ rule RC_COMPILER__SDL2_mixer_unscanned_Debug
 # Rule for linking C shared library.
 
 rule C_SHARED_LIBRARY_LINKER__SDL2_mixer_Debug
-<<<<<<< Updated upstream
   command = cmd.exe /C "$PRE_LINK && C:\Users\martimv2\AppData\Local\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -E vs_link_dll --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~4\2022\COMMUN~1\VC\Tools\MSVC\1440~1.338\bin\Hostx64\x64\link.exe  $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /dll /version:0.800 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES  && $POST_BUILD"
-=======
-  command = cmd.exe /C "$PRE_LINK && C:\Users\arnaubl1\AppData\Local\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe -E vs_link_dll --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~4\2022\COMMUN~1\VC\Tools\MSVC\1440~1.338\bin\Hostx64\x64\link.exe  $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /dll /version:0.800 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES  && $POST_BUILD"
->>>>>>> Stashed changes
   description = Linking C shared library $TARGET_FILE
   restat = $RESTAT
 
@@ -65,11 +57,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-<<<<<<< Updated upstream
   command = C:\Users\martimv2\AppData\Local\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe --regenerate-during-build -SC:\Users\martimv2\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\sdl2-mixer\src\ease-2.8.0-5d1a2b7a04.clean -BC:\Users\martimv2\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\sdl2-mixer\x64-windows-dbg
-=======
-  command = C:\Users\arnaubl1\AppData\Local\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe --regenerate-during-build -SC:\Users\arnaubl1\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\sdl2-mixer\src\ease-2.8.0-5d1a2b7a04.clean -BC:\Users\arnaubl1\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\sdl2-mixer\x64-windows-dbg
->>>>>>> Stashed changes
   description = Re-running CMake...
   generator = 1
 

@@ -1,8 +1,3 @@
 # ninja log v5
-<<<<<<< Updated upstream
-8	1956	7536170616041941	../CMakeCache.txt	6f6710ded3fb5574
-12	1957	7536170616036891	../../x64-windows-dbg/CMakeCache.txt	904d54f37e42198f
-=======
-14	1798	7536181894360933	../../x64-windows-dbg/CMakeCache.txt	8b0b37a10e11afd
-9	1798	7536181894360933	../CMakeCache.txt	9a5ad01b77074cdf
->>>>>>> Stashed changes
+14	2702	7536249294487970	../../x64-windows-dbg/CMakeCache.txt	904d54f37e42198f
+9	2703	7536249294487970	../CMakeCache.txt	6f6710ded3fb5574

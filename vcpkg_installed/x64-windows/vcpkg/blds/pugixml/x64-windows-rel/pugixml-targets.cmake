@@ -62,23 +62,14 @@ add_library(pugixml::shared SHARED IMPORTED)
 
 set_target_properties(pugixml::shared PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "\$<\$<BOOL:OFF>:PUGIXML_WCHAR_MODE>;\$<\$<BOOL:OFF>:PUGIXML_COMPACT>;\$<\$<BOOL:OFF>:PUGIXML_NO_XPATH>;\$<\$<BOOL:OFF>:PUGIXML_NO_STL>;\$<\$<BOOL:OFF>:PUGIXML_NO_EXCEPTIONS>"
-<<<<<<< Updated upstream
   INTERFACE_INCLUDE_DIRECTORIES "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/pugixml/src/v1.14-3215fd4dab.clean/src"
-=======
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/pugixml/src/v1.14-3215fd4dab.clean/src"
->>>>>>> Stashed changes
 )
 
 # Import target "pugixml::shared" for configuration "Release"
 set_property(TARGET pugixml::shared APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(pugixml::shared PROPERTIES
-<<<<<<< Updated upstream
   IMPORTED_IMPLIB_RELEASE "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/pugixml/x64-windows-rel/pugixml.lib"
   IMPORTED_LOCATION_RELEASE "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/pugixml/x64-windows-rel/pugixml.dll"
-=======
-  IMPORTED_IMPLIB_RELEASE "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/pugixml/x64-windows-rel/pugixml.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/pugixml/x64-windows-rel/pugixml.dll"
->>>>>>> Stashed changes
   )
 
 # This file does not depend on other imported targets which have

@@ -102,6 +102,17 @@
 					</damageLeft>
 				</animations>
 			</player>
+			<enemy x="100" y="800" w="32" h ="32" texture="Assets/Textures/Bat.png">
+				<animations>
+					<idleRight loop="true" speed ="0.1">
+						<frame x="0" y="0" w="32" h="32"/>
+						<frame x="32" y="0" w="32" h="32"/>
+						<frame x="64" y="0" w="32" h="32"/>
+						<frame x="96" y="0" w="32" h="32"/>
+					</idleRight>
+				</animations>
+				
+			</enemy>
 			<fire w ="32" h="32" texture="Assets/Textures/Fire.png">
 				<animations>
 					<fire loop ="true" speed ="0.1">

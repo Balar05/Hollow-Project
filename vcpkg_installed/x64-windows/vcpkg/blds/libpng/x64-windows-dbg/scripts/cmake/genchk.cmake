@@ -13,13 +13,8 @@
 # SPDX-License-Identifier: libpng-2.0
 
 # Variables substituted from CMakeLists.txt
-<<<<<<< Updated upstream
 set(SRCDIR "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/src/v1.6.43-e957a32120.clean")
 set(BINDIR "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-dbg")
-=======
-set(SRCDIR "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/src/v1.6.43-e957a32120.clean")
-set(BINDIR "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libpng/x64-windows-dbg")
->>>>>>> Stashed changes
 
 set(AWK "AWK-NOTFOUND")
 

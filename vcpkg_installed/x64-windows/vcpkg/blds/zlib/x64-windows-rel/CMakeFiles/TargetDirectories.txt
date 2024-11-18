@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/zlib.dir
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/test.dir
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/edit_cache.dir
@@ -6,12 +5,3 @@ C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vc
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/list_install_components.dir
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/install.dir
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/install/local.dir
-=======
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/zlib.dir
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/test.dir
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/edit_cache.dir
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/rebuild_cache.dir
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/list_install_components.dir
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/install.dir
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/zlib/x64-windows-rel/CMakeFiles/install/local.dir
->>>>>>> Stashed changes

@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/SDL2_mixer.lib
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/bin/SDL2_mixer.dll
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/include/SDL2/SDL_mixer.h
@@ -8,14 +7,3 @@ C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vc
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/cmake/SDL2_mixer/SDL2_mixer-shared-targets-release.cmake
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/pkgconfig/SDL2_mixer.pc
 C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/share/licenses/SDL2_mixer/LICENSE.txt
-=======
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/SDL2_mixer.lib
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/bin/SDL2_mixer.dll
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/include/SDL2/SDL_mixer.h
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/cmake/SDL2_mixer/SDL2_mixerConfig.cmake
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/cmake/SDL2_mixer/SDL2_mixerConfigVersion.cmake
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/cmake/SDL2_mixer/SDL2_mixer-shared-targets.cmake
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/cmake/SDL2_mixer/SDL2_mixer-shared-targets-release.cmake
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/lib/pkgconfig/SDL2_mixer.pc
-C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/sdl2-mixer_x64-windows/share/licenses/SDL2_mixer/LICENSE.txt
->>>>>>> Stashed changes

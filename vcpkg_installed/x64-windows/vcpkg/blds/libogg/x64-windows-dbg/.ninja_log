@@ -1,14 +1,6 @@
 # ninja log v5
-<<<<<<< Updated upstream
-2	58	7536171551572240	CMakeFiles/ogg.dir/src/bitwise.c.obj	871de2f487cb2024
-7	61	7536171551601368	CMakeFiles/ogg.dir/src/framing.c.obj	4be86baa2bdc8f8d
-62	310	7536171553932148	ogg.dll	344ef0439bab5100
-62	310	7536171553932148	ogg.lib	344ef0439bab5100
-310	418	0	CMakeFiles/install.util	20bc814a1d1122ac
-=======
-2	53	7536182848154523	CMakeFiles/ogg.dir/src/bitwise.c.obj	390d3666310ee6d5
-6	60	7536182848222391	CMakeFiles/ogg.dir/src/framing.c.obj	3ac699dc3c7630f6
-60	315	7536182850544125	ogg.dll	605f2c830dad75e3
-60	315	7536182850544125	ogg.lib	605f2c830dad75e3
-315	429	0	CMakeFiles/install.util	c8154fa431306c4e
->>>>>>> Stashed changes
+2	61	7536250348532791	CMakeFiles/ogg.dir/src/bitwise.c.obj	871de2f487cb2024
+5	65	7536250348617079	CMakeFiles/ogg.dir/src/framing.c.obj	4be86baa2bdc8f8d
+65	375	7536250351537887	ogg.dll	344ef0439bab5100
+65	375	7536250351537887	ogg.lib	344ef0439bab5100
+376	516	0	CMakeFiles/install.util	20bc814a1d1122ac

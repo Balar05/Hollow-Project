@@ -17,50 +17,29 @@ set(CPACK_BINARY_NSIS "ON")
 set(CPACK_BINARY_NUGET "OFF")
 set(CPACK_BINARY_WIX "OFF")
 set(CPACK_BINARY_ZIP "OFF")
-<<<<<<< Updated upstream
 set(CPACK_BUILD_SOURCE_DIRS "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/src/5.6.0-d46202430d.clean;C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-dbg")
-=======
-set(CPACK_BUILD_SOURCE_DIRS "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/src/5.6.0-d46202430d.clean;C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-dbg")
->>>>>>> Stashed changes
 set(CPACK_CMAKE_GENERATOR "Ninja")
 set(CPACK_COMPONENTS_ALL "")
 set(CPACK_COMPONENT_UNSPECIFIED_HIDDEN "TRUE")
 set(CPACK_COMPONENT_UNSPECIFIED_REQUIRED "TRUE")
-<<<<<<< Updated upstream
 set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_FILE "C:/Users/martimv2/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericDescription.txt")
-=======
-set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_FILE "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericDescription.txt")
->>>>>>> Stashed changes
 set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_SUMMARY "WavPack built using CMake")
 set(CPACK_GENERATOR "7Z;ZIP")
 set(CPACK_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#")
 set(CPACK_INNOSETUP_ARCHITECTURE "x64")
-<<<<<<< Updated upstream
 set(CPACK_INSTALLED_DIRECTORIES "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/src/5.6.0-d46202430d.clean;/")
 set(CPACK_INSTALL_CMAKE_PROJECTS "")
 set(CPACK_INSTALL_PREFIX "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug")
 set(CPACK_MODULE_PATH "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/src/5.6.0-d46202430d.clean/cmake")
-=======
-set(CPACK_INSTALLED_DIRECTORIES "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/src/5.6.0-d46202430d.clean;/")
-set(CPACK_INSTALL_CMAKE_PROJECTS "")
-set(CPACK_INSTALL_PREFIX "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/pkgs/wavpack_x64-windows/debug")
-set(CPACK_MODULE_PATH "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/src/5.6.0-d46202430d.clean/cmake")
->>>>>>> Stashed changes
 set(CPACK_NSIS_DISPLAY_NAME "WavPack 5.6.0")
 set(CPACK_NSIS_INSTALLER_ICON_CODE "")
 set(CPACK_NSIS_INSTALLER_MUI_ICON_CODE "")
 set(CPACK_NSIS_INSTALL_ROOT "$PROGRAMFILES64")
 set(CPACK_NSIS_PACKAGE_NAME "WavPack 5.6.0")
 set(CPACK_NSIS_UNINSTALL_NAME "Uninstall")
-<<<<<<< Updated upstream
 set(CPACK_OUTPUT_CONFIG_FILE "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-dbg/CPackConfig.cmake")
 set(CPACK_PACKAGE_DEFAULT_LOCATION "/")
 set(CPACK_PACKAGE_DESCRIPTION_FILE "C:/Users/martimv2/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericDescription.txt")
-=======
-set(CPACK_OUTPUT_CONFIG_FILE "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-dbg/CPackConfig.cmake")
-set(CPACK_PACKAGE_DEFAULT_LOCATION "/")
-set(CPACK_PACKAGE_DESCRIPTION_FILE "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericDescription.txt")
->>>>>>> Stashed changes
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "WavPack built using CMake")
 set(CPACK_PACKAGE_FILE_NAME "WavPack-5.6.0-Source")
 set(CPACK_PACKAGE_INSTALL_DIRECTORY "WavPack 5.6.0")
@@ -72,27 +51,16 @@ set(CPACK_PACKAGE_VERSION "5.6.0")
 set(CPACK_PACKAGE_VERSION_MAJOR "5")
 set(CPACK_PACKAGE_VERSION_MINOR "6")
 set(CPACK_PACKAGE_VERSION_PATCH "0")
-<<<<<<< Updated upstream
 set(CPACK_RESOURCE_FILE_LICENSE "C:/Users/martimv2/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericLicense.txt")
 set(CPACK_RESOURCE_FILE_README "C:/Users/martimv2/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericDescription.txt")
 set(CPACK_RESOURCE_FILE_WELCOME "C:/Users/martimv2/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericWelcome.txt")
-=======
-set(CPACK_RESOURCE_FILE_LICENSE "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericLicense.txt")
-set(CPACK_RESOURCE_FILE_README "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericDescription.txt")
-set(CPACK_RESOURCE_FILE_WELCOME "C:/Users/arnaubl1/AppData/Local/vcpkg/downloads/tools/cmake-3.27.1-windows/cmake-3.27.1-windows-i386/share/cmake-3.27/Templates/CPack.GenericWelcome.txt")
->>>>>>> Stashed changes
 set(CPACK_RPM_PACKAGE_SOURCES "ON")
 set(CPACK_SET_DESTDIR "OFF")
 set(CPACK_SOURCE_7Z "ON")
 set(CPACK_SOURCE_GENERATOR "7Z;ZIP")
 set(CPACK_SOURCE_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#")
-<<<<<<< Updated upstream
 set(CPACK_SOURCE_INSTALLED_DIRECTORIES "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/src/5.6.0-d46202430d.clean;/")
 set(CPACK_SOURCE_OUTPUT_CONFIG_FILE "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-dbg/CPackSourceConfig.cmake")
-=======
-set(CPACK_SOURCE_INSTALLED_DIRECTORIES "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/src/5.6.0-d46202430d.clean;/")
-set(CPACK_SOURCE_OUTPUT_CONFIG_FILE "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-dbg/CPackSourceConfig.cmake")
->>>>>>> Stashed changes
 set(CPACK_SOURCE_PACKAGE_FILE_NAME "WavPack-5.6.0-Source")
 set(CPACK_SOURCE_TOPLEVEL_TAG "win64-Source")
 set(CPACK_SOURCE_ZIP "ON")
@@ -103,11 +71,7 @@ set(CPACK_TOPLEVEL_TAG "win64-Source")
 set(CPACK_WIX_SIZEOF_VOID_P "8")
 
 if(NOT CPACK_PROPERTIES_FILE)
-<<<<<<< Updated upstream
   set(CPACK_PROPERTIES_FILE "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-dbg/CPackProperties.cmake")
-=======
-  set(CPACK_PROPERTIES_FILE "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/wavpack/x64-windows-dbg/CPackProperties.cmake")
->>>>>>> Stashed changes
 endif()
 
 if(EXISTS ${CPACK_PROPERTIES_FILE})

@@ -47,11 +47,7 @@ rule CXX_STATIC_LIBRARY_LINKER__box2d_Release
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-<<<<<<< Updated upstream
   command = C:\Users\martimv2\AppData\Local\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe --regenerate-during-build -SC:\Users\martimv2\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\box2d\src\64c16f51bc-7b27809cb5.clean -BC:\Users\martimv2\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\box2d\x64-windows-rel
-=======
-  command = C:\Users\arnaubl1\AppData\Local\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe --regenerate-during-build -SC:\Users\arnaubl1\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\box2d\src\64c16f51bc-7b27809cb5.clean -BC:\Users\arnaubl1\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\box2d\x64-windows-rel
->>>>>>> Stashed changes
   description = Re-running CMake...
   generator = 1
 

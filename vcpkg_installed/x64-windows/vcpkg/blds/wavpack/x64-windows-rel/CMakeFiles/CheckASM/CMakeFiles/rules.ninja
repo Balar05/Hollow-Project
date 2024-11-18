@@ -23,11 +23,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-<<<<<<< Updated upstream
   command = C:\Users\martimv2\AppData\Local\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe --regenerate-during-build -SC:\Users\martimv2\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\wavpack\x64-windows-rel\CMakeFiles\CheckASM -BC:\Users\martimv2\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\wavpack\x64-windows-rel\CMakeFiles\CheckASM
-=======
-  command = C:\Users\arnaubl1\AppData\Local\vcpkg\downloads\tools\cmake-3.27.1-windows\cmake-3.27.1-windows-i386\bin\cmake.exe --regenerate-during-build -SC:\Users\arnaubl1\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\wavpack\x64-windows-rel\CMakeFiles\CheckASM -BC:\Users\arnaubl1\Documents\GitHub\Hollow-Project\vcpkg_installed\x64-windows\vcpkg\blds\wavpack\x64-windows-rel\CMakeFiles\CheckASM
->>>>>>> Stashed changes
   description = Re-running CMake...
   generator = 1
 

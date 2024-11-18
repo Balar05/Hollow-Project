@@ -3,21 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-<<<<<<< Updated upstream
-  "documentNamespace": "https://spdx.org/spdxdocs/wavpack-x64-windows-5.6.0#1-77a29ccb-5c8c-4db0-9c9a-1b34afacdf67",
-=======
-  "documentNamespace": "https://spdx.org/spdxdocs/wavpack-x64-windows-5.6.0#1-9909588b-be0b-43bc-86ac-374ed3bae00d",
->>>>>>> Stashed changes
+  "documentNamespace": "https://spdx.org/spdxdocs/wavpack-x64-windows-5.6.0#1-0e01c423-e71e-4bf1-8e62-af300641f71c",
   "name": "wavpack:x64-windows@5.6.0#1 6110cdd8ddc613cd46ae2ed1c69d7f1dc70d610fb46ae15fe237d85023949491",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
     ],
-<<<<<<< Updated upstream
-    "created": "2024-11-18T07:12:23Z"
-=======
-    "created": "2024-11-18T07:31:13Z"
->>>>>>> Stashed changes
+    "created": "2024-11-18T09:23:42Z"
   },
   "relationships": [
     {
@@ -91,7 +83,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/arnaubl1/AppData/Local/vcpkg/registries/git-trees/d58b3734d0a42c7309216ade0432f7787fbd6ff5/portfile.cmake",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/d58b3734d0a42c7309216ade0432f7787fbd6ff5/portfile.cmake",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -103,7 +95,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/arnaubl1/AppData/Local/vcpkg/registries/git-trees/d58b3734d0a42c7309216ade0432f7787fbd6ff5/vcpkg.json",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/d58b3734d0a42c7309216ade0432f7787fbd6ff5/vcpkg.json",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {

@@ -50,23 +50,14 @@ unset(_cmake_expected_targets)
 add_library(Ogg::ogg SHARED IMPORTED)
 
 set_target_properties(Ogg::ogg PROPERTIES
-<<<<<<< Updated upstream
   INTERFACE_INCLUDE_DIRECTORIES "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/src/v1.3.5-1a4243fef9.clean/include;C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-rel/include"
-=======
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/src/v1.3.5-1a4243fef9.clean/include;C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-rel/include"
->>>>>>> Stashed changes
 )
 
 # Import target "Ogg::ogg" for configuration "Release"
 set_property(TARGET Ogg::ogg APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Ogg::ogg PROPERTIES
-<<<<<<< Updated upstream
   IMPORTED_IMPLIB_RELEASE "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-rel/ogg.lib"
   IMPORTED_LOCATION_RELEASE "C:/Users/martimv2/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-rel/ogg.dll"
-=======
-  IMPORTED_IMPLIB_RELEASE "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-rel/ogg.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/arnaubl1/Documents/GitHub/Hollow-Project/vcpkg_installed/x64-windows/vcpkg/blds/libogg/x64-windows-rel/ogg.dll"
->>>>>>> Stashed changes
   )
 
 # This file does not depend on other imported targets which have
