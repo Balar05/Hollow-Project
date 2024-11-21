@@ -201,9 +201,34 @@ void Scene::LoadState() {
 
 
 
+	pugi::xml_document loadFile;
+	pugi::xml_parse_result result = loadFile.load_file("config.xml");
+
+	if (result == NULL) {
+		LOG("Error loading config.xml: %s", result.description());
+	}
+	Vector2D pos;
+
+	pos.setX(loadFile.child("config").child("scene").child("entities").child("player").attribute("x").as_int());
+	pos.setY(loadFile.child("config").child("scene").child("entities").child("player").attribute("y").as_int());
+	player->SetPosition(pos);
+
 }
 void Scene::SaveState() {
+	pugi::xml_document saveFile;
+	pugi::xml_parse_result result = saveFile.load_file("config.xml");
+	
+	if (result == NULL) {
+		LOG("Error....");
+		return;
+	}
+	//Read the player pos and set the value in the XML
+	Vector2D pos = player->GetPosition();
+	saveFile.child("config").child("scene").child("entities").child("player").attribute("x").set_value(pos.getX());
+	saveFile.child("config").child("scene").child("entities").child("player").attribute("y").set_value(pos.getY());
 
 
+	//save the XML modification to disk
+	saveFile.save_file("config.xml");
 }
 

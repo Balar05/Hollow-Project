@@ -20,7 +20,7 @@
 	<scene>
 		<map path="Assets/Maps/" name="Level_1.tmx"/>
 		<entities>
-			<player x="100" y="736" w="32" h ="32" texture="Assets/Textures/HollowSprites.png">
+			<player x="100" y="732" w="32" h ="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>
 					<idleRight loop="true" speed ="0.1">
 						<frame x="0" y="0" w="32" h="32"/>
