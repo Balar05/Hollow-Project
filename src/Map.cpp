@@ -91,7 +91,6 @@ bool Map::CleanUp()
     }
     mapData.tilesets.clear();
 
-    // L07 TODO 2: clean up all layer data
     for (const auto& layer : mapData.layers)
     {
         delete layer;
@@ -172,8 +171,6 @@ bool Map::Load(std::string path, std::string fileName)
             if (mapLayer->properties.GetProperty("Colliders") != NULL && mapLayer->properties.GetProperty("Colliders")->value == true) {
                 for (int i = 0; i < mapData.width; i++) {
                     for (int j = 0; j < mapData.height; j++) {
-
-                        // L07 TODO 9: Complete the draw function
 
                         //Get the gid from tile  
                         int gid = mapLayer->Get(i, j);

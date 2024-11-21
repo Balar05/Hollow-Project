@@ -29,9 +29,12 @@ bool Scene::Awake()
 {
 	LOG("Loading Scene");
 	bool ret = true;
-
+	
 	player = (Player*)Engine::GetInstance().entityManager->CreateEntity(EntityType::PLAYER);
 	player->SetParameters(configParameters.child("entities").child("player"));
+
+	bat = (Enemy*)Engine::GetInstance().entityManager->CreateEntity(EntityType::ENEMY);
+	bat->SetParameters(configParameters.child("entities").child("enemy"));
 
 	Fire* fire1 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
 	fire1->SetParameters(configParameters.child("entities").child("fire"));
@@ -167,6 +170,15 @@ bool Scene::PostUpdate()
 	if(Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_ESCAPE) == KEY_DOWN)
 		ret = false;
 
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F5) == KEY_DOWN) {
+
+		LoadState();
+	}
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F6) == KEY_DOWN) {
+
+		SaveState();
+	}
+
 	return ret;
 }
 
@@ -184,3 +196,14 @@ Vector2D Scene::GetPlayerPosition()
 {
 	return player->GetPosition();
 }
+
+void Scene::LoadState() {
+
+
+
+}
+void Scene::SaveState() {
+
+
+}
+

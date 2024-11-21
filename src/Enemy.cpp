@@ -32,17 +32,17 @@ bool Enemy::Start() {
 	texH = parameters.attribute("h").as_int();
 
 	//Load animations
-	idle.LoadAnimations(parameters.child("animations").child("idle"));
+	idle.LoadAnimations(parameters.child("animations").child("idleRight"));
 	currentAnimation = &idle;
 
 	//Add a physics to an item - initialize the physics body
-	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 2, bodyType::DYNAMIC);
+	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 4, bodyType::DYNAMIC);
 
 	//Assign collider type
 	pbody->ctype = ColliderType::ENEMY;
 
 	// Set the gravity of the body
-	if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(0);
+	if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(1);
 
 	// Initialize pathfinding
 	pathfinding = new Pathfinding();

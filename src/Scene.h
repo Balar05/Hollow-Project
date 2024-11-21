@@ -2,6 +2,7 @@
 
 #include "Module.h"
 #include "Player.h"
+#include "Enemy.h"
 
 struct SDL_Texture;
 
@@ -38,10 +39,13 @@ public:
 
 	Vector2D GetPlayerPosition();
 
+	void LoadState();
+	void SaveState();
 
 private:
 	SDL_Texture* img;
 
 	Player* player;
+	Enemy* bat;
 	
 };

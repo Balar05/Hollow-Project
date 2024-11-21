@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/libvorbis-x64-windows-1.3.7#2-f76cbf86-d063-4565-a287-0f919b47a43d",
+  "documentNamespace": "https://spdx.org/spdxdocs/libvorbis-x64-windows-1.3.7#2-e35a48e7-f78b-40ec-accb-599f6110ef1d",
   "name": "libvorbis:x64-windows@1.3.7#2 3b6f230461476de7f768f263da80c2e05e4ec2c13d579b8935d288ba4c316543",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
     ],
-    "created": "2024-11-18T09:24:03Z"
+    "created": "2024-09-19T07:39:27Z"
   },
   "relationships": [
     {

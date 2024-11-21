@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/pugixml-x64-windows-1.14-098fc706-db37-4911-a2d5-d814e4bff66f",
+  "documentNamespace": "https://spdx.org/spdxdocs/pugixml-x64-windows-1.14-1aa68431-b132-46e2-8bf9-986d491253ac",
   "name": "pugixml:x64-windows@1.14 8a74584c25c1a689a53c01a2e5376a0c02d609164e32a09bb142990db4f618fa",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
     ],
-    "created": "2024-11-18T09:22:23Z"
+    "created": "2024-10-03T06:46:53Z"
   },
   "relationships": [
     {

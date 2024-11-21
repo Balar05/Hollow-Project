@@ -102,13 +102,14 @@
 					</damageLeft>
 				</animations>
 			</player>
-			<enemy x="100" y="800" w="32" h ="32" texture="Assets/Textures/Bat.png">
+			
+			<enemy x="110" y="710" w="64" h ="64" texture="Assets/Textures/Bat.png">
 				<animations>
 					<idleRight loop="true" speed ="0.1">
-						<frame x="0" y="0" w="32" h="32"/>
-						<frame x="32" y="0" w="32" h="32"/>
-						<frame x="64" y="0" w="32" h="32"/>
-						<frame x="96" y="0" w="32" h="32"/>
+						<frame x="0" y="0" w="64" h="64"/>
+						<frame x="64" y="0" w="64" h="64"/>
+						<frame x="128" y="0" w="64" h="64"/>
+						<frame x="192" y="0" w="64" h="64"/>
 					</idleRight>
 				</animations>
 				
