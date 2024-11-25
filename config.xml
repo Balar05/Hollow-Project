@@ -1,134 +1,128 @@
-<!-- Config file for the engine -->
+<?xml version="1.0"?>
 <config>
-  <engine>
-    <title>Hollow Project</title>
-    <maxFrameDuration value="16"/>
-  </engine>
-
-  <render>
-    <vsync value="false"/>
-  </render>
-
-  <window>
-    <resolution width="1280" height="720" scale="2"/>
-    <fullscreen value="false"/>
-    <borderless value="false"/>
-    <resizable value="false"/>
-    <fullscreen_window value="false"/>
-  </window>
-
+	<engine>
+		<title>Hollow Project</title>
+		<maxFrameDuration value="16" />
+	</engine>
+	<render>
+		<vsync value="false" />
+	</render>
+	<window>
+		<resolution width="1280" height="720" scale="2" />
+		<fullscreen value="false" />
+		<borderless value="false" />
+		<resizable value="false" />
+		<fullscreen_window value="false" />
+	</window>
 	<scene>
-		<map path="Assets/Maps/" name="Level_1.tmx"/>
+		<map path="Assets/Maps/" name="Level_1.tmx" />
 		<entities>
-			<player x="100" y="732" w="32" h ="32" texture="Assets/Textures/HollowSprites.png">
+			<player x="1441" y="655" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>
-					<idleRight loop="true" speed ="0.1">
-						<frame x="0" y="0" w="32" h="32"/>
-						<frame x="32" y="0" w="32" h="32"/>
-						<frame x="64" y="0" w="32" h="32"/>
-						<frame x="96" y="0" w="32" h="32"/>
+					<idleRight loop="true" speed="0.1">
+						<frame x="0" y="0" w="32" h="32" />
+						<frame x="32" y="0" w="32" h="32" />
+						<frame x="64" y="0" w="32" h="32" />
+						<frame x="96" y="0" w="32" h="32" />
 					</idleRight>
-					<idleLeft loop="true" speed ="0.1">
-						<frame x="128" y="0" w="32" h="32"/>
-						<frame x="160" y="0" w="32" h="32"/>
-						<frame x="192" y="0" w="32" h="32"/>
-						<frame x="224" y="0" w="32" h="32"/>
+					<idleLeft loop="true" speed="0.1">
+						<frame x="128" y="0" w="32" h="32" />
+						<frame x="160" y="0" w="32" h="32" />
+						<frame x="192" y="0" w="32" h="32" />
+						<frame x="224" y="0" w="32" h="32" />
 					</idleLeft>
-					<runRight loop="true" speed ="0.1">
-						<frame x="0" y="32" w="32" h="32"/>
-						<frame x="32" y="32" w="32" h="32"/>
-						<frame x="64" y="32" w="32" h="32"/>
-						<frame x="96" y="32" w="32" h="32"/>
-						<frame x="128" y="32" w="32" h="32"/>
-						<frame x="160" y="32" w="32" h="32"/>
+					<runRight loop="true" speed="0.1">
+						<frame x="0" y="32" w="32" h="32" />
+						<frame x="32" y="32" w="32" h="32" />
+						<frame x="64" y="32" w="32" h="32" />
+						<frame x="96" y="32" w="32" h="32" />
+						<frame x="128" y="32" w="32" h="32" />
+						<frame x="160" y="32" w="32" h="32" />
 					</runRight>
-					<runLeft loop="true" speed ="0.1">
-						<frame x="192" y="32" w="32" h="32"/>
-						<frame x="224" y="32" w="32" h="32"/>
-						<frame x="256" y="32" w="32" h="32"/>
-						<frame x="288" y="32" w="32" h="32"/>
-						<frame x="320" y="32" w="32" h="32"/>
-						<frame x="352" y="32" w="32" h="32"/>
+					<runLeft loop="true" speed="0.1">
+						<frame x="192" y="32" w="32" h="32" />
+						<frame x="224" y="32" w="32" h="32" />
+						<frame x="256" y="32" w="32" h="32" />
+						<frame x="288" y="32" w="32" h="32" />
+						<frame x="320" y="32" w="32" h="32" />
+						<frame x="352" y="32" w="32" h="32" />
 					</runLeft>
-					<jumpRight loop="true" speed ="0.1">
-						<frame x="0" y="64" w="32" h="32"/>
-						<frame x="32" y="64" w="32" h="32"/>
-						<frame x="64" y="64" w="32" h="32"/>
-						<frame x="96" y="64" w="32" h="32"/>
-						<frame x="128" y="64" w="32" h="32"/>
+					<jumpRight loop="true" speed="0.1">
+						<frame x="0" y="64" w="32" h="32" />
+						<frame x="32" y="64" w="32" h="32" />
+						<frame x="64" y="64" w="32" h="32" />
+						<frame x="96" y="64" w="32" h="32" />
+						<frame x="128" y="64" w="32" h="32" />
 					</jumpRight>
-					<jumpLeft loop="true" speed ="0.1">
-						<frame x="160" y="64" w="32" h="32"/>
-						<frame x="192" y="64" w="32" h="32"/>
-						<frame x="224" y="64" w="32" h="32"/>
-						<frame x="256" y="64" w="32" h="32"/>
-						<frame x="288" y="64" w="32" h="32"/>
+					<jumpLeft loop="true" speed="0.1">
+						<frame x="160" y="64" w="32" h="32" />
+						<frame x="192" y="64" w="32" h="32" />
+						<frame x="224" y="64" w="32" h="32" />
+						<frame x="256" y="64" w="32" h="32" />
+						<frame x="288" y="64" w="32" h="32" />
 					</jumpLeft>
-					<dieRight loop="true" speed ="0.1">
-						<frame x="0" y="224" w="32" h="32"/>
-						<frame x="32" y="224" w="32" h="32"/>
-						<frame x="64" y="224" w="32" h="32"/>
-						<frame x="96" y="224" w="32" h="32"/>
+					<dieRight loop="true" speed="0.1">
+						<frame x="0" y="224" w="32" h="32" />
+						<frame x="32" y="224" w="32" h="32" />
+						<frame x="64" y="224" w="32" h="32" />
+						<frame x="96" y="224" w="32" h="32" />
 					</dieRight>
-					<dieLeft loop="true" speed ="0.1">
-						<frame x="128" y="224" w="32" h="32"/>
-						<frame x="160" y="224" w="32" h="32"/>
-						<frame x="192" y="224" w="32" h="32"/>
-						<frame x="224" y="224" w="32" h="32"/>
+					<dieLeft loop="true" speed="0.1">
+						<frame x="128" y="224" w="32" h="32" />
+						<frame x="160" y="224" w="32" h="32" />
+						<frame x="192" y="224" w="32" h="32" />
+						<frame x="224" y="224" w="32" h="32" />
 					</dieLeft>
-					<dashRight loop="true" speed ="0.1">
-						<frame x="0" y="192" w="32" h="32"/>
-						<frame x="32" y="192" w="32" h="32"/>
-						<frame x="64" y="192" w="32" h="32"/>
-						<frame x="96" y="192" w="32" h="32"/>
+					<dashRight loop="true" speed="0.1">
+						<frame x="0" y="192" w="32" h="32" />
+						<frame x="32" y="192" w="32" h="32" />
+						<frame x="64" y="192" w="32" h="32" />
+						<frame x="96" y="192" w="32" h="32" />
 					</dashRight>
-					<dashLeft loop="true" speed ="0.1">
-						<frame x="128" y="192" w="32" h="32"/>
-						<frame x="160" y="192" w="32" h="32"/>
-						<frame x="192" y="192" w="32" h="32"/>
-						<frame x="224" y="192" w="32" h="32"/>
+					<dashLeft loop="true" speed="0.1">
+						<frame x="128" y="192" w="32" h="32" />
+						<frame x="160" y="192" w="32" h="32" />
+						<frame x="192" y="192" w="32" h="32" />
+						<frame x="224" y="192" w="32" h="32" />
 					</dashLeft>
-					<damageRight loop="true" speed ="0.1">
-						<frame x="128" y="288" w="32" h="32"/>
-						<frame x="160" y="288" w="32" h="32"/>
-						<frame x="192" y="288" w="32" h="32"/>
-						<frame x="224" y="288" w="32" h="32"/>
+					<damageRight loop="true" speed="0.1">
+						<frame x="128" y="288" w="32" h="32" />
+						<frame x="160" y="288" w="32" h="32" />
+						<frame x="192" y="288" w="32" h="32" />
+						<frame x="224" y="288" w="32" h="32" />
 					</damageRight>
-					<damageLeft loop="true" speed ="0.1">
-						<frame x="256" y="288" w="32" h="32"/>
-						<frame x="288" y="288" w="32" h="32"/>
-						<frame x="320" y="288" w="32" h="32"/>
-						<frame x="352" y="288" w="32" h="32"/>
+					<damageLeft loop="true" speed="0.1">
+						<frame x="256" y="288" w="32" h="32" />
+						<frame x="288" y="288" w="32" h="32" />
+						<frame x="320" y="288" w="32" h="32" />
+						<frame x="352" y="288" w="32" h="32" />
 					</damageLeft>
 				</animations>
 			</player>
-			
-			<enemy x="110" y="710" w="64" h ="64" texture="Assets/Textures/Bat.png">
+			<enemy x="110" y="710" w="64" h="64" texture="Assets/Textures/Bat.png">
 				<animations>
-					<idleRight loop="true" speed ="0.1">
-						<frame x="0" y="0" w="64" h="64"/>
-						<frame x="64" y="0" w="64" h="64"/>
-						<frame x="128" y="0" w="64" h="64"/>
-						<frame x="192" y="0" w="64" h="64"/>
+					<idleRight loop="true" speed="0.1">
+						<frame x="0" y="0" w="64" h="64" />
+						<frame x="64" y="0" w="64" h="64" />
+						<frame x="128" y="0" w="64" h="64" />
+						<frame x="192" y="0" w="64" h="64" />
 					</idleRight>
 				</animations>
-				
 			</enemy>
-			<fire w ="32" h="32" texture="Assets/Textures/Fire.png">
+			<fire w="32" h="32" texture="Assets/Textures/Fire.png">
 				<animations>
-					<fire loop ="true" speed ="0.1">
-						<frame x="0" y="0" w="32" h="32"/>
-						<frame x="32" y="0" w="32" h="32"/>
-						<frame x="64" y="0" w="32" h="32"/>
-						<frame x="96" y="0" w="32" h="32"/>
-						<frame x="128" y="0" w="32" h="32"/>
-						<frame x="160" y="0" w="32" h="32"/>
-						<frame x="192" y="0" w="32" h="32"/>
-						<frame x="224" y="0" w="32" h="32"/>
+					<fire loop="true" speed="0.1">
+						<frame x="0" y="0" w="32" h="32" />
+						<frame x="32" y="0" w="32" h="32" />
+						<frame x="64" y="0" w="32" h="32" />
+						<frame x="96" y="0" w="32" h="32" />
+						<frame x="128" y="0" w="32" h="32" />
+						<frame x="160" y="0" w="32" h="32" />
+						<frame x="192" y="0" w="32" h="32" />
+						<frame x="224" y="0" w="32" h="32" />
 					</fire>
 				</animations>
 			</fire>
 		</entities>
 	</scene>
-
 </config>
