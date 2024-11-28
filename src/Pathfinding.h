@@ -58,14 +58,9 @@ public:
     // L13: A* Pathfinding variables
     std::priority_queue<std::pair<int, Vector2D>, std::vector<std::pair<int, Vector2D>>, std::greater<std::pair<int, Vector2D>> > frontierAStar;
 
-<<<<<<< Updated upstream
+
     int blockedGid = 1; //Gid of the tiles that block the path - Important adjust this value to your map
     int highCostGid = 0; //Gid of the tiles that have high cost - Important adjust this value to your map
-=======
-    //int blockedGid = 49; //Gid of the tiles that block the path - Important adjust this value to your map
-    int blockedGid = 0;
-    /*??*/int highCostGid = 33; //Gid of the tiles that have high cost - Important adjust this value to your map
->>>>>>> Stashed changes
 
 };
 

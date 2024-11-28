@@ -17,11 +17,8 @@
 	<scene>
 		<map path="Assets/Maps/" name="Level_1.tmx" />
 		<entities>
-<<<<<<< Updated upstream
-			<player x="376" y="655" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
-=======
 			<player x="352" y="655" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
->>>>>>> Stashed changes
+
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />
