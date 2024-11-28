@@ -17,8 +17,7 @@
 	<scene>
 		<map path="Assets/Maps/" name="Level_1.tmx" />
 		<entities>
-			<player x="352" y="655" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
-
+			<player x="824" y="431" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />
@@ -100,7 +99,7 @@
 					</damageLeft>
 				</animations>
 			</player>
-			<enemy x="110" y="710" w="64" h="64" texture="Assets/Textures/Bat.png">
+			<enemy x="110" y="600" w="64" h="64" texture="Assets/Textures/Bat.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="64" h="64" />

@@ -42,7 +42,7 @@ bool Enemy::Start() {
 	pbody->ctype = ColliderType::ENEMY;
 
 	// Set the gravity of the body
-	if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(1);
+	if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(0);
 
 	// Initialize pathfinding
 	pathfinding = new Pathfinding();
@@ -107,8 +107,20 @@ bool Enemy::Update(float dt)
 		pathfinding->PropagateAStar(SQUARED);
 	}
 
-	// L08 TODO 4: Add a physics to an item - update the position of the object from the physics.  
-	b2Transform pbodyPos = pbody->body->GetTransform();
+	// L08 TODO 4: Add a physics to an item - update the position of the object from the physics.
+
+	pathfinding->PropagateAStar(SQUARED);
+
+	if (pathfinding != nullptr && pathfinding->pathTiles.size() > 0) {
+		Vector2D nextPos = Vector2D(PIXEL_TO_METERS(pathfinding->pathTiles.front().getX()), PIXEL_TO_METERS(pathfinding->pathTiles.front().getY()));
+		b2Vec2 nextPosMeters = b2Vec2((pathfinding->pathTiles.front().getX()), (pathfinding->pathTiles.front().getY()));
+		pbody->body->SetTransform(nextPosMeters, 0);
+		LOG("Enemy position: %f, %f", position.getX(), position.getY());
+	}
+	
+	LOG("Enemy position: %f, %f", position.getX(), position.getY());
+	
+b2Transform pbodyPos = pbody->body->GetTransform();
 	position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
 	position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
 
@@ -117,6 +129,7 @@ bool Enemy::Update(float dt)
 
 	// Draw pathfinding 
 	pathfinding->DrawPath();
+	
 
 	return true;
 }
