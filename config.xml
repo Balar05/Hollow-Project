@@ -97,6 +97,24 @@
 						<frame x="320" y="288" w="32" h="32" />
 						<frame x="352" y="288" w="32" h="32" />
 					</damageLeft>
+					<attackfrontRight loop="true" speed="0.1">
+						<frame x="0" y="96" w="32" h="32" /> 
+						<frame x="32" y="96" w="32" h="32" /> 
+						<frame x="64" y="96" w="32" h="32" /> 
+					</attackfrontRight>
+					<frontTraceRight loop="true" speed="0.1">
+						<frame x="0" y="416" w="32" h="32" />
+						<frame x="32" y="416" w="32" h="32" />
+					</frontTraceRight>
+					<attackfrontLeft loop="true" speed="0.1">
+						<frame x="192" y="96" w="32" h="32" />
+						<frame x="160" y="96" w="32" h="32" />
+						<frame x="128" y="96" w="32" h="32" />
+					</attackfrontLeft>
+					<frontTraceLeft loop="true" speed="0.1">
+						<frame x="96" y="416" w="32" h="32" />
+						<frame x="64" y="416" w="32" h="32" />
+					</frontTraceLeft>
 				</animations>
 			</player>
 			<enemy x="110" y="710" w="64" h="64" texture="Assets/Textures/Bat.png">
