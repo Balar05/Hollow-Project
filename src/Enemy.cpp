@@ -130,7 +130,26 @@ bool Enemy::Update(float dt)
 		Vector2D nextPosEnemyPixels = Engine::GetInstance().map.get()->MapToWorld(nextPosEnemy.getX(), nextPosEnemy.getY());
 		
 		//setear velocidad
+		if (nextPosEnemyPixels.getX() > position.getX()) {
+			pbody->body->SetLinearVelocity(b2Vec2(1, pbody->body->GetLinearVelocity().y));
+		}
+		else if (nextPosEnemyPixels.getX() < position.getX()) {
+			pbody->body->SetLinearVelocity(b2Vec2(-1, pbody->body->GetLinearVelocity().y));
+		}
 
+		if (nextPosEnemyPixels.getY() == position.getY()) {
+			pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, 0));
+		}
+		else if (nextPosEnemyPixels.getY() > position.getY()) {
+			pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, 1));
+		}
+		else if (nextPosEnemyPixels.getY() < position.getY()) {
+			pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, -1));
+		}
+
+		
+			
+		
 
 		//Vector2D nextPos = Vector2D(PIXEL_TO_METERS(pathfinding->pathTiles.front().getX()), PIXEL_TO_METERS(pathfinding->pathTiles.front().getY()));
 		//b2Vec2 nextPosMeters = b2Vec2((pathfinding->pathTiles.front().getX()), (pathfinding->pathTiles.front().getY()));
