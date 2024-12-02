@@ -115,6 +115,11 @@ public:
     bool Load(std::string path, std::string mapFileName);
 
     Vector2D MapToWorld(int x, int y) const;
+   
+    Vector2D MapToWorldCenter(int x, int y) const;
+
+
+
 
     Vector2D WorldToMap(int x, int y);
 

@@ -244,6 +244,16 @@ Vector2D Map::MapToWorld(int x, int y) const
     return ret;
 }
 
+Vector2D Map::MapToWorldCenter(int x, int y) const
+{
+    Vector2D ret;
+
+    ret.setX(x * mapData.tileWidth + mapData.tileWidth/2);
+    ret.setY(y * mapData.tileHeight+ mapData.tileHeight/2);
+
+    return ret;
+}
+
 bool Map::LoadProperties(pugi::xml_node& node, Properties& properties)
 {
     bool ret = false;

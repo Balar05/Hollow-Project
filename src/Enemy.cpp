@@ -114,10 +114,11 @@ bool Enemy::Update(float dt)
 		pathfinding->PropagateAStar(SQUARED);
 	}
 
-	if (pathfinding != nullptr && pathfinding->pathTiles.size() > 0) {
+	if (pathfinding != nullptr && !pathfinding->pathTiles.empty()) {
 
 		int posIndex = 0; 
 		Vector2D nextPosEnemy;
+
 
 		for (const auto& enemyPos : pathfinding->pathTiles) {
 			posIndex++;
@@ -127,25 +128,34 @@ bool Enemy::Update(float dt)
 			}
 		}
 
-		Vector2D nextPosEnemyPixels = Engine::GetInstance().map.get()->MapToWorld(nextPosEnemy.getX(), nextPosEnemy.getY());
+		Vector2D nextPosEnemyPixels = Engine::GetInstance().map.get()->MapToWorldCenter(nextPosEnemy.getX(), nextPosEnemy.getY());
+
+		Vector2D enemyWorldPos = { (float)METERS_TO_PIXELS(pbody->body->GetPosition().x) , (float)METERS_TO_PIXELS(pbody->body->GetPosition().y) };
+
+		Vector2D direction = { nextPosEnemyPixels.getX() - enemyWorldPos.getX(), nextPosEnemyPixels.getY() - enemyWorldPos.getY() };
+		
+		float distance = direction.magnitude();
+
+		pbody->body->SetLinearVelocity({ direction.normalized().getX(), direction.normalized().getY() });
+
 		
 		//setear velocidad
-		if (nextPosEnemyPixels.getX() > position.getX()) {
-			pbody->body->SetLinearVelocity(b2Vec2(1, pbody->body->GetLinearVelocity().y));
-		}
-		else if (nextPosEnemyPixels.getX() < position.getX()) {
-			pbody->body->SetLinearVelocity(b2Vec2(-1, pbody->body->GetLinearVelocity().y));
-		}
+		//if (nextPosEnemyPixels.getX() > position.getX()) {
+		//	pbody->body->SetLinearVelocity(b2Vec2(1, pbody->body->GetLinearVelocity().y));
+		//}
+		//else if (nextPosEnemyPixels.getX() < position.getX()) {
+		//	pbody->body->SetLinearVelocity(b2Vec2(-1, pbody->body->GetLinearVelocity().y));
+		//}
 
-		if (nextPosEnemyPixels.getY() == position.getY()) {
-			pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, 0));
-		}
-		else if (nextPosEnemyPixels.getY() > position.getY()) {
-			pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, 1));
-		}
-		else if (nextPosEnemyPixels.getY() < position.getY()) {
-			pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, -1));
-		}
+		//if (nextPosEnemyPixels.getY() == position.getY()) {
+		//	pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, 0));
+		//}
+		//else if (nextPosEnemyPixels.getY() > position.getY()) {
+		//	pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, 1));
+		//}
+		//else if (nextPosEnemyPixels.getY() < position.getY()) {
+		//	pbody->body->SetLinearVelocity(b2Vec2(pbody->body->GetLinearVelocity().x, -1));
+		//}
 
 		
 			
