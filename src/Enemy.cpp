@@ -108,19 +108,41 @@ bool Enemy::Update(float dt)
 	}
 
 	// L08 TODO 4: Add a physics to an item - update the position of the object from the physics.
-
-	pathfinding->PropagateAStar(SQUARED);
+	ResetPath();
+	// propgara hasta encontrar el player
+	while (pathfinding->pathTiles.empty()) {
+		pathfinding->PropagateAStar(SQUARED);
+	}
 
 	if (pathfinding != nullptr && pathfinding->pathTiles.size() > 0) {
-		Vector2D nextPos = Vector2D(PIXEL_TO_METERS(pathfinding->pathTiles.front().getX()), PIXEL_TO_METERS(pathfinding->pathTiles.front().getY()));
-		b2Vec2 nextPosMeters = b2Vec2((pathfinding->pathTiles.front().getX()), (pathfinding->pathTiles.front().getY()));
-		pbody->body->SetTransform(nextPosMeters, 0);
-		LOG("Enemy position: %f, %f", position.getX(), position.getY());
+
+		int posIndex = 0; 
+		Vector2D nextPosEnemy;
+
+		for (const auto& enemyPos : pathfinding->pathTiles) {
+			posIndex++;
+			if (posIndex == pathfinding->pathTiles.size() - 1) {
+				nextPosEnemy = enemyPos;
+				break;
+			}
+		}
+
+		Vector2D nextPosEnemyPixels = Engine::GetInstance().map.get()->MapToWorld(nextPosEnemy.getX(), nextPosEnemy.getY());
+		
+		//setear velocidad
+
+
+		//Vector2D nextPos = Vector2D(PIXEL_TO_METERS(pathfinding->pathTiles.front().getX()), PIXEL_TO_METERS(pathfinding->pathTiles.front().getY()));
+		//b2Vec2 nextPosMeters = b2Vec2((pathfinding->pathTiles.front().getX()), (pathfinding->pathTiles.front().getY()));
+		//pbody->body->SetTransform(nextPosMeters, 0);
+		//LOG("Enemy position: %f, %f", position.getX(), position.getY());
 	}
 	
 	LOG("Enemy position: %f, %f", position.getX(), position.getY());
 	
-b2Transform pbodyPos = pbody->body->GetTransform();
+
+	// saber en que posision esta el enemigo y pintar la textura
+	b2Transform pbodyPos = pbody->body->GetTransform();
 	position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
 	position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
 
