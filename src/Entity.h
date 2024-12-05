@@ -8,7 +8,7 @@ enum class EntityType
 	PLAYER,
 	ITEM,
 	FIRE,
-	ENEMY
+	BAT
 };
 
 class PhysBody;

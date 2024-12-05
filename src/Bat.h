@@ -7,12 +7,18 @@
 
 struct SDL_Texture;
 
-class Enemy : public Entity
+enum State {
+	CHASE,
+	PATROL,
+	DEAD
+};
+
+class Bat : public Entity
 {
 public:
 
-	Enemy();
-	virtual ~Enemy();
+	Bat();
+	virtual ~Bat();
 
 	bool Awake();
 
@@ -31,6 +37,18 @@ public:
 	Vector2D GetPosition();
 
 	void ResetPath();
+
+	Vector2D distanceVec;
+
+	float distance;
+
+	void Chase();
+
+	void Patrol();
+
+	State state;
+
+	bool debug;
 
 public:
 

@@ -99,7 +99,7 @@
 					</damageLeft>
 				</animations>
 			</player>
-			<enemy x="96" y="640" w="64" h="64" texture="Assets/Textures/Bat.png">
+			<enemy x="112" y="656" w="64" h="64" texture="Assets/Textures/Bat.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="64" h="64" />
