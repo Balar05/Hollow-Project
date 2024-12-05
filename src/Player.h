@@ -54,8 +54,11 @@ public:
 	float jumpForce = 1.8; // The force to apply when jumping
 	bool isJumping = false; // Flag to check if the player is currently jumping
 	bool isDashing = false;
+	bool isAttacking = false;
 	float dashDuration = 4;
+	float attackDuration = 3;
 	float dashTimer = 0.0f;
+	float attackTimer;
 	Timer dashCooldown;
 
 	b2Vec2 velocity;
@@ -74,6 +77,8 @@ public:
 	Animation dashLeft;
 	Animation damageRight;
 	Animation damageLeft;
+	Animation attackRight;
+	Animation attackLeft;
 	
 
 	bool isLookingRight;
