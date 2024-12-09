@@ -24,10 +24,6 @@ public:
 
 	bool CleanUp();
 
-	void OnCollision(PhysBody* physA, PhysBody* physB);
-
-	void OnCollisionEnd(PhysBody* physA, PhysBody* physB);
-
 	void SetParameters(pugi::xml_node parameters) {
 		this->parameters = parameters;
 	}
@@ -50,11 +46,15 @@ public:
 
 	b2Vec2 velocity;
 
-	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
 	Animation slashRight;
 	Animation slashLeft;
 
 
 	bool isLookingRight;
+
+
+private:
+	pugi::xml_node parameters;
+
 };

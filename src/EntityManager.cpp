@@ -86,7 +86,9 @@ Entity* EntityManager::CreateEntity(EntityType type)
 	case EntityType::GOLEM:
 		entity = new Golem();
 		break;
-
+	case EntityType::SLASH:
+		entity = new Slash();
+		break;
 	default:
 		break;
 	}
