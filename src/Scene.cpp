@@ -36,11 +36,11 @@ bool Scene::Awake()
 	slash = (Slash*)Engine::GetInstance().entityManager->CreateEntity(EntityType::SLASH);
 	slash->SetParameters(configParameters.child("entities").child("player"));
 
-	/*bat = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
+	bat = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
 	bat->SetParameters(configParameters.child("entities").child("bat"));
 
 	golem = (Golem*)Engine::GetInstance().entityManager->CreateEntity(EntityType::GOLEM);
-	golem->SetParameters(configParameters.child("entities").child("golem"));*/
+	golem->SetParameters(configParameters.child("entities").child("golem"));
 
 	Fire* fire1 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
 	fire1->SetParameters(configParameters.child("entities").child("fire"));
