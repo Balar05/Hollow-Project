@@ -67,7 +67,7 @@ bool Slash::Update(float dt)
 		else
 		{
 			currentAnimation = &slashLeft;
-			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX() - PIXEL_TO_METERS(32);
+			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX()) - PIXEL_TO_METERS(32);
 			playerPos = { playerX, playerY };
 			pbody->body->SetTransform(playerPos, 0);
 		}
