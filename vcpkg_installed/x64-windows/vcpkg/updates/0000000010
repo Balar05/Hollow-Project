@@ -1,8 +1,8 @@
-Package: zlib
-Version: 1.3.1
-Depends: vcpkg-cmake
+Package: libpng
+Version: 1.6.43
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 07706a4ee9f4ee862e057fd156b4b78200d7c26d6e3770ec8e4c15604e291c79
-Description: A compression library
-Status: install ok half-installed
+Abi: 96a6c428b027f1f9388ca7995a40dd2ab3a2b101ee0c18ed4a9cf2d43274b542
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Status: purge ok half-installed

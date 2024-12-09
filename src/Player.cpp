@@ -319,11 +319,11 @@ void Player::takeDamage() {
 		lives = lives-1;
 		LOG("Treure vides");
 		if (isLookingRight) {
-			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(-10, -1.5f), true);
+			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(-10, -2.0f), true);
 			currentAnimation = &jumpRight;
 		}
 		else {
-			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(10, -1.5f), true);
+			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(10, -2.0f), true);
 			currentAnimation = &damageLeft;
 		}
 		velocity.y = pbody->body->GetLinearVelocity().y;

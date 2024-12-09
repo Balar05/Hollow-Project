@@ -1,9 +1,8 @@
-Package: wavpack
-Version: 5.6.0
-Port-Version: 1
+Package: pugixml
+Version: 1.14
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 2ccb867e35168724bed19edc2d133cc0e93ac35fae377808d3673b80aefcf7fb
-Description: WavPack encode/decode library, command-line programs, and several plugins
-Status: install ok half-installed
+Abi: 36b736f379dfde364b19eb95800c0cd58e015b8264c8d503f560f0b656fe353c
+Description: Light-weight, simple and fast XML parser for C++ with XPath support
+Status: purge ok half-installed

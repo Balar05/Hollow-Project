@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/pugixml-x64-windows-1.14-0f550c85-a64c-4259-b700-a9caa19e2604",
-  "name": "pugixml:x64-windows@1.14 36b736f379dfde364b19eb95800c0cd58e015b8264c8d503f560f0b656fe353c",
+  "documentNamespace": "https://spdx.org/spdxdocs/pugixml-x64-windows-1.14-f1c2653d-9fc4-47d4-aeaa-b371129d4535",
+  "name": "pugixml:x64-windows@1.14 8a74584c25c1a689a53c01a2e5376a0c02d609164e32a09bb142990db4f618fa",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
+      "Tool: vcpkg-7d353e869753e5609a1f1a057df3db8fd356e49d"
     ],
-    "created": "2024-12-05T09:47:41Z"
+    "created": "2024-12-09T12:10:20Z"
   },
   "relationships": [
     {
@@ -59,7 +59,7 @@
     {
       "name": "pugixml:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "36b736f379dfde364b19eb95800c0cd58e015b8264c8d503f560f0b656fe353c",
+      "versionInfo": "8a74584c25c1a689a53c01a2e5376a0c02d609164e32a09bb142990db4f618fa",
       "downloadLocation": "NONE",
       "licenseConcluded": "MIT",
       "licenseDeclared": "NOASSERTION",
@@ -83,7 +83,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/arnaubl1/AppData/Local/vcpkg/registries/git-trees/6e38344aea6e7529afde3895e0885ed5cb0c0542/portfile.cmake",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/6e38344aea6e7529afde3895e0885ed5cb0c0542/portfile.cmake",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -95,7 +95,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/arnaubl1/AppData/Local/vcpkg/registries/git-trees/6e38344aea6e7529afde3895e0885ed5cb0c0542/vcpkg.json",
+      "fileName": "./C:/Users/martimv2/AppData/Local/vcpkg/registries/git-trees/6e38344aea6e7529afde3895e0885ed5cb0c0542/vcpkg.json",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
