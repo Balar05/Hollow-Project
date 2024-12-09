@@ -133,6 +133,18 @@
 					</idleLeft>
 				</animations>
 			</bat>
+			<slash x="352" y="640" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
+				<animations>
+					<slashRight loop="true" speed="0.1">
+						<frame x="0" y="384" w="32" h="32" />
+						<frame x="32" y="384" w="32" h="32" />
+					</slashRight>
+					<slashLeft loop="true" speed="0.1">
+						<frame x="64" y="384" w="32" h="32" />
+						<frame x="96" y="384" w="32" h="32" />
+					</slashLeft>
+				</animations>
+			</slash>
 			<golem x="352" y="640" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">

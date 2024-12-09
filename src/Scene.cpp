@@ -33,6 +33,9 @@ bool Scene::Awake()
 	player = (Player*)Engine::GetInstance().entityManager->CreateEntity(EntityType::PLAYER);
 	player->SetParameters(configParameters.child("entities").child("player"));
 
+	slash = (Slash*)Engine::GetInstance().entityManager->CreateEntity(EntityType::SLASH);
+	slash->SetParameters(configParameters.child("entities").child("player"));
+
 	bat = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
 	bat->SetParameters(configParameters.child("entities").child("bat"));
 

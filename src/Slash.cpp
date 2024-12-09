@@ -1,5 +1,5 @@
 #include "Slash.h"
-#include "Player.h"
+//#include "Player.h"
 #include "Engine.h"
 #include "Textures.h"
 #include "Audio.h"
@@ -35,7 +35,7 @@ bool Slash::Start() {
 
 	//Load animations
 	slashRight.LoadAnimations(parameters.child("animations").child("slashRight"));
-	slashLeft.LoadAnimations(parameters.child("animations").child("slashRight"));
+	slashLeft.LoadAnimations(parameters.child("animations").child("slashLeft"));
 	currentAnimation = &slashRight;
 	isLookingRight = true;
 
@@ -50,7 +50,7 @@ bool Slash::Start() {
 
 bool Slash::Update(float dt)
 {
-	return 1;
+	return true;
 }
 
 bool Slash::CleanUp()
@@ -58,14 +58,6 @@ bool Slash::CleanUp()
 	LOG("Cleanup slash");
 	Engine::GetInstance().textures.get()->UnLoad(texture);
 	return true;
-}
-
-void Slash::OnCollision(PhysBody* physA, PhysBody* physB) {
-
-}
-
-void Slash::OnCollisionEnd(PhysBody* physA, PhysBody* physB) {
-
 }
 
 

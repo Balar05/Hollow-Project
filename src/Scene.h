@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "Bat.h"
 #include "Golem.h"
+#include "Slash.h"
 
 struct SDL_Texture;
 
@@ -49,5 +50,6 @@ private:
 	Player* player;
 	Bat* bat;
 	Golem* golem;
+	Slash* slash;
 	
 };
