@@ -36,11 +36,11 @@ bool Scene::Awake()
 	slash = (Slash*)Engine::GetInstance().entityManager->CreateEntity(EntityType::SLASH);
 	slash->SetParameters(configParameters.child("entities").child("player"));
 
-	bat = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
+	/*bat = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
 	bat->SetParameters(configParameters.child("entities").child("bat"));
 
 	golem = (Golem*)Engine::GetInstance().entityManager->CreateEntity(EntityType::GOLEM);
-	golem->SetParameters(configParameters.child("entities").child("golem"));
+	golem->SetParameters(configParameters.child("entities").child("golem"));*/
 
 	Fire* fire1 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
 	fire1->SetParameters(configParameters.child("entities").child("fire"));
@@ -136,7 +136,7 @@ bool Scene::Start()
 
 	Engine::GetInstance().map->Load(configParameters.child("map").attribute("path").as_string(), configParameters.child("map").attribute("name").as_string());
 
-	Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/EnterHallownest.ogg", 0);
+	//Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/EnterHallownest.ogg", 0);
 
 	return true;
 }
@@ -209,6 +209,7 @@ void Scene::LoadState() {
 
 	pugi::xml_document loadFile;
 	pugi::xml_parse_result result = loadFile.load_file("config.xml");
+	Engine::GetInstance().audio.get()->PlayFx(player->loadGame);
 
 	if (result == NULL) {
 		LOG("Error loading config.xml: %s", result.description());
@@ -223,6 +224,7 @@ void Scene::LoadState() {
 void Scene::SaveState() {
 	pugi::xml_document saveFile;
 	pugi::xml_parse_result result = saveFile.load_file("config.xml");
+	Engine::GetInstance().audio.get()->PlayFx(player->saveGame);
 	
 	if (result == NULL) {
 		LOG("Error....");
