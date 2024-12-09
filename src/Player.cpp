@@ -59,8 +59,19 @@ bool Player::Start() {
 
 	pbody->ctype = ColliderType::PLAYER;
 
+	pugi::xml_document audioFile;
+	pugi::xml_parse_result result = audioFile.load_file("config.xml");
+
+	saveGame = Engine::GetInstance().audio.get()->LoadFx(audioFile.child("config").child("audio").child("fx").child("saveGame").attribute("path").as_string()); 
+	loadGame = Engine::GetInstance().audio.get()->LoadFx(audioFile.child("config").child("audio").child("fx").child("loadGame").attribute("path").as_string()); 
+	run = Engine::GetInstance().audio.get()->LoadFx(audioFile.child("config").child("audio").child("fx").child("run").attribute("path").as_string()); 
+	attack = Engine::GetInstance().audio.get()->LoadFx(audioFile.child("config").child("audio").child("fx").child("attack").attribute("path").as_string()); 
+	jump = Engine::GetInstance().audio.get()->LoadFx(audioFile.child("config").child("audio").child("fx").child("jump").attribute("path").as_string()); 
+	dash = Engine::GetInstance().audio.get()->LoadFx(audioFile.child("config").child("audio").child("fx").child("dash").attribute("path").as_string()); 
+
+	 
 	return true;
-}
+}      
 
 bool Player::Update(float dt)
 {
@@ -86,6 +97,7 @@ bool Player::Update(float dt)
 
 	// Move left
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_A) == KEY_REPEAT) {
+		
 		if (dead) {
 			velocity.x = 0;
 
@@ -94,7 +106,9 @@ bool Player::Update(float dt)
 			velocity.x = -0.2 * 16;
 			currentAnimation = &runLeft;
 			isLookingRight = false;
+			Engine::GetInstance().audio.get()->PlayFx(run, 1);
 		}
+		
 	}
 
 	// Move right
@@ -107,6 +121,7 @@ bool Player::Update(float dt)
 			velocity.x = 0.2 * 16;
 			currentAnimation = &runRight;
 			isLookingRight = true;
+			Engine::GetInstance().audio.get()->PlayFx(run, 1);
 		}
 
 	}
@@ -114,12 +129,13 @@ bool Player::Update(float dt)
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F) == KEY_DOWN) {
 		isDashing = true;
 		dashTimer = dashDuration;
+		Engine::GetInstance().audio.get()->PlayFx(dash);
 	}
 
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_R) == KEY_DOWN) {
 		isAttacking = true;
 		attackTimer = attackDuration;
-		//attack1Timer.Start();
+		Engine::GetInstance().audio.get()->PlayFx(attack);
 	}
 
 	if (isDashing) {
@@ -157,13 +173,14 @@ bool Player::Update(float dt)
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_SPACE) == KEY_DOWN && isJumping == false) {
 		// Apply an initial upward force
 		pbody->body->ApplyLinearImpulseToCenter(b2Vec2(0, -jumpForce), true);
-
+		Engine::GetInstance().audio.get()->PlayFx(jump);
 		isJumping = true;
 	}
 
 	// If the player is jumpling, we don't want to apply gravity, we use the current velocity prduced by the jump
 	if(isJumping == true)
 	{
+		
 		if (dead) {
 			velocity.x = 0;
 			velocity.y = 0;

@@ -273,4 +273,14 @@
 			</fire>
 		</entities>
 	</scene>
+	<audio>
+		<fx>
+			<loadGame path="Assets/Audio/FX/Save_Game.ogg" />
+			<saveGame path="Assets/Audio/FX/Load_Game.ogg" />
+			<run path="Assets/Audio/FX/Player_Run.ogg" />
+			<attack path="Assets/Audio/FX/Slash_Sword.ogg" />
+			<jump path="Assets/Audio/FX/Jump.ogg" />
+			<dash path="Assets/Audio/FX/Dash.ogg" />
+		</fx>
+	</audio>
 </config>

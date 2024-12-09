@@ -215,6 +215,7 @@ void Scene::LoadState() {
 
 	pugi::xml_document loadFile;
 	pugi::xml_parse_result result = loadFile.load_file("config.xml");
+	Engine::GetInstance().audio.get()->PlayFx(player->loadGame);
 
 	if (result == NULL) {
 		LOG("Error loading config.xml: %s", result.description());
@@ -229,6 +230,7 @@ void Scene::LoadState() {
 void Scene::SaveState() {
 	pugi::xml_document saveFile;
 	pugi::xml_parse_result result = saveFile.load_file("config.xml");
+	Engine::GetInstance().audio.get()->PlayFx(player->saveGame);
 	
 	if (result == NULL) {
 		LOG("Error....");

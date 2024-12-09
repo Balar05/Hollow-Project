@@ -78,6 +78,14 @@ public:
 	Animation attackRight;
 	Animation attackLeft;
 	
-
 	bool isLookingRight;
+
+	//Audio
+	int saveGame;
+	int loadGame;
+	int attack;
+	int jump;
+	int run;
+	int dash;
+
 };
