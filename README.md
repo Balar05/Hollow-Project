@@ -22,10 +22,16 @@ SPACE: Jump
 
 F: Dash
 
+R: Attack
+
 ### Special Keys
 F1: Substract Lives
   
 F2: Restore lives
+
+F5: Save Game
+
+F6: Load Game
   
 F9: Debug Mode
   
