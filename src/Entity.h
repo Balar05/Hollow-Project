@@ -15,6 +15,8 @@ enum State {
 	CHASE,
 	PATROL,
 	DEAD
+	ENEMY,
+	SLASH
 };
 class PhysBody;
 

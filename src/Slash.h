@@ -8,13 +8,13 @@
 
 struct SDL_Texture;
 
-class Player : public Entity
+class Slash : public Entity
 {
 public:
 
-	Player();
-	
-	virtual ~Player();
+	Slash();
+
+	virtual ~Slash();
 
 	bool Awake();
 
@@ -32,7 +32,6 @@ public:
 		this->parameters = parameters;
 	}
 
-	void takeDamage();
 
 	Vector2D GetPosition();
 	void SetPosition(Vector2D pos);
@@ -44,42 +43,18 @@ public:
 	SDL_Texture* texture = NULL;
 	int texW, texH;
 
-	int lives;
-	bool dead;
-	bool godMode;
-
-	//int pickCoinFxId;
-
 	PhysBody* pbody;
-	float jumpForce = 1.8; // The force to apply when jumping
-	bool isJumping = false; // Flag to check if the player is currently jumping
-	bool isDashing = false;
 	bool isAttacking = false;
-	float dashDuration = 4;
 	float attackDuration = 3;
-	float dashTimer = 0.0f;
 	float attackTimer;
-	Timer dashCooldown;
 
 	b2Vec2 velocity;
 
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
-	Animation idleRight;
-	Animation idleLeft;
-	Animation runRight;
-	Animation runLeft;
-	Animation jumpRight;
-	Animation jumpLeft;
-	Animation dieRight;
-	Animation dieLeft;
-	Animation dashRight;
-	Animation dashLeft;
-	Animation damageRight;
-	Animation damageLeft;
-	Animation attackRight;
-	Animation attackLeft;
-	
+	Animation slashRight;
+	Animation slashLeft;
+
 
 	bool isLookingRight;
 };

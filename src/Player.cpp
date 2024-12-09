@@ -48,6 +48,8 @@ bool Player::Start() {
 	dashLeft.LoadAnimations(parameters.child("animations").child("dashLeft"));
 	damageRight.LoadAnimations(parameters.child("animations").child("damageRight"));
 	damageLeft.LoadAnimations(parameters.child("animations").child("damageLeft"));
+	attackRight.LoadAnimations(parameters.child("animations").child("attackfrontRight"));
+	attackLeft.LoadAnimations(parameters.child("animations").child("attackfrontLeft"));
 	currentAnimation = &idleRight;
 	isLookingRight = true;
 
@@ -61,8 +63,7 @@ bool Player::Start() {
 }
 
 bool Player::Update(float dt)
-{/*
-	LOG("position: %f", position.getY());*/
+{
 	if (godMode) {
 		lives = 5;
 		dead = false;
@@ -116,6 +117,11 @@ bool Player::Update(float dt)
 		dashTimer = dashDuration;
 	}
 
+	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_R) == KEY_DOWN) {
+		isAttacking = true;
+		attackTimer = attackDuration;
+	}
+
 	if (isDashing) {
 		dashTimer -= 0.16;
 		if (dashTimer <= 0) {
@@ -130,7 +136,22 @@ bool Player::Update(float dt)
 			currentAnimation = &dashLeft;
 		}
 	}
-
+	
+	if (isAttacking) {
+		attackTimer -= 0.16;
+		if (attackTimer <= 0) {
+			isAttacking = false;
+			
+		}
+		if (isLookingRight && isAttacking) {
+			//Efecte atacar
+			currentAnimation = &attackRight;
+		}
+		else {
+			//Efecte
+			currentAnimation = &attackLeft;
+		}
+	}
 	
 	//Jump
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_SPACE) == KEY_DOWN && isJumping == false) {

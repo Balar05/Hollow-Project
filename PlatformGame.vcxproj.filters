@@ -96,6 +96,9 @@
     <ClCompile Include="src\Golem.cpp">
       <Filter>Source Files\Game</Filter>
     </ClCompile>
+    <ClCompile Include="src\Slash.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Audio.h">
@@ -168,6 +171,9 @@
       <Filter>Source Files\Game</Filter>
     </ClInclude>
     <ClInclude Include="src\Golem.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Slash.h">
       <Filter>Source Files\Game</Filter>
     </ClInclude>
   </ItemGroup>
