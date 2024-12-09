@@ -30,6 +30,7 @@ enum class ColliderType {
 	GROUND,
 	SPIKES,
 	ENEMY,
+	SLASH,
 	UNKNOWN
 	// ..
 };
