@@ -9,12 +9,13 @@ enum class EntityType
 	ITEM,
 	FIRE,
 	BAT,
+	SLASH,
 	GOLEM
 };
 enum State {
 	CHASE,
 	PATROL,
-	DEAD
+	DEAD,
 	ENEMY,
 	SLASH
 };

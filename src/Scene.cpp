@@ -39,9 +39,6 @@ bool Scene::Awake()
 	golem = (Golem*)Engine::GetInstance().entityManager->CreateEntity(EntityType::GOLEM);
 	golem->SetParameters(configParameters.child("entities").child("golem"));
 
-	golem = (Golem*)Engine::GetInstance().entityManager->CreateEntity(EntityType::GOLEM);
-	golem->SetParameters(configParameters.child("entities").child("golem"));
-
 	Fire* fire1 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
 	fire1->SetParameters(configParameters.child("entities").child("fire"));
 	fire1->position = Vector2D(192, 640);

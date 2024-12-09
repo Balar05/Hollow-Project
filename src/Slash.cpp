@@ -50,7 +50,7 @@ bool Slash::Start() {
 
 bool Slash::Update(float dt)
 {
-
+	return 1;
 }
 
 bool Slash::CleanUp()
