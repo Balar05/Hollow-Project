@@ -47,6 +47,12 @@ public:
 
 	bool isLookingRight;
 
+	void OnCollision(PhysBody* physA, PhysBody* physB);
+	void OnCollisionEnd(PhysBody* physA, PhysBody* physB);
+
+	int lives;
+	bool dead;
+
 public:
 
 private:

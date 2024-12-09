@@ -211,8 +211,6 @@ Vector2D Scene::GetPlayerPosition()
 
 void Scene::LoadState() {
 
-
-
 	pugi::xml_document loadFile;
 	pugi::xml_parse_result result = loadFile.load_file("config.xml");
 	Engine::GetInstance().audio.get()->PlayFx(player->loadGame);

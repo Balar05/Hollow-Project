@@ -43,13 +43,13 @@ bool Golem::Start() {
 	//pbody->listener = this;
 	//Add a physics to an item - initialize the physics body
 	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 2, bodyType::DYNAMIC);
-
+	pbody->listener = this;
 	//Assign collider type
 	pbody->ctype = ColliderType::ENEMY;
 
 	// Set the gravity of the body
 	
-	pbody->body->SetGravityScale(1);
+	if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(0);
 
 	// Initialize pathfinding
 	pathfinding = new Pathfinding();

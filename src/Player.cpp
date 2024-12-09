@@ -106,7 +106,7 @@ bool Player::Update(float dt)
 			velocity.x = -0.2 * 16;
 			currentAnimation = &runLeft;
 			isLookingRight = false;
-			Engine::GetInstance().audio.get()->PlayFx(run, 1);
+			//Engine::GetInstance().audio.get()->PlayFx(run, 1);
 		}
 		
 	}
@@ -121,7 +121,7 @@ bool Player::Update(float dt)
 			velocity.x = 0.2 * 16;
 			currentAnimation = &runRight;
 			isLookingRight = true;
-			Engine::GetInstance().audio.get()->PlayFx(run, 1);
+			//Engine::GetInstance().audio.get()->PlayFx(run, 1);
 		}
 
 	}

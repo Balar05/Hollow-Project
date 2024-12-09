@@ -42,7 +42,7 @@ bool Bat::Start() {
 
 	//Add a physics to an item - initialize the physics body
 	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 4, bodyType::DYNAMIC);
-
+	pbody->listener = this;
 	//Assign collider type
 	pbody->ctype = ColliderType::ENEMY;
 
@@ -58,54 +58,52 @@ bool Bat::Start() {
 
 bool Bat::Update(float dt)
 {
-	if (dead) {
-		LOG("Dead");
-	}
-	if (lives <= 0) {
-		dead = true;
-	}
-
-	Vector2D playerPos = Engine::GetInstance().scene.get()->GetPlayerPosition();
-
-	Vector2D enemyPos = GetPosition();
-
-	distanceVec = enemyPos - playerPos;
-	distance = distanceVec.magnitude();
-
-	if (PIXEL_TO_METERS(distance) <= 5) {
-		Chase();
-	}
-	else
-	{
-		Patrol();
-	}
-
-	//LOG("Enemy position: %f, %f", position.getX(), position.getY());
-	
-	// saber en que posision esta el enemigo y pintar la textura
-	b2Transform pbodyPos = pbody->body->GetTransform();
-	position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
-	position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
-
 	if (!dead) {
-		Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
-		currentAnimation->Update();
-	}
+		//if (lives <= 0) {
+		//	dead = true;
+		//}
 
-	// Draw pathfinding
-	debug = Engine::GetInstance().physics.get()->returnDebug();
-	if (debug) {
-		pathfinding->DrawPath();
-	}
-	
-	if (pbody->body->GetLinearVelocity().x < 0) {
-		isLookingRight = false;
+		Vector2D playerPos = Engine::GetInstance().scene.get()->GetPlayerPosition();
+
+		Vector2D enemyPos = GetPosition();
+
+		distanceVec = enemyPos - playerPos;
+		distance = distanceVec.magnitude();
+
+		if (PIXEL_TO_METERS(distance) <= 5) {
+			Chase();
+		}
+		else
+		{
+			Patrol();
+		}
+
+		//LOG("Enemy position: %f, %f", position.getX(), position.getY());
+
+		// saber en que posision esta el enemigo y pintar la textura
+		b2Transform pbodyPos = pbody->body->GetTransform();
+		position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
+		position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
+
+		if (!dead) {
+			Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
+			currentAnimation->Update();
+		}
+
+		// Draw pathfinding
+		debug = Engine::GetInstance().physics.get()->returnDebug();
+		if (debug) {
+			pathfinding->DrawPath();
+		}
+
+		if (pbody->body->GetLinearVelocity().x < 0) {
+			isLookingRight = false;
+		}
+		else {
+			isLookingRight = true;
+		}
 	}
 	else {
-		isLookingRight = true;
-	}
-
-	if (dead) {
 		pbody->body->SetEnabled(false);
 	}
 
@@ -192,7 +190,6 @@ void Bat::OnCollision(PhysBody* physA, PhysBody* physB) {
 		LOG("Collision SLASH");
 		//takeDamage(physB);
 		dead = true;
-		LOG("Hola");
 		break;
 	case ColliderType::PLATFORM:
 		LOG("Collision PLATFORM");
