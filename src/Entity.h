@@ -8,9 +8,14 @@ enum class EntityType
 	PLAYER,
 	ITEM,
 	FIRE,
-	ENEMY
+	BAT,
+	GOLEM
 };
-
+enum State {
+	CHASE,
+	PATROL,
+	DEAD
+};
 class PhysBody;
 
 class Entity

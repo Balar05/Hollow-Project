@@ -2,7 +2,8 @@
 
 #include "Module.h"
 #include "Player.h"
-#include "Enemy.h"
+#include "Bat.h"
+#include "Golem.h"
 
 struct SDL_Texture;
 
@@ -46,6 +47,7 @@ private:
 	SDL_Texture* img;
 
 	Player* player;
-	Enemy* bat;
+	Bat* bat;
+	Golem* golem;
 	
 };

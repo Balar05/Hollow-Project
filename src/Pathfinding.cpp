@@ -9,7 +9,7 @@
 Pathfinding::Pathfinding() {
 
     //Loads texture to draw the path
-    pathTex = Engine::GetInstance().textures.get()->Load("Assets/Maps/MapMetadata.png");
+    pathTex = Engine::GetInstance().textures.get()->Load("Assets/Maps/MetadataPedro.png");
     tileX = Engine::GetInstance().textures.get()->Load("Assets/Maps/x.png");
     map = Engine::GetInstance().map.get();
     layerNav = map->GetNavigationLayer();
