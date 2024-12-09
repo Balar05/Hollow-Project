@@ -43,7 +43,7 @@ bool Slash::Start() {
 
 	pbody->listener = this;
 
-	pbody->body->SetEnabled(false);
+	pbody->body->SetEnabled(true);
 
 	pbody->ctype = ColliderType::SLASH;
 
@@ -54,18 +54,20 @@ bool Slash::Update(float dt)
 {
 	if (Engine::GetInstance().scene.get()->isAttacking()) {
 
+		pbody->body->SetEnabled(true);
+
 		playerY = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getY());
 		
 		if (Engine::GetInstance().scene.get()->isLookingRight()) {
 			currentAnimation = &slashRight;
-			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX())+PIXEL_TO_METERS(16);
+			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX())+PIXEL_TO_METERS(33);
 			playerPos = { playerX, playerY };
 			pbody->body->SetTransform(playerPos, 0);
 		}
 		else
 		{
 			currentAnimation = &slashLeft;
-			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX() - PIXEL_TO_METERS(16));
+			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX() - PIXEL_TO_METERS(33));
 			playerPos = { playerX, playerY };
 			pbody->body->SetTransform(playerPos, 0);
 		}

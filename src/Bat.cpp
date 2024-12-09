@@ -24,6 +24,8 @@ bool Bat::Awake() {
 
 bool Bat::Start() {
 
+	lives = 1;
+	dead = false;
 	isLookingRight = true;
 	//state = PATROL;
 	//initilize textures
@@ -56,6 +58,12 @@ bool Bat::Start() {
 
 bool Bat::Update(float dt)
 {
+	if (dead) {
+		LOG("Dead");
+	}
+	if (lives <= 0) {
+		dead = true;
+	}
 
 	Vector2D playerPos = Engine::GetInstance().scene.get()->GetPlayerPosition();
 
@@ -79,8 +87,10 @@ bool Bat::Update(float dt)
 	position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
 	position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
 
-	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
-	currentAnimation->Update();
+	if (!dead) {
+		Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
+		currentAnimation->Update();
+	}
 
 	// Draw pathfinding
 	debug = Engine::GetInstance().physics.get()->returnDebug();
@@ -95,6 +105,9 @@ bool Bat::Update(float dt)
 		isLookingRight = true;
 	}
 
+	if (dead) {
+		pbody->body->SetEnabled(false);
+	}
 
 	return true;
 }
@@ -170,4 +183,68 @@ void Bat::Chase() {
 void Bat::Patrol() {
 	state = PATROL;
 	pbody->body->SetLinearVelocity({ 0,0 });
+}
+
+void Bat::OnCollision(PhysBody* physA, PhysBody* physB) {
+	switch (physB->ctype)
+	{
+	case ColliderType::SLASH:
+		LOG("Collision SLASH");
+		//takeDamage(physB);
+		dead = true;
+		LOG("Hola");
+		break;
+	case ColliderType::PLATFORM:
+		LOG("Collision PLATFORM");
+		break;
+	case ColliderType::ITEM:
+		LOG("Collision ITEM");
+		break;
+	case ColliderType::UNKNOWN:
+		LOG("Collision UNKNOWN");
+		break;
+	case ColliderType::GROUND:
+		LOG("Collision GROUND");
+		break;
+	case ColliderType::SPIKES:
+		LOG("Collision SPIKES");
+		break;
+	case ColliderType::ENEMY:
+		LOG("Collision ENEMY");
+		break;
+	default:
+		break;
+	}
+
+}
+
+void Bat::OnCollisionEnd(PhysBody* physA, PhysBody* physB)
+{
+	switch (physB->ctype)
+	{
+	case ColliderType::PLATFORM:
+		LOG("End Collision PLATFORM");
+		break;
+	case ColliderType::ITEM:
+		LOG("End Collision ITEM");
+		break;
+	case ColliderType::UNKNOWN:
+		LOG("End Collision UNKNOWN");
+		break;
+	case ColliderType::SPIKES:
+		LOG("End Collision SPIKES");
+		break;
+	default:
+		break;
+	}
+}
+
+void Bat::takeDamage(PhysBody* physBody) {
+	switch (physBody->ctype) {
+	case ColliderType::SLASH:
+		lives--;
+		break;
+	default:
+		break;
+	}
 }
