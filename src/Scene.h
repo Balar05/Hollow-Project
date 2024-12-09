@@ -51,8 +51,10 @@ private:
 	SDL_Texture* img;
 
 	Player* player;
-	Bat* bat;
-	Golem* golem;
+	Bat* bat1;
+	Bat* bat2;
+	Golem* golem1;
+	Golem* golem2;
 	Slash* slash;
 	
 };

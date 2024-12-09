@@ -36,11 +36,17 @@ bool Scene::Awake()
 	slash = (Slash*)Engine::GetInstance().entityManager->CreateEntity(EntityType::SLASH);
 	slash->SetParameters(configParameters.child("entities").child("slash"));
 
-	bat = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
-	bat->SetParameters(configParameters.child("entities").child("bat"));
+	bat1 = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
+	bat1->SetParameters(configParameters.child("entities").child("bat1"));
 
-	golem = (Golem*)Engine::GetInstance().entityManager->CreateEntity(EntityType::GOLEM);
-	golem->SetParameters(configParameters.child("entities").child("golem"));
+	bat2 = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
+	bat2->SetParameters(configParameters.child("entities").child("bat2"));
+
+	golem1 = (Golem*)Engine::GetInstance().entityManager->CreateEntity(EntityType::GOLEM);
+	golem1->SetParameters(configParameters.child("entities").child("golem1"));
+
+	golem2 = (Golem*)Engine::GetInstance().entityManager->CreateEntity(EntityType::GOLEM);
+	golem2->SetParameters(configParameters.child("entities").child("golem2"));
 
 	Fire* fire1 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
 	fire1->SetParameters(configParameters.child("entities").child("fire"));
@@ -232,7 +238,18 @@ void Scene::SaveState() {
 	Vector2D pos = player->GetPosition();
 	saveFile.child("config").child("scene").child("entities").child("player").attribute("x").set_value(pos.getX());
 	saveFile.child("config").child("scene").child("entities").child("player").attribute("y").set_value(pos.getY());
-
+	pos = bat1->GetPosition();
+	saveFile.child("config").child("scene").child("entities").child("bat1").attribute("x").set_value(pos.getX());
+	saveFile.child("config").child("scene").child("entities").child("bat1").attribute("y").set_value(pos.getY());
+	pos = bat2->GetPosition();
+	saveFile.child("config").child("scene").child("entities").child("bat2").attribute("x").set_value(pos.getX());
+	saveFile.child("config").child("scene").child("entities").child("bat2").attribute("y").set_value(pos.getY());
+	pos = golem1->GetPosition();
+	saveFile.child("config").child("scene").child("entities").child("golem1").attribute("x").set_value(pos.getX());
+	saveFile.child("config").child("scene").child("entities").child("golem1").attribute("y").set_value(pos.getY());
+	pos = golem2->GetPosition();
+	saveFile.child("config").child("scene").child("entities").child("golem2").attribute("x").set_value(pos.getX());
+	saveFile.child("config").child("scene").child("entities").child("golem2").attribute("y").set_value(pos.getY());
 
 	//save the XML modification to disk
 	saveFile.save_file("config.xml");

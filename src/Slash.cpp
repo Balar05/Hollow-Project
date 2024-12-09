@@ -43,7 +43,7 @@ bool Slash::Start() {
 
 	pbody->listener = this;
 
-	pbody->body->SetEnabled(true);
+	//pbody->body->SetEnabled(true);
 
 	pbody->ctype = ColliderType::SLASH;
 
@@ -54,20 +54,20 @@ bool Slash::Update(float dt)
 {
 	if (Engine::GetInstance().scene.get()->isAttacking()) {
 
-		pbody->body->SetEnabled(true);
+		//pbody->body->SetEnabled(true);
 
 		playerY = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getY());
 		
 		if (Engine::GetInstance().scene.get()->isLookingRight()) {
 			currentAnimation = &slashRight;
-			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX())+PIXEL_TO_METERS(33);
+			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX())+PIXEL_TO_METERS(32);
 			playerPos = { playerX, playerY };
 			pbody->body->SetTransform(playerPos, 0);
 		}
 		else
 		{
 			currentAnimation = &slashLeft;
-			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX() - PIXEL_TO_METERS(33));
+			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX() - PIXEL_TO_METERS(32);
 			playerPos = { playerX, playerY };
 			pbody->body->SetTransform(playerPos, 0);
 		}
@@ -105,4 +105,31 @@ void Slash::SetPosition(Vector2D pos) {
 	pos.setY(pos.getY() + texH / 2);
 	b2Vec2 bodyPos = b2Vec2(PIXEL_TO_METERS(pos.getX()), PIXEL_TO_METERS(pos.getY()));
 	pbody->body->SetTransform(bodyPos, 0);
+}
+
+void Slash::OnCollision(PhysBody* physA, PhysBody* physB) {
+	switch (physB->ctype)
+	{
+	case ColliderType::PLATFORM:
+		LOG("Collision PLATFORM");
+		break;
+	case ColliderType::ITEM:
+		LOG("Collision ITEM");
+		break;
+	case ColliderType::UNKNOWN:
+		LOG("Collision UNKNOWN");
+		break;
+	case ColliderType::GROUND:
+		LOG("Collision GROUND");
+		break;
+	case ColliderType::SPIKES:
+		LOG("Collision SPIKES");
+		break;
+	case ColliderType::ENEMY:
+		LOG("Collision ENEMY");
+		break;
+	default:
+		break;
+	}
+
 }

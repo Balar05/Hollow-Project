@@ -57,6 +57,9 @@ public:
 
 	b2Vec2 playerPos;
 
+	void OnCollision(PhysBody* physA, PhysBody* physB);
+
+
 
 private:
 	pugi::xml_node parameters;

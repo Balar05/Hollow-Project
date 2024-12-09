@@ -243,6 +243,7 @@ void Bat::takeDamage(PhysBody* physBody) {
 	switch (physBody->ctype) {
 	case ColliderType::SLASH:
 		lives--;
+		LOG("Collision SLASH");
 		break;
 	default:
 		break;
