@@ -60,44 +60,51 @@ bool Golem::Start() {
 
 bool Golem::Update(float dt)
 {
+	if (!dead) {
+		Vector2D playerPos = Engine::GetInstance().scene.get()->GetPlayerPosition();
 
-	Vector2D playerPos = Engine::GetInstance().scene.get()->GetPlayerPosition();
+		Vector2D enemyPos = GetPosition();
 
-	Vector2D enemyPos = GetPosition();
+		distanceVec = enemyPos - playerPos;
+		distance = distanceVec.magnitude();
 
-	distanceVec = enemyPos - playerPos;
-	distance = distanceVec.magnitude();
+		if (PIXEL_TO_METERS(distance) <= 5) {
+			Chase();
+		}
+		else
+		{
+			Patrol();
+		}
 
-	if (PIXEL_TO_METERS(distance) <= 5) {
-		Chase();
-	}
-	else
-	{
-		Patrol();
-	}
+		//LOG("Enemy position: %f, %f", position.getX(), position.getY());
 
-	//LOG("Enemy position: %f, %f", position.getX(), position.getY());
+		// saber en que posision esta el enemigo y pintar la textura
+		b2Transform pbodyPos = pbody->body->GetTransform();
+		position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
+		position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
 
-	// saber en que posision esta el enemigo y pintar la textura
-	b2Transform pbodyPos = pbody->body->GetTransform();
-	position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
-	position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
+		if (!dead) {
+			Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
+			currentAnimation->Update();
+		}
 
-	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
-	currentAnimation->Update();
+		// Draw pathfinding
+		debug = Engine::GetInstance().physics.get()->returnDebug();
+		if (debug) {
+			pathfinding->DrawPath();
+		}
 
-	// Draw pathfinding
-	debug = Engine::GetInstance().physics.get()->returnDebug();
-	if (debug) {
-		pathfinding->DrawPath();
-	}
-
-	if (pbody->body->GetLinearVelocity().x < 0) {
-		isLookingRight = false;
+		if (pbody->body->GetLinearVelocity().x < 0) {
+			isLookingRight = false;
+		}
+		else {
+			isLookingRight = true;
+		}
 	}
 	else {
-		isLookingRight = true;
+		pbody->body->SetEnabled(false);
 	}
+	
 
 	return true;
 }
@@ -179,4 +186,57 @@ void Golem::Patrol() {
 	}
 	state = PATROL;
 	pbody->body->SetLinearVelocity({ 0,0 });
+}
+
+void Golem::OnCollision(PhysBody* physA, PhysBody* physB) {
+	switch (physB->ctype)
+	{
+	case ColliderType::SLASH:
+		LOG("Collision SLASH");
+		//takeDamage(physB);
+		dead = true;
+		break;
+	case ColliderType::PLATFORM:
+		LOG("Collision PLATFORM");
+		break;
+	case ColliderType::ITEM:
+		LOG("Collision ITEM");
+		break;
+	case ColliderType::UNKNOWN:
+		LOG("Collision UNKNOWN");
+		break;
+	case ColliderType::GROUND:
+		LOG("Collision GROUND");
+		break;
+	case ColliderType::SPIKES:
+		LOG("Collision SPIKES");
+		break;
+	case ColliderType::ENEMY:
+		LOG("Collision ENEMY");
+		break;
+	default:
+		break;
+	}
+
+}
+
+void Golem::OnCollisionEnd(PhysBody* physA, PhysBody* physB)
+{
+	switch (physB->ctype)
+	{
+	case ColliderType::PLATFORM:
+		LOG("End Collision PLATFORM");
+		break;
+	case ColliderType::ITEM:
+		LOG("End Collision ITEM");
+		break;
+	case ColliderType::UNKNOWN:
+		LOG("End Collision UNKNOWN");
+		break;
+	case ColliderType::SPIKES:
+		LOG("End Collision SPIKES");
+		break;
+	default:
+		break;
+	}
 }
