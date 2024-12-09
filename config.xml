@@ -109,7 +109,7 @@
 					</idleRight>
 				</animations>
 			</bat>
-			<golem x="150" y="590" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
+			<golem x="352" y="640" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="128" w="32" h="32" />
@@ -121,6 +121,40 @@
 						<frame x="192" y="128" w="32" h="32" />
 						<frame x="224" y="128" w="32" h="32" />
 					</idleRight>
+					<idleLeft loop="true" speed="0.1">
+						<frame x="0" y="160" w="32" h="32" />
+						<frame x="32" y="160" w="32" h="32" />
+						<frame x="64" y="160" w="32" h="32" />
+						<frame x="96" y="160" w="32" h="32" />
+						<frame x="128" y="160" w="32" h="32" />
+						<frame x="160" y="160" w="32" h="32" />
+						<frame x="192" y="160" w="32" h="32" />
+						<frame x="224" y="160" w="32" h="32" />
+					</idleLeft>
+					<walkRight loop="true" speed="0.1">
+						<frame x="0" y="224" w="32" h="32" />
+						<frame x="32" y="224" w="32" h="32" />
+						<frame x="64" y="224" w="32" h="32" />
+						<frame x="96" y="224" w="32" h="32" />
+						<frame x="128" y="224" w="32" h="32" />
+						<frame x="160" y="224" w="32" h="32" />
+						<frame x="192" y="224" w="32" h="32" />
+						<frame x="224" y="224" w="32" h="32" />
+						<frame x="256" y="224" w="32" h="32" />
+						<frame x="288" y="224" w="32" h="32" />
+					</walkRight>
+					<walkLeft loop="true" speed="0.1">
+						<frame x="0" y="256" w="32" h="32" />
+						<frame x="32" y="256" w="32" h="32" />
+						<frame x="64" y="256" w="32" h="32" />
+						<frame x="96" y="256" w="32" h="32" />
+						<frame x="128" y="256" w="32" h="32" />
+						<frame x="160" y="256" w="32" h="32" />
+						<frame x="192" y="256" w="32" h="32" />
+						<frame x="224" y="256" w="32" h="32" />
+						<frame x="256" y="256" w="32" h="32" />
+						<frame x="288" y="256" w="32" h="32" />
+					</walkLeft>
 				</animations>
 			</golem>
 			<fire w="32" h="32" texture="Assets/Textures/Fire.png">

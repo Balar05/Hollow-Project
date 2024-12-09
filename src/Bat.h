@@ -7,11 +7,6 @@
 
 struct SDL_Texture;
 
-enum State {
-	CHASE,
-	PATROL,
-	DEAD
-};
 
 class Bat : public Entity
 {

@@ -7,11 +7,6 @@
 
 struct SDL_Texture;
 
-enum State {
-	CHASE,
-	PATROL,
-	DEAD
-};
 
 class Golem : public Entity
 {
@@ -50,6 +45,8 @@ public:
 
 	bool debug;
 
+	bool isLookingRight;
+
 public:
 
 private:
@@ -60,6 +57,13 @@ private:
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
 	Animation idleRight;
+	Animation idleLeft;
+	Animation attackRight;
+	Animation attackLeft;
+	Animation walkRight;
+	Animation walkLeft;
+	Animation dieRight;
+	Animation dieLeft;
 	PhysBody* pbody;
 	Pathfinding* pathfinding;
 };

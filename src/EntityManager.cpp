@@ -1,6 +1,7 @@
 #include "EntityManager.h"
 #include "Player.h"
 #include "Bat.h"
+#include "Golem.h"
 #include "Engine.h"
 #include "Textures.h"
 #include "Scene.h"
@@ -82,6 +83,10 @@ Entity* EntityManager::CreateEntity(EntityType type)
 	case EntityType::BAT:
 		entity = new Bat();
 		break;
+	case EntityType::GOLEM:
+		entity = new Golem();
+		break;
+
 	default:
 		break;
 	}

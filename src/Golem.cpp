@@ -24,6 +24,7 @@ bool Golem::Awake() {
 
 bool Golem::Start() {
 
+	isLookingRight = true;
 	//state = PATROL;
 	//initilize textures
 	texture = Engine::GetInstance().textures.get()->Load(parameters.attribute("texture").as_string());
@@ -34,16 +35,21 @@ bool Golem::Start() {
 
 	//Load animations
 	idleRight.LoadAnimations(parameters.child("animations").child("idleRight"));
+	idleLeft.LoadAnimations(parameters.child("animations").child("idleLeft"));
+	walkRight.LoadAnimations(parameters.child("animations").child("walkRight"));
+	walkLeft.LoadAnimations(parameters.child("animations").child("walkLeft"));
 	currentAnimation = &idleRight;
 
+	//pbody->listener = this;
 	//Add a physics to an item - initialize the physics body
-	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 4, bodyType::DYNAMIC);
+	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 2, bodyType::DYNAMIC);
 
 	//Assign collider type
 	pbody->ctype = ColliderType::ENEMY;
 
 	// Set the gravity of the body
-	if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(0);
+	
+	pbody->body->SetGravityScale(1);
 
 	// Initialize pathfinding
 	pathfinding = new Pathfinding();
@@ -87,7 +93,12 @@ bool Golem::Update(float dt)
 		pathfinding->DrawPath();
 	}
 
-
+	if (pbody->body->GetLinearVelocity().x < 0) {
+		isLookingRight = false;
+	}
+	else {
+		isLookingRight = true;
+	}
 
 	return true;
 }
@@ -119,6 +130,12 @@ void Golem::ResetPath() {
 void Golem::Chase() {
 
 	state = CHASE;
+	if (isLookingRight) {
+		currentAnimation = &walkRight;
+	}
+	else {
+		currentAnimation = &walkLeft;
+	}
 	ResetPath();
 	// propgara hasta encontrar el player
 	while (pathfinding->pathTiles.empty()) {
@@ -149,12 +166,18 @@ void Golem::Chase() {
 
 		float distance = direction.magnitude();
 
-		pbody->body->SetLinearVelocity({ direction.normalized().getX(), direction.normalized().getY() });
+		pbody->body->SetLinearVelocity({ direction.normalized().getX(), pbody->body->GetLinearVelocity().y});
 	}
 
 }
 
 void Golem::Patrol() {
+	if (isLookingRight) {
+		currentAnimation = &idleRight;
+	}
+	else {
+		currentAnimation = &idleLeft;
+	}
 	state = PATROL;
 	pbody->body->SetLinearVelocity({ 0,0 });
 	LOG("Patrol");

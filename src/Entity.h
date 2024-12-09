@@ -11,7 +11,11 @@ enum class EntityType
 	BAT,
 	GOLEM
 };
-
+enum State {
+	CHASE,
+	PATROL,
+	DEAD
+};
 class PhysBody;
 
 class Entity
