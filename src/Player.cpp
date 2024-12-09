@@ -111,7 +111,6 @@ bool Player::Update(float dt)
 
 	}
 
-
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_F) == KEY_DOWN) {
 		isDashing = true;
 		dashTimer = dashDuration;
@@ -120,6 +119,7 @@ bool Player::Update(float dt)
 	if (Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_R) == KEY_DOWN) {
 		isAttacking = true;
 		attackTimer = attackDuration;
+		//attack1Timer.Start();
 	}
 
 	if (isDashing) {

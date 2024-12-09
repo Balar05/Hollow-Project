@@ -44,6 +44,9 @@ public:
 	void LoadState();
 	void SaveState();
 
+	bool isAttacking();
+	bool isLookingRight();
+
 private:
 	SDL_Texture* img;
 

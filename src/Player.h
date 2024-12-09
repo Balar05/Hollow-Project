@@ -48,8 +48,6 @@ public:
 	bool dead;
 	bool godMode;
 
-	//int pickCoinFxId;
-
 	PhysBody* pbody;
 	float jumpForce = 1.8; // The force to apply when jumping
 	bool isJumping = false; // Flag to check if the player is currently jumping

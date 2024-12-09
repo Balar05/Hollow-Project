@@ -43,6 +43,8 @@ bool Slash::Start() {
 
 	pbody->listener = this;
 
+	pbody->body->SetEnabled(false);
+
 	pbody->ctype = ColliderType::SLASH;
 
 	return true;
@@ -50,6 +52,35 @@ bool Slash::Start() {
 
 bool Slash::Update(float dt)
 {
+	if (Engine::GetInstance().scene.get()->isAttacking()) {
+
+		playerY = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getY());
+		
+		if (Engine::GetInstance().scene.get()->isLookingRight()) {
+			currentAnimation = &slashRight;
+			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX())+PIXEL_TO_METERS(16);
+			playerPos = { playerX, playerY };
+			pbody->body->SetTransform(playerPos, 0);
+		}
+		else
+		{
+			currentAnimation = &slashLeft;
+			playerX = PIXEL_TO_METERS(Engine::GetInstance().scene.get()->GetPlayerPosition().getX() - PIXEL_TO_METERS(16));
+			playerPos = { playerX, playerY };
+			pbody->body->SetTransform(playerPos, 0);
+		}
+	}
+	else {
+		pbody->body->SetTransform({ 0,0 }, 0);
+	}
+
+	b2Transform pbodyPos = pbody->body->GetTransform();
+	position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
+	position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
+
+	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
+	currentAnimation->Update();
+
 	return true;
 }
 

@@ -34,7 +34,7 @@ bool Scene::Awake()
 	player->SetParameters(configParameters.child("entities").child("player"));
 
 	slash = (Slash*)Engine::GetInstance().entityManager->CreateEntity(EntityType::SLASH);
-	slash->SetParameters(configParameters.child("entities").child("player"));
+	slash->SetParameters(configParameters.child("entities").child("slash"));
 
 	bat = (Bat*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BAT);
 	bat->SetParameters(configParameters.child("entities").child("bat"));
@@ -136,7 +136,7 @@ bool Scene::Start()
 
 	Engine::GetInstance().map->Load(configParameters.child("map").attribute("path").as_string(), configParameters.child("map").attribute("name").as_string());
 
-	Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/EnterHallownest.ogg", 0);
+	//Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/EnterHallownest.ogg", 0);
 
 	return true;
 }
@@ -236,5 +236,13 @@ void Scene::SaveState() {
 
 	//save the XML modification to disk
 	saveFile.save_file("config.xml");
+}
+
+bool Scene::isAttacking() {
+	return player->isAttacking;
+}
+
+bool Scene::isLookingRight() {
+	return player->isLookingRight;
 }
 

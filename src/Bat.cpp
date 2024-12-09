@@ -63,7 +63,6 @@ bool Bat::Update(float dt)
 
 	distanceVec = enemyPos - playerPos;
 	distance = distanceVec.magnitude();
-	LOG("Distancia: %f", distance);
 
 	if (PIXEL_TO_METERS(distance) <= 5) {
 		Chase();
@@ -171,5 +170,4 @@ void Bat::Chase() {
 void Bat::Patrol() {
 	state = PATROL;
 	pbody->body->SetLinearVelocity({ 0,0 });
-	LOG("Patrol");
 }

@@ -46,12 +46,16 @@ public:
 
 	b2Vec2 velocity;
 
+	float playerX, playerY;
+
 	Animation* currentAnimation = nullptr;
 	Animation slashRight;
 	Animation slashLeft;
 
 
 	bool isLookingRight;
+
+	b2Vec2 playerPos;
 
 
 private:

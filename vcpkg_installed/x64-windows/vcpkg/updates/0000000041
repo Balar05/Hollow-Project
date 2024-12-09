@@ -4,6 +4,6 @@ Port-Version: 1
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 6110cdd8ddc613cd46ae2ed1c69d7f1dc70d610fb46ae15fe237d85023949491
+Abi: 2ccb867e35168724bed19edc2d133cc0e93ac35fae377808d3673b80aefcf7fb
 Description: WavPack encode/decode library, command-line programs, and several plugins
 Status: install ok installed
