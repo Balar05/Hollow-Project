@@ -40,7 +40,6 @@ bool Golem::Start() {
 	walkLeft.LoadAnimations(parameters.child("animations").child("walkLeft"));
 	currentAnimation = &idleRight;
 
-	//pbody->listener = this;
 	//Add a physics to an item - initialize the physics body
 	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 2, bodyType::DYNAMIC);
 	pbody->listener = this;
@@ -172,7 +171,7 @@ void Golem::Chase() {
 
 		float distance = direction.magnitude();
 
-		pbody->body->SetLinearVelocity({ direction.normalized().getX(), pbody->body->GetLinearVelocity().y});
+		pbody->body->SetLinearVelocity({ direction.normalized().getX(),0});
 	}
 
 }

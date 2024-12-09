@@ -78,7 +78,6 @@ bool Bat::Update(float dt)
 			Patrol();
 		}
 
-		//LOG("Enemy position: %f, %f", position.getX(), position.getY());
 
 		// saber en que posision esta el enemigo y pintar la textura
 		b2Transform pbodyPos = pbody->body->GetTransform();
