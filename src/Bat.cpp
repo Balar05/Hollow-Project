@@ -24,6 +24,7 @@ bool Bat::Awake() {
 
 bool Bat::Start() {
 
+	isLookingRight = true;
 	//state = PATROL;
 	//initilize textures
 	texture = Engine::GetInstance().textures.get()->Load(parameters.attribute("texture").as_string());
@@ -33,8 +34,9 @@ bool Bat::Start() {
 	texH = parameters.attribute("h").as_int();
 
 	//Load animations
-	idle.LoadAnimations(parameters.child("animations").child("idleRight"));
-	currentAnimation = &idle;
+	idleRight.LoadAnimations(parameters.child("animations").child("idleRight"));
+	idleLeft.LoadAnimations(parameters.child("animations").child("idleLeft"));
+	currentAnimation = &idleRight;
 
 	//Add a physics to an item - initialize the physics body
 	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 4, bodyType::DYNAMIC);
@@ -87,7 +89,13 @@ bool Bat::Update(float dt)
 		pathfinding->DrawPath();
 	}
 	
-	
+	if (pbody->body->GetLinearVelocity().x < 0) {
+		isLookingRight = false;
+	}
+	else {
+		isLookingRight = true;
+	}
+
 
 	return true;
 }
@@ -119,6 +127,12 @@ void Bat::ResetPath() {
 void Bat::Chase() {
 
 	state = CHASE;
+	if (isLookingRight) {
+		currentAnimation = &idleRight;
+	}
+	else {
+		currentAnimation = &idleLeft;
+	}
 	ResetPath();
 	// propgara hasta encontrar el player
 	while (pathfinding->pathTiles.empty()) {

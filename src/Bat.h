@@ -45,6 +45,7 @@ public:
 
 	bool debug;
 
+	bool isLookingRight;
 public:
 
 private:
@@ -54,7 +55,8 @@ private:
 	int texW, texH;
 	pugi::xml_node parameters;
 	Animation* currentAnimation = nullptr;
-	Animation idle;
+	Animation idleRight;
+	Animation idleLeft;
 	PhysBody* pbody;
 	Pathfinding* pathfinding;
 };
