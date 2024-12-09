@@ -130220,7 +130220,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile/>
+   <tile gid="2526"/>
    <tile/>
    <tile gid="210"/>
    <tile gid="211"/>
@@ -131213,8 +131213,8 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile gid="2526"/>
    <tile/>
+   <tile gid="2526"/>
    <tile/>
    <tile gid="2646"/>
    <tile gid="2646"/>
