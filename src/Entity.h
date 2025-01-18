@@ -10,7 +10,8 @@ enum class EntityType
 	FIRE,
 	BAT,
 	SLASH,
-	GOLEM
+	GOLEM,
+	BOSS
 };
 enum State {
 	CHASE,

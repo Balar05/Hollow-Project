@@ -48,6 +48,9 @@ bool Scene::Awake()
 	golem2 = (Golem*)Engine::GetInstance().entityManager->CreateEntity(EntityType::GOLEM);
 	golem2->SetParameters(configParameters.child("entities").child("golem2"));
 
+	boss = (Boss*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BOSS);
+	boss->SetParameters(configParameters.child("entities").child("boss"));
+
 	Fire* fire1 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
 	fire1->SetParameters(configParameters.child("entities").child("fire"));
 	fire1->position = Vector2D(192, 640);
@@ -261,5 +264,9 @@ bool Scene::isAttacking() {
 
 bool Scene::isLookingRight() {
 	return player->isLookingRight;
+}
+
+void Scene::takeDamagePlayer() {
+	player->takeDamage();
 }
 

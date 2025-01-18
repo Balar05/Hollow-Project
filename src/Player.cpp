@@ -293,6 +293,8 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 		LOG("Collision ENEMY");
 		takeDamage();
 		break;
+	case ColliderType::BOSS:
+		break;
 	default:
 		break;
 	}
@@ -337,7 +339,7 @@ void Player::takeDamage() {
 		LOG("Treure vides");
 		if (isLookingRight) {
 			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(-10, -2.0f), true);
-			currentAnimation = &jumpRight;
+			currentAnimation = &damageRight;
 		}
 		else {
 			pbody->body->ApplyLinearImpulseToCenter(b2Vec2(10, -2.0f), true);

@@ -2,6 +2,7 @@
 #include "Player.h"
 #include "Bat.h"
 #include "Golem.h"
+#include "Boss.h"
 #include "Engine.h"
 #include "Textures.h"
 #include "Scene.h"
@@ -88,6 +89,9 @@ Entity* EntityManager::CreateEntity(EntityType type)
 		break;
 	case EntityType::SLASH:
 		entity = new Slash();
+		break;
+	case EntityType::BOSS:
+		entity = new Boss();
 		break;
 	default:
 		break;

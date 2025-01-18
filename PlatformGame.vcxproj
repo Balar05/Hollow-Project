@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="src\Audio.cpp" />
     <ClCompile Include="src\Bat.cpp" />
+    <ClCompile Include="src\Boss.cpp" />
     <ClCompile Include="src\Engine.cpp" />
     <ClCompile Include="src\EntityManager.cpp" />
     <ClCompile Include="src\Fire.cpp" />
@@ -173,6 +174,7 @@
     <ClInclude Include="src\Animation.h" />
     <ClInclude Include="src\Audio.h" />
     <ClInclude Include="src\Bat.h" />
+    <ClInclude Include="src\Boss.h" />
     <ClInclude Include="src\Engine.h" />
     <ClInclude Include="src\Entity.h" />
     <ClInclude Include="src\EntityManager.h" />
