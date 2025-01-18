@@ -21,32 +21,28 @@ bool Item::Awake() {
 
 bool Item::Start() {
 
-	//initilize textures
-	texture = Engine::GetInstance().textures.get()->Load("Assets/Textures/goldCoin.png");
-	
-	// L08 TODO 4: Add a physics to an item - initialize the physics body
-	Engine::GetInstance().textures.get()->GetSize(texture, texW, texH);
-	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 2, bodyType::DYNAMIC);
+	texture = Engine::GetInstance().textures.get()->Load(parameters.attribute("texture").as_string());
 
-	// L08 TODO 7: Assign collider type
-	pbody->ctype = ColliderType::ITEM;
+	texW = parameters.attribute("w").as_int();
+	texH = parameters.attribute("h").as_int();
 
-	
+	key.LoadAnimations(parameters.child("animations").child("key"));
+	currentAnimation = &key;
+
 	return true;
 }
 
 bool Item::Update(float dt)
 {
-	b2Transform pbodyPos = pbody->body->GetTransform();
-	position.setX(METERS_TO_PIXELS(pbodyPos.p.x) - texH / 2);
-	position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
-
-	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY());
+	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
+	currentAnimation->Update();
 
 	return true;
 }
 
 bool Item::CleanUp()
 {
+	LOG("Cleanup fire");
+	Engine::GetInstance().textures.get()->UnLoad(texture);
 	return true;
 }
