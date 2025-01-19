@@ -24,11 +24,11 @@ bool UI::Awake(){
 bool UI::Start(){
 	help = false;
 	bool ret = true;
-	helpMenu = Engine::GetInstance().textures.get()->Load("Assets/UI/Help_menu.png");
+	helpMenu = Engine::GetInstance().textures.get()->Load("Assets/UI/Help_menu/Help_menu.png");
 
 
 	if (helpMenu == nullptr){
-		LOG("Failed to load texture: Assets/Textures/UI/Help_menu.png");
+		LOG("Failed to load texture: Assets/UI/Help_menu/Help_menu.png");
 		ret = false;
 	}
 
