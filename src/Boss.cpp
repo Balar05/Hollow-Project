@@ -26,6 +26,7 @@ bool Boss::Start() {
 
 	isLookingRight = true;
 	isAttacking = false;
+	lives = 20;
 	//state = PATROL;
 	//initilize textures
 	texture = Engine::GetInstance().textures.get()->Load(parameters.attribute("texture").as_string());
@@ -53,6 +54,8 @@ bool Boss::Start() {
 	//Assign collider type
 	pbody->ctype = ColliderType::BOSS;
 
+	pbody->body->SetEnabled(true);
+
 	// Set the gravity of the body
 
 	//if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(0);
@@ -77,25 +80,16 @@ bool Boss::Update(float dt)
 
 		if (PIXEL_TO_METERS(distance) <= 5) {
 			if (PIXEL_TO_METERS(distance) <= 1) {
-				if (isAttacking) {
-
-				}
-				else {
-					isAttacking = true;
-					attackTimer = attackDuration;
-					Attack();
-				}
+				Attack();
 			}
 			else {
-				if (!isAttacking)
-					Chase();
+				
+				Chase();
 			}
 		}
-		else
-		{
+		else {
 			Patrol();
 		}
-
 		//LOG("Enemy position: %f, %f", position.getX(), position.getY());
 
 		// saber en que posision esta el enemigo y pintar la textura
@@ -156,10 +150,8 @@ void Boss::ResetPath() {
 void Boss::Attack() {
 
 	//Engine::GetInstance().audio.get()->PlayFx(attack);
-	attackTimer -= 0.16;
-	if (attackTimer <= 0) {
-		isAttacking = false;
-	}
+	isAttacking = true;
+
 	pbody->body->SetLinearVelocity(b2Vec2(0, 0));
 	if (isLookingRight && isAttacking) {
 		currentAnimation = &attackRight;
@@ -172,6 +164,7 @@ void Boss::Attack() {
 
 void Boss::Chase() {
 
+	isAttacking = false;
 	state = CHASE;
 	if (isLookingRight) {
 		currentAnimation = &walkRight;
@@ -215,6 +208,7 @@ void Boss::Chase() {
 }
 
 void Boss::Patrol() {
+	isAttacking = false;
 	if (isLookingRight) {
 		currentAnimation = &idleRight;
 	}
@@ -261,10 +255,11 @@ void Boss::OnCollision(PhysBody* physA, PhysBody* physB) {
 
 void Boss::takeDamage()
 {
-	this->lives--;
+	lives--;
 	if (lives <= 0) {
 		dead = true;
 		pbody->body->SetLinearVelocity(b2Vec2(0, 0));
+		
 		if (isLookingRight) currentAnimation = &dieRight;
 		else
 		{

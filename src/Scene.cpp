@@ -135,6 +135,10 @@ bool Scene::Awake()
 	fire21->SetParameters(configParameters.child("entities").child("fire"));
 	fire21->position = Vector2D(3360, 1024);
 
+	Item* key1 = (Item*)Engine::GetInstance().entityManager->CreateEntity(EntityType::ITEM);
+	key1->SetParameters(configParameters.child("entities").child("key"));
+	key1->position = Vector2D(687, 719);
+
 	return ret;
 
 }
@@ -268,5 +272,13 @@ bool Scene::isLookingRight() {
 
 void Scene::takeDamagePlayer() {
 	player->takeDamage();
+}
+
+void Scene::takePoints() {
+	player->points += 10;
+}
+
+void Scene::playerHeal() {
+	player->lives++;
 }
 

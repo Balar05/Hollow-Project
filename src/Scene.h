@@ -6,6 +6,7 @@
 #include "Golem.h"
 #include "Slash.h"
 #include "Boss.h"
+#include "Item.h"
 
 struct SDL_Texture;
 
@@ -48,6 +49,8 @@ public:
 	bool isAttacking();
 	bool isLookingRight();
 	void takeDamagePlayer();
+	void playerHeal();
+	void takePoints();
 
 private:
 	SDL_Texture* img;
@@ -59,5 +62,6 @@ private:
 	Golem* golem2;
 	Slash* slash;
 	Boss* boss;
+	Item* key;
 	
 };

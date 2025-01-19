@@ -276,6 +276,7 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 		break;
 	case ColliderType::ITEM:
 		LOG("Collision ITEM");
+		takePoints();
 		break;
 	case ColliderType::UNKNOWN:
 		LOG("Collision UNKNOWN");
@@ -362,3 +363,12 @@ void Player::SetPosition(Vector2D pos) {
 	b2Vec2 bodyPos = b2Vec2(PIXEL_TO_METERS(pos.getX()), PIXEL_TO_METERS(pos.getY()));
 	pbody->body->SetTransform(bodyPos, 0);
 }
+
+void Player::heal() {
+	lives++;
+}
+
+void Player::takePoints() {
+	points += 10;
+}
+

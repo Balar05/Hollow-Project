@@ -29,14 +29,25 @@ bool Item::Start() {
 	key.LoadAnimations(parameters.child("animations").child("key"));
 	currentAnimation = &key;
 
+	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 2, bodyType::STATIC);
+	pbody->listener = this;
+
+	pbody->ctype = ColliderType::ITEM;
+
+
 	return true;
 }
 
 bool Item::Update(float dt)
 {
-	Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
-	currentAnimation->Update();
-
+	if (!isPicked) {
+		Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
+		currentAnimation->Update();
+	}
+	else {
+		pbody->body->SetEnabled(false);
+	}
+	
 	return true;
 }
 
@@ -45,4 +56,17 @@ bool Item::CleanUp()
 	LOG("Cleanup fire");
 	Engine::GetInstance().textures.get()->UnLoad(texture);
 	return true;
+}
+
+void Item::OnCollision(PhysBody* physA, PhysBody* physB) {
+	switch (physB->ctype)
+	{
+	case ColliderType::PLAYER:
+		LOG("Collision PLAYER");
+		isPicked = true;
+		break;
+	default:
+		break;
+	}
+
 }

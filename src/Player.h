@@ -34,6 +34,10 @@ public:
 
 	void takeDamage();
 
+	void heal();
+
+	void takePoints();
+
 	Vector2D GetPosition();
 	void SetPosition(Vector2D pos);
 
@@ -45,6 +49,7 @@ public:
 	int texW, texH;
 
 	int lives;
+	int points;
 	bool dead;
 	bool godMode;
 

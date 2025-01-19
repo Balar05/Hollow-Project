@@ -48,7 +48,9 @@ bool Golem::Start() {
 
 	// Set the gravity of the body
 	
-	if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(0);
+	//if (!parameters.attribute("gravity").as_bool()) pbody->body->SetGravityScale(1);
+
+	pbody->body->SetGravityScale(1);
 
 	// Initialize pathfinding
 	pathfinding = new Pathfinding();
