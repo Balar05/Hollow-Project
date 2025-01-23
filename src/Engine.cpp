@@ -14,6 +14,7 @@
 #include "Map.h"
 #include "Physics.h"
 #include "UI.h"
+#include "GuiManager.h"
 
 // Constructor
 Engine::Engine() {

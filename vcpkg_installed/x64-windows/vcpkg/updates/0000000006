@@ -1,9 +1,9 @@
-Package: wavpack
-Version: 5.6.0
-Port-Version: 1
+Package: freetype
+Version: 2.13.2
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 2ccb867e35168724bed19edc2d133cc0e93ac35fae377808d3673b80aefcf7fb
-Description: WavPack encode/decode library, command-line programs, and several plugins
-Status: purge ok half-installed
+Abi: 4012010b7a396af49659c6e78e98bc6cbfcd36e1ec17fd432406d151cb259101
+Description: A library to render fonts.
+Default-Features: brotli, bzip2, png, zlib
+Status: install ok half-installed
