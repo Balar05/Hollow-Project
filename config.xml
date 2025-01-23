@@ -17,7 +17,7 @@
 	<scene>
 		<map path="Assets/Maps/" name="Level_1.tmx" />
 		<entities>
-			<player x="79" y="719" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
+			<player x="113" y="719" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />
@@ -117,7 +117,7 @@
 					</frontTraceLeft>
 				</animations>
 			</player>
-			<bat1 x="2121" y="1931" w="64" h="64" texture="Assets/Textures/Bat.png">
+			<bat1 x="930" y="463" w="64" h="64" texture="Assets/Textures/Bat.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="64" h="64" />
@@ -133,7 +133,7 @@
 					</idleLeft>
 				</animations>
 			</bat1>
-			<bat2 x="1346" y="1589" w="64" h="48" texture="Assets/Textures/Bat.png">
+			<bat2 x="260" y="624" w="64" h="48" texture="Assets/Textures/Bat.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="64" h="64" />
@@ -161,7 +161,7 @@
 					</slashLeft>
 				</animations>
 			</slash>
-			<golem1 x="1500" y="1718" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
+			<golem1 x="578" y="719" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="128" w="32" h="32" />
@@ -209,7 +209,7 @@
 					</walkLeft>
 				</animations>
 			</golem1>
-			<golem2 x="1718" y="1868" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
+			<golem2 x="1152" y="1071" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="128" w="32" h="32" />
