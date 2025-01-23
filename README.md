@@ -4,6 +4,8 @@ Hollow Project is a tribute game to Hollow Knight.
 It is a 2D Metroidvania in pixel art. We are creating this game for a uni project.
 We use C++ as the language and Box2D and SDL2 for our main libraries.
 
+GitHub: https://github.com/Balar05/Hollow-Project
+
 ## Hollow Team
 Our team consists of two members.
 
