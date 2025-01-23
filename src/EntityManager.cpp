@@ -9,6 +9,8 @@
 #include "Log.h"
 #include "Item.h"
 #include "Fire.h"
+#include "Potion.h"
+
 
 EntityManager::EntityManager() : Module()
 {
@@ -77,6 +79,9 @@ Entity* EntityManager::CreateEntity(EntityType type)
 		break;
 	case EntityType::ITEM:
 		entity = new Item();
+		break;
+	case EntityType::POTION:
+		entity = new Potion();
 		break;
 	case EntityType::FIRE:
 		entity = new Fire();

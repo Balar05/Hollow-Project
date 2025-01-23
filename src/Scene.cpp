@@ -12,6 +12,7 @@
 #include "Map.h"
 #include "Item.h"
 #include "Fire.h"
+#include "Potion.h"
 #include "GuiControl.h"
 #include "GuiManager.h"
 
@@ -139,7 +140,11 @@ bool Scene::Awake()
 
 	Item* key1 = (Item*)Engine::GetInstance().entityManager->CreateEntity(EntityType::ITEM);
 	key1->SetParameters(configParameters.child("entities").child("key"));
-	key1->position = Vector2D(687, 719);
+	key1->position = Vector2D(687, 710);
+
+	Potion* potion1 = (Potion*)Engine::GetInstance().entityManager->CreateEntity(EntityType::POTION);
+	potion1->SetParameters(configParameters.child("entities").child("potion"));
+
 
 	// L16: TODO 2: Instantiate a new GuiControlButton in the Scene
 	//SDL_Rect btPos = { 520, 350, 120,20 };

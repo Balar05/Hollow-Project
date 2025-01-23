@@ -278,6 +278,10 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 		LOG("Collision ITEM");
 		takePoints();
 		break;
+	case ColliderType::POTION:
+		LOG("Collision POTION");
+		heal();
+		break;
 	case ColliderType::UNKNOWN:
 		LOG("Collision UNKNOWN");
 		break;

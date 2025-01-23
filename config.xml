@@ -403,6 +403,15 @@
 					</key>
 				</animations>
 			</key>
+
+			<potion x="687" y="703" w="32" h="32" texture="Assets/Textures/HealthPotion.png">
+				<animations>
+					<potion loop="true" speed="0.1">
+						<frame x="0" y="0" w="32" h="32" />
+					</potion>
+				</animations>
+			</potion>
+			
 		</entities>
 	</scene>
 	<audio>
