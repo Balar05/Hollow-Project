@@ -77,6 +77,7 @@ bool Player::Start() {
 bool Player::Update(float dt)
 {
 	ZoneScoped;
+
 	if (godMode) {
 		lives = 5;
 		dead = false;

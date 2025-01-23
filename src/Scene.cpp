@@ -55,7 +55,7 @@ bool Scene::Awake()
 
 	boss = (Boss*)Engine::GetInstance().entityManager->CreateEntity(EntityType::BOSS);
 	boss->SetParameters(configParameters.child("entities").child("boss"));
-
+	
 	Fire* fire1 = (Fire*)Engine::GetInstance().entityManager->CreateEntity(EntityType::FIRE);
 	fire1->SetParameters(configParameters.child("entities").child("fire"));
 	fire1->position = Vector2D(192, 640);
@@ -192,6 +192,10 @@ bool Scene::Update(float dt)
 		Engine::GetInstance().render.get()->camera.y = -2160;
 	}
 
+	if (player->position.getX() >= 5426 && player->position.getY() >= 655 && boss->dead == false) {
+		Engine::GetInstance().audio.get()->PlayMusic("Assets/Audio/Music/Radiance.ogg", 0);
+	}
+
 	return true;
 }
 
@@ -272,6 +276,10 @@ void Scene::SaveState() {
 	pos = golem2->GetPosition();
 	saveFile.child("config").child("scene").child("entities").child("golem2").attribute("x").set_value(pos.getX());
 	saveFile.child("config").child("scene").child("entities").child("golem2").attribute("y").set_value(pos.getY());
+	pos = boss->GetPosition();
+	saveFile.child("config").child("scene").child("entities").child("boss").attribute("x").set_value(pos.getX());
+	saveFile.child("config").child("scene").child("entities").child("boss").attribute("y").set_value(pos.getY());
+
 
 	//save the XML modification to disk
 	saveFile.save_file("config.xml");
@@ -310,5 +318,6 @@ void Scene::CreateCheckpoint(Vector2D pos) {
 	campfire->SetParameters(configParameters.child("entities").child("campfire"));
 	//Vector2D campPos = { pos.getX() / 0.02f, pos.getY() / 0.02f };
 	campfire->position = pos;
+	//checkpointList.push_back(&pos);
 }
 

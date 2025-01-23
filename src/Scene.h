@@ -10,6 +10,7 @@
 #include "Potion.h"
 #include "Checkpoint.h"
 #include "GuiControlButton.h"
+#include <list>
 
 struct SDL_Texture;
 
@@ -43,6 +44,7 @@ public:
 	//Music and FX
 
 	int EnterHallownest;
+	int Radiance;
 
 	Vector2D GetPlayerPosition();
 
@@ -75,6 +77,7 @@ private:
 	Item* key;
 	Potion* potion;
 	Checkpoint* checkpoint;
+	//std::list<Vector2D*> checkpointList;
 	//GuiControlButton* guiBt;
 
 };
