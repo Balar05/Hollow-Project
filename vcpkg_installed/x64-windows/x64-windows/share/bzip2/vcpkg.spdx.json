@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/bzip2-x64-windows-1.0.8#5-320988dd-33bc-4586-bde3-8118e15346a0",
-  "name": "bzip2:x64-windows@1.0.8#5 c78d1a0cf4c48daf744452652a7adc15637431c4e74785ed705736bf60b10142",
+  "documentNamespace": "https://spdx.org/spdxdocs/bzip2-x64-windows-1.0.8#5-1f6d9583-1ed7-40ac-a444-8884156fc599",
+  "name": "bzip2:x64-windows@1.0.8#5 f629eea701ae1f23fad93a134a963495377a114d6fcbdcebd50c98fbed951c1e",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-1c9ec1978a6b0c2b39c9e9554a96e3e275f7556e"
+      "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
     ],
-    "created": "2025-01-23T17:04:18Z"
+    "created": "2025-01-23T15:43:52Z"
   },
   "relationships": [
     {
@@ -99,7 +99,7 @@
     {
       "name": "bzip2:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "c78d1a0cf4c48daf744452652a7adc15637431c4e74785ed705736bf60b10142",
+      "versionInfo": "f629eea701ae1f23fad93a134a963495377a114d6fcbdcebd50c98fbed951c1e",
       "downloadLocation": "NONE",
       "licenseConcluded": "bzip2-1.0.6",
       "licenseDeclared": "NOASSERTION",
@@ -124,7 +124,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/bzip2.pc.in",
+      "fileName": "./C:/Users/arnau/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/bzip2.pc.in",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -136,7 +136,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/CMakeLists.txt",
+      "fileName": "./C:/Users/arnau/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/CMakeLists.txt",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -148,7 +148,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/fix-import-export-macros.patch",
+      "fileName": "./C:/Users/arnau/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/fix-import-export-macros.patch",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -160,7 +160,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/portfile.cmake",
+      "fileName": "./C:/Users/arnau/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/portfile.cmake",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -172,7 +172,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/usage",
+      "fileName": "./C:/Users/arnau/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/usage",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
@@ -184,7 +184,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/marti/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/vcpkg.json",
+      "fileName": "./C:/Users/arnau/AppData/Local/vcpkg/registries/git-trees/92e9a8bbf1abbd89872b48ad82fcf75852de1006/vcpkg.json",
       "SPDXID": "SPDXRef-file-5",
       "checksums": [
         {

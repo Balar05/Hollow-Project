@@ -8,6 +8,7 @@
 #include "Boss.h"
 #include "Item.h"
 #include "Potion.h"
+#include "Checkpoint.h"
 #include "GuiControlButton.h"
 
 struct SDL_Texture;
@@ -55,6 +56,7 @@ public:
 	void takePoints();
 
 	bool OnGuiMouseClickEvent(GuiControl* control);
+	void CreateCheckpoint(Vector2D pos);
 
 
 private:
@@ -72,6 +74,7 @@ private:
 	Boss* boss;
 	Item* key;
 	Potion* potion;
+	Checkpoint* checkpoint;
 	//GuiControlButton* guiBt;
 
 };

@@ -12,6 +12,7 @@ enum class EntityType
 	BAT,
 	SLASH,
 	GOLEM,
+	CHECKPOINT,
 	BOSS
 };
 enum State {

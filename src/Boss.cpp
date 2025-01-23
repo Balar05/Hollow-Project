@@ -50,7 +50,7 @@ bool Boss::Start() {
 	currentAnimation = &idleRight;
 
 	//Add a physics to an item - initialize the physics body
-	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH, bodyType::DYNAMIC);
+	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX(), (int)position.getY(), texH/2, bodyType::DYNAMIC);
 	pbody->listener = this;
 	//Assign collider type
 	pbody->ctype = ColliderType::BOSS;
@@ -100,7 +100,7 @@ bool Boss::Update(float dt)
 		position.setY(METERS_TO_PIXELS(pbodyPos.p.y) - texH / 2);
 
 		if (!dead) {
-			Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY(), &currentAnimation->GetCurrentFrame());
+			Engine::GetInstance().render.get()->DrawTexture(texture, (int)position.getX(), (int)position.getY()-16, &currentAnimation->GetCurrentFrame());
 			currentAnimation->Update();
 		}
 
@@ -204,7 +204,7 @@ void Boss::Chase() {
 
 		float distance = direction.magnitude();
 
-		pbody->body->SetLinearVelocity({ direction.normalized().getX(),0 });
+		pbody->body->SetLinearVelocity({ direction.normalized().getX(),pbody->body->GetLinearVelocity().y});
 	}
 
 }

@@ -146,6 +146,8 @@ bool Scene::Awake()
 	Potion* potion = (Potion*)Engine::GetInstance().entityManager->CreateEntity(EntityType::POTION);
 	potion->SetParameters(configParameters.child("entities").child("potion"));
 
+	
+
 	// L16: TODO 2: Instantiate a new GuiControlButton in the Scene
 	//SDL_Rect btPos = { 520, 350, 120,20 };
 	//guiBt = (GuiControlButton*)Engine::GetInstance().guiManager->CreateGuiControl(GuiControlType::BUTTON, 1, "MyButton", btPos, this);
@@ -301,5 +303,12 @@ bool Scene::OnGuiMouseClickEvent(GuiControl* control)
 	LOG("Press Gui Control: %d", control->id);
 
 	return true;
+}
+
+void Scene::CreateCheckpoint(Vector2D pos) {
+	Checkpoint* campfire = (Checkpoint*)Engine::GetInstance().entityManager->CreateEntity(EntityType::CHECKPOINT);
+	campfire->SetParameters(configParameters.child("entities").child("campfire"));
+	//Vector2D campPos = { pos.getX() / 0.02f, pos.getY() / 0.02f };
+	campfire->position = pos;
 }
 

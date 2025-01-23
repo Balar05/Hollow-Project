@@ -3,5 +3,5 @@ Version: 2.22.0
 Depends: freetype, sdl2, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 99a2061d282d1629d9f9df51e2e01b3270649434ba0ecd2b714414d72f902254
+Abi: 38a239ad7b5fb3b75a580f7ededf69c5479e02cde0b7cc810a72ed2ae95ed041
 Description: A library for rendering TrueType fonts with SDL

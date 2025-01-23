@@ -4,6 +4,6 @@ Port-Version: 3
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 6427d3539cc6c27f840f8b0589548b44961a46903f0a8f353b18e6cd5e1f031e
+Abi: f4cae6ee9611158c691c4103f32aa4b73712a94dbf9bbdb2870667d330ae156b
 Description: An open source C++ engine for simulating rigid bodies in 2D
 Status: purge ok half-installed

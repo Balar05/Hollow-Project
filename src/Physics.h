@@ -33,6 +33,7 @@ enum class ColliderType {
 	ENEMY,
 	SLASH,
 	BOSS,
+	CHECKPOINT,
 	UNKNOWN
 	// ..
 };

@@ -10,6 +10,7 @@
 #include "Item.h"
 #include "Fire.h"
 #include "Potion.h"
+#include "Checkpoint.h"
 #include "tracy/Tracy.hpp"
 
 EntityManager::EntityManager() : Module()
@@ -83,6 +84,9 @@ Entity* EntityManager::CreateEntity(EntityType type)
 	case EntityType::POTION:
 		entity = new Potion();
 		break;
+	case EntityType::CHECKPOINT:
+		entity = new Checkpoint();
+		break;
 	case EntityType::FIRE:
 		entity = new Fire();
 		break;
@@ -98,8 +102,6 @@ Entity* EntityManager::CreateEntity(EntityType type)
 	case EntityType::BOSS:
 		entity = new Boss();
 		break;
-	case EntityType::POTION:
-		entity = new Potion();
 	default:
 		break;
 	}

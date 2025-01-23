@@ -17,7 +17,7 @@
 	<scene>
 		<map path="Assets/Maps/" name="Level_1.tmx" />
 		<entities>
-			<player x="161" y="719" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
+			<player x="5162" y="625" w="32" h="32" texture="Assets/Textures/HollowSprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />
@@ -117,7 +117,7 @@
 					</frontTraceLeft>
 				</animations>
 			</player>
-			<bat1 x="893" y="463" w="64" h="64" texture="Assets/Textures/Bat.png">
+			<bat1 x="1615" y="1423" w="64" h="64" texture="Assets/Textures/Bat.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="64" h="64" />
@@ -133,7 +133,7 @@
 					</idleLeft>
 				</animations>
 			</bat1>
-			<bat2 x="452" y="659" w="64" h="48" texture="Assets/Textures/Bat.png">
+			<bat2 x="964" y="1209" w="64" h="48" texture="Assets/Textures/Bat.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="64" h="64" />
@@ -161,7 +161,7 @@
 					</slashLeft>
 				</animations>
 			</slash>
-			<golem1 x="702" y="703" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
+			<golem1 x="1262" y="1125" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="128" w="32" h="32" />
@@ -209,7 +209,7 @@
 					</walkLeft>
 				</animations>
 			</golem1>
-			<golem2 x="1177" y="1071" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
+			<golem2 x="1466" y="1361" w="32" h="32" texture="Assets/Textures/Golem_Sprites.png">
 				<animations>
 					<idleRight loop="true" speed="0.1">
 						<frame x="0" y="128" w="32" h="32" />
@@ -257,7 +257,7 @@
 					</walkLeft>
 				</animations>
 			</golem2>
-			<boss x="6016" y="650" w="64" h="32" texture="Assets/Textures/Skeleton.png">
+			<boss x="6016" y="630" w="64" h="32" texture="Assets/Textures/Skeleton.png">
 				<animations>
 					<attackRight loop="true" speed="0.1">
 						<frame x="0" y="0" w="64" h="48" />
@@ -385,7 +385,7 @@
 					</fire>
 				</animations>
 			</fire>
-			<key x ="687" y ="705" w="32" h="32" texture="Assets/Textures/WhiteKey.png">
+			<key x="687" y="705" w="32" h="32" texture="Assets/Textures/WhiteKey.png">
 				<animations>
 					<key loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />
@@ -403,7 +403,7 @@
 					</key>
 				</animations>
 			</key>
-			<potion x ="670" y ="705" w="32" h="32" texture="Assets/Textures/HealthPotion.png">
+			<potion x="670" y="705" w="32" h="32" texture="Assets/Textures/HealthPotion.png">
 				<animations>
 					<potion loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />
@@ -411,6 +411,18 @@
 					</potion>
 				</animations>
 			</potion>
+			<campfire w="32" h="32" texture="Assets/Textures/CampfireFull.png">
+				<animations>
+					<campfireoff loop="true" speed="0.1">
+						<frame x="0" y="0" w="32" h="32" />
+					</campfireoff>
+					<campfireon loop="true" speed="0.1">
+						<frame x="32" y="0" w="32" h="32" />
+						<frame x="64" y="0" w="32" h="32" />
+						<frame x="96" y="0" w="32" h="32" />
+					</campfireon>
+				</animations>
+			</campfire>
 		</entities>
 	</scene>
 	<audio>

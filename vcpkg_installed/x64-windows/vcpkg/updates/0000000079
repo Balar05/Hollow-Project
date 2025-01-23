@@ -1,7 +1,7 @@
 Package: freetype
-Feature: bzip2
-Depends: bzip2
+Feature: png
+Depends: libpng
 Architecture: x64-windows
 Multi-Arch: same
-Description: Support bzip2 compressed fonts.
-Status: install ok installed
+Description: Support PNG compressed OpenType embedded bitmaps.
+Status: install ok half-installed

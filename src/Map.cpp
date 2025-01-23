@@ -5,6 +5,7 @@
 #include "Map.h"
 #include "Log.h"
 #include "Physics.h"
+#include "Scene.h"
 
 #include <math.h>
 #include "tracy/Tracy.hpp"
@@ -40,23 +41,6 @@ bool Map::Update(float dt)
     if (mapLoaded) {
 
         for (const auto& mapLayer : mapData.layers) {
-
-            int cameraX = Engine::GetInstance().render.get()->camera.w;
-            int cameraY = Engine::GetInstance().render.get()->camera.y;
-            int screenWidth = 1240;
-            int screenHeight = 720;
-
-            int startX = WorldToMap(cameraX, 0).getX();
-            if (startX < 0) startX = 0;
-
-            int endX = WorldToMap(cameraX+screenWidth, 0).getX();
-            if (endX >= mapData.width) endX = mapData.width;
-
-            int startY = WorldToMap(0, cameraY).getY();
-            if (startY < 0)  startY = 0;
-
-            int endY = WorldToMap(0, cameraY + screenHeight).getY();
-            if (endY > mapData.height)   endY = mapData.height;
 
             //Check if the property Draw exist get the value, if it's true draw the lawyer
             if (mapLayer->properties.GetProperty("Draw") != NULL && mapLayer->properties.GetProperty("Draw")->value == true) {
@@ -212,6 +196,17 @@ bool Map::Load(std::string path, std::string fileName)
                             Vector2D mapCoord = MapToWorld(i, j);
                             PhysBody* platform = Engine::GetInstance().physics.get()->CreateRectangle(mapCoord.getX() + mapData.tileWidth / 2, mapCoord.getY() + mapData.tileHeight / 2, mapData.tileWidth, mapData.tileHeight, STATIC);
                             platform->ctype = ColliderType::SPIKES;
+                        }
+                    }
+                }
+            }
+            if (mapLayer->properties.GetProperty("Campfire") != NULL && mapLayer->properties.GetProperty("Campfire")->value == true) {
+                for (int i = 0; i < mapData.width; ++i) {
+                    for (int j = 0; j < mapData.height; ++j) {
+                        int gid = mapLayer->Get(i, j);
+                        if (gid == 3) {
+                            Vector2D mapCoord = MapToWorld(i, j);
+                            Engine::GetInstance().scene.get()->CreateCheckpoint(mapCoord);
                         }
                     }
                 }

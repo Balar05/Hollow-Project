@@ -1,7 +1,7 @@
 Package: freetype
-Feature: png
-Depends: libpng
+Feature: zlib
+Depends: zlib
 Architecture: x64-windows
 Multi-Arch: same
-Description: Support PNG compressed OpenType embedded bitmaps.
-Status: install ok installed
+Description: Use zlib instead of internal library for DEFLATE
+Status: install ok half-installed

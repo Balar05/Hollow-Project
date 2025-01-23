@@ -302,6 +302,8 @@ void Player::OnCollision(PhysBody* physA, PhysBody* physB) {
 		break;
 	case ColliderType::BOSS:
 		break;
+	case ColliderType::CHECKPOINT:
+		Engine::GetInstance().scene.get()->SaveState();
 	default:
 		break;
 	}
