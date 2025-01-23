@@ -18,6 +18,7 @@ class EntityManager;
 class Map;
 class Physics;
 class UI;
+class GuiManager;
 
 class Engine
 {
@@ -100,6 +101,7 @@ public:
 	std::shared_ptr<Map> map;
 	std::shared_ptr<Physics> physics;
 	std::shared_ptr<UI> ui;
+	std::shared_ptr<GuiManager> guiManager;
 
 
 private: 

@@ -12,6 +12,8 @@
 #include "Map.h"
 #include "Item.h"
 #include "Fire.h"
+#include "GuiControl.h"
+#include "GuiManager.h"
 
 
 Scene::Scene() : Module()
@@ -139,6 +141,10 @@ bool Scene::Awake()
 	key1->SetParameters(configParameters.child("entities").child("key"));
 	key1->position = Vector2D(687, 719);
 
+	// L16: TODO 2: Instantiate a new GuiControlButton in the Scene
+	//SDL_Rect btPos = { 520, 350, 120,20 };
+	//guiBt = (GuiControlButton*)Engine::GetInstance().guiManager->CreateGuiControl(GuiControlType::BUTTON, 1, "MyButton", btPos, this);
+
 	return ret;
 
 }
@@ -177,7 +183,7 @@ bool Scene::Update(float dt)
 	if (Engine::GetInstance().render.get()->camera.y < -2160) {
 		Engine::GetInstance().render.get()->camera.y = -2160;
 	}
-	
+
 	return true;
 }
 
@@ -280,5 +286,13 @@ void Scene::takePoints() {
 
 void Scene::playerHeal() {
 	player->lives++;
+}
+
+bool Scene::OnGuiMouseClickEvent(GuiControl* control)
+{
+	// L15: DONE 5: Implement the OnGuiMouseClickEvent method
+	LOG("Press Gui Control: %d", control->id);
+
+	return true;
 }
 

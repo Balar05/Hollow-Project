@@ -7,6 +7,7 @@
 #include "Slash.h"
 #include "Boss.h"
 #include "Item.h"
+#include "GuiControlButton.h"
 
 struct SDL_Texture;
 
@@ -52,8 +53,14 @@ public:
 	void playerHeal();
 	void takePoints();
 
+	bool OnGuiMouseClickEvent(GuiControl* control);
+
+
 private:
 	SDL_Texture* img;
+	SDL_Texture* mouseTileTex = nullptr;
+	std::string tilePosDebug = "[0,0]";
+	bool once = false;
 
 	Player* player;
 	Bat* bat1;
@@ -63,5 +70,6 @@ private:
 	Slash* slash;
 	Boss* boss;
 	Item* key;
-	
+	//GuiControlButton* guiBt;
+
 };
