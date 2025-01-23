@@ -385,7 +385,7 @@
 					</fire>
 				</animations>
 			</fire>
-			<key w="32" h="32" texture="Assets/Textures/WhiteKey.png">
+			<key x ="687" y ="705" w="32" h="32" texture="Assets/Textures/WhiteKey.png">
 				<animations>
 					<key loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />

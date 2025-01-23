@@ -5,6 +5,8 @@
 #include "GuiControlButton.h"
 #include "Audio.h"
 
+#include "tracy/Tracy.hpp"
+
 GuiManager::GuiManager() :Module()
 {
 	name = "guiManager";
@@ -41,6 +43,7 @@ GuiControl* GuiManager::CreateGuiControl(GuiControlType type, int id, const char
 
 bool GuiManager::Update(float dt)
 {
+	ZoneScoped;
 	for (const auto& control : guiControlsList)
 	{
 		control->Update(dt);

@@ -7,6 +7,7 @@
 #include "Slash.h"
 #include "Boss.h"
 #include "Item.h"
+#include "Potion.h"
 #include "GuiControlButton.h"
 
 struct SDL_Texture;
@@ -70,6 +71,7 @@ private:
 	Slash* slash;
 	Boss* boss;
 	Item* key;
+	Potion* potion;
 	//GuiControlButton* guiBt;
 
 };

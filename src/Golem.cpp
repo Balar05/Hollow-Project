@@ -8,6 +8,7 @@
 #include "Log.h"
 #include "Physics.h"
 #include "Map.h"
+#include "tracy/Tracy.hpp"
 
 Golem::Golem() : Entity(EntityType::GOLEM)
 {
@@ -61,6 +62,7 @@ bool Golem::Start() {
 
 bool Golem::Update(float dt)
 {
+	ZoneScoped;
 	if (!dead) {
 		Vector2D playerPos = Engine::GetInstance().scene.get()->GetPlayerPosition();
 
@@ -173,7 +175,7 @@ void Golem::Chase() {
 
 		float distance = direction.magnitude();
 
-		pbody->body->SetLinearVelocity({ direction.normalized().getX(),0});
+		pbody->body->SetLinearVelocity({ direction.normalized().getX(),pbody->body->GetLinearVelocity().y});
 	}
 
 }

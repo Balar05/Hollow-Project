@@ -11,9 +11,11 @@
 #include "Player.h"
 #include "Map.h"
 #include "Item.h"
+#include "Potion.h"
 #include "Fire.h"
 #include "GuiControl.h"
 #include "GuiManager.h"
+#include "tracy/Tracy.hpp"
 
 
 Scene::Scene() : Module()
@@ -139,7 +141,9 @@ bool Scene::Awake()
 
 	Item* key1 = (Item*)Engine::GetInstance().entityManager->CreateEntity(EntityType::ITEM);
 	key1->SetParameters(configParameters.child("entities").child("key"));
-	key1->position = Vector2D(687, 719);
+
+	Potion* potion = (Potion*)Engine::GetInstance().entityManager->CreateEntity(EntityType::POTION);
+	potion->SetParameters(configParameters.child("entities").child("potion"));
 
 	// L16: TODO 2: Instantiate a new GuiControlButton in the Scene
 	//SDL_Rect btPos = { 520, 350, 120,20 };
@@ -169,6 +173,7 @@ bool Scene::PreUpdate()
 // Called each loop iteration
 bool Scene::Update(float dt)
 {
+	ZoneScoped;
 	float camSpeed = 0;
 
 	Engine::GetInstance().render.get()->camera.x =- player->position.getX()*2+450;
@@ -190,6 +195,7 @@ bool Scene::Update(float dt)
 // Called each loop iteration
 bool Scene::PostUpdate()
 {
+	ZoneScoped;
 	bool ret = true;
 
 	if(Engine::GetInstance().input.get()->GetKey(SDL_SCANCODE_ESCAPE) == KEY_DOWN)
