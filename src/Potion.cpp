@@ -21,11 +21,13 @@ bool Potion::Awake() {
 
 bool Potion::Start() {
 
-	texture = Engine::GetInstance().textures.get()->Load("Assets/Textures/HealthPotion.png");
-	
+	texture = Engine::GetInstance().textures.get()->Load(parameters.attribute("texture").as_string());
 
 	texW = parameters.attribute("w").as_int();
 	texH = parameters.attribute("h").as_int();
+
+	position.setX(parameters.attribute("x").as_int());
+	position.setY(parameters.attribute("y").as_int());
 
 	potion.LoadAnimations(parameters.child("animations").child("potion"));
 	currentAnimation = &potion;
@@ -54,7 +56,7 @@ bool Potion::Update(float dt)
 
 bool Potion::CleanUp()
 {
-	LOG("Cleanup fire");
+	LOG("Cleanup item");
 	Engine::GetInstance().textures.get()->UnLoad(texture);
 	return true;
 }
@@ -69,5 +71,4 @@ void Potion::OnCollision(PhysBody* physA, PhysBody* physB) {
 	default:
 		break;
 	}
-
 }

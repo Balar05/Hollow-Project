@@ -26,6 +26,9 @@ bool Item::Start() {
 	texW = parameters.attribute("w").as_int();
 	texH = parameters.attribute("h").as_int();
 
+	position.setX(parameters.attribute("x").as_int());
+	position.setY(parameters.attribute("y").as_int());
+
 	key.LoadAnimations(parameters.child("animations").child("key"));
 	currentAnimation = &key;
 
@@ -53,7 +56,7 @@ bool Item::Update(float dt)
 
 bool Item::CleanUp()
 {
-	LOG("Cleanup fire");
+	LOG("Cleanup item");
 	Engine::GetInstance().textures.get()->UnLoad(texture);
 	return true;
 }

@@ -7,6 +7,7 @@
 #include "Scene.h"
 #include "Log.h"
 #include "Physics.h"
+#include "tracy/Tracy.hpp"
 
 
 Player::Player() : Entity(EntityType::PLAYER)
@@ -75,6 +76,7 @@ bool Player::Start() {
 
 bool Player::Update(float dt)
 {
+	ZoneScoped;
 	if (godMode) {
 		lives = 5;
 		dead = false;
@@ -315,6 +317,9 @@ void Player::OnCollisionEnd(PhysBody* physA, PhysBody* physB)
 		break;
 	case ColliderType::ITEM:
 		LOG("End Collision ITEM");
+		break;
+	case ColliderType::POTION:
+		LOG("End Collision POTION");
 		break;
 	case ColliderType::UNKNOWN:
 		LOG("End Collision UNKNOWN");

@@ -10,7 +10,7 @@
 #include "Item.h"
 #include "Fire.h"
 #include "Potion.h"
-
+#include "tracy/Tracy.hpp"
 
 EntityManager::EntityManager() : Module()
 {
@@ -98,6 +98,8 @@ Entity* EntityManager::CreateEntity(EntityType type)
 	case EntityType::BOSS:
 		entity = new Boss();
 		break;
+	case EntityType::POTION:
+		entity = new Potion();
 	default:
 		break;
 	}
@@ -127,6 +129,7 @@ void EntityManager::AddEntity(Entity* entity)
 
 bool EntityManager::Update(float dt)
 {
+	ZoneScoped;
 	bool ret = true;
 	for(const auto entity : entities)
 	{

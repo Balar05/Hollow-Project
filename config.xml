@@ -385,7 +385,7 @@
 					</fire>
 				</animations>
 			</fire>
-			<key w="32" h="32" texture="Assets/Textures/WhiteKey.png">
+			<key x ="687" y ="705" w="32" h="32" texture="Assets/Textures/WhiteKey.png">
 				<animations>
 					<key loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />
@@ -403,15 +403,14 @@
 					</key>
 				</animations>
 			</key>
-
-			<potion x="687" y="703" w="32" h="32" texture="Assets/Textures/HealthPotion.png">
+			<potion x ="670" y ="705" w="32" h="32" texture="Assets/Textures/HealthPotion.png">
 				<animations>
 					<potion loop="true" speed="0.1">
 						<frame x="0" y="0" w="32" h="32" />
+						<frame x="32" y="0" w="32" h="32" />
 					</potion>
 				</animations>
 			</potion>
-			
 		</entities>
 	</scene>
 	<audio>

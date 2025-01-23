@@ -8,6 +8,7 @@
 #include "Log.h"
 #include "Physics.h"
 #include "Map.h"
+#include "tracy/Tracy.hpp"
 
 Bat::Bat() : Entity(EntityType::BAT)
 {
@@ -58,6 +59,7 @@ bool Bat::Start() {
 
 bool Bat::Update(float dt)
 {
+	ZoneScoped;
 	if (!dead) {
 		//if (lives <= 0) {
 		//	dead = true;

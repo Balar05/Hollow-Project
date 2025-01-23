@@ -7,6 +7,7 @@
 #include "Physics.h"
 
 #include <math.h>
+#include "tracy/Tracy.hpp"
 
 Map::Map() : Module(), mapLoaded(false)
 {
@@ -33,11 +34,30 @@ bool Map::Start() {
 
 bool Map::Update(float dt)
 {
+    ZoneScoped;
     bool ret = true;
 
     if (mapLoaded) {
 
         for (const auto& mapLayer : mapData.layers) {
+
+            int cameraX = Engine::GetInstance().render.get()->camera.w;
+            int cameraY = Engine::GetInstance().render.get()->camera.y;
+            int screenWidth = 1240;
+            int screenHeight = 720;
+
+            int startX = WorldToMap(cameraX, 0).getX();
+            if (startX < 0) startX = 0;
+
+            int endX = WorldToMap(cameraX+screenWidth, 0).getX();
+            if (endX >= mapData.width) endX = mapData.width;
+
+            int startY = WorldToMap(0, cameraY).getY();
+            if (startY < 0)  startY = 0;
+
+            int endY = WorldToMap(0, cameraY + screenHeight).getY();
+            if (endY > mapData.height)   endY = mapData.height;
+
             //Check if the property Draw exist get the value, if it's true draw the lawyer
             if (mapLayer->properties.GetProperty("Draw") != NULL && mapLayer->properties.GetProperty("Draw")->value == true) {
                 for (int i = 0; i < mapData.width; i++) {

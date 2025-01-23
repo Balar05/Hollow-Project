@@ -1,7 +1,6 @@
-Package: freetype
-Feature: zlib
-Depends: zlib
+Package: tracy
+Feature: crash-handler
 Architecture: x64-windows
 Multi-Arch: same
-Description: Use zlib instead of internal library for DEFLATE
-Status: purge ok half-installed
+Description: Enable crash handler
+Status: install ok installed

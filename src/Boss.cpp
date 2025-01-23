@@ -8,6 +8,7 @@
 #include "Log.h"
 #include "Physics.h"
 #include "Map.h"
+#include "tracy/Tracy.hpp"
 
 Boss::Boss() : Entity(EntityType::BOSS)
 {
@@ -70,6 +71,7 @@ bool Boss::Start() {
 
 bool Boss::Update(float dt)
 {
+	ZoneScoped;
 	if (!dead) {
 		Vector2D playerPos = Engine::GetInstance().scene.get()->GetPlayerPosition();
 
