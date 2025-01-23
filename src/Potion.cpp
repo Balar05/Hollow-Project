@@ -26,7 +26,10 @@ bool Potion::Start() {
 	texW = parameters.attribute("w").as_int();
 	texH = parameters.attribute("h").as_int();
 
-	potion.LoadAnimations(parameters.child("animations").child("key"));
+	position.setX(parameters.attribute("x").as_int());
+	position.setY(parameters.attribute("y").as_int());
+
+	potion.LoadAnimations(parameters.child("animations").child("potion"));
 	currentAnimation = &potion;
 
 	pbody = Engine::GetInstance().physics.get()->CreateCircle((int)position.getX() + texH / 2, (int)position.getY() + texH / 2, texH / 2, bodyType::STATIC);
